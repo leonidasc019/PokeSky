@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Liza" script="Liza.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100" />
+	<look type="2040" head="99" legs="66" feet="78" addons="0"/>
+	<parameters>
+		<parameter key="message_greet" value="Ola |PLAYERNAME|! Eu compro Pokemons de treinadores como voce. Se voce quiser vender algum, basta me dizer o nome do Pokemon que voce deseja vender." />
+		<parameter key="message_decline" value="Talvez em outra ocasiao. Ate mais!" />
+		<parameter key="message_no_pokemon" value="Parece que voce nao tem nenhum Pokemon para vender. Volte quando tiver algum para negociar!" />
+		<parameter key="message_sell_success" value="Obrigado por vender esse Pokemon! A negociacao foi concluida com sucesso." />
+		<parameter key="message_sell_fail" value="Nao posso comprar esse Pokemon. Certifique-se de que o nome esta correto ou que voce tem o Pokemon em sua posse." />
+	</parameters>
+</npc>

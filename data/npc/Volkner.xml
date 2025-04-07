@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Volkner" script="volkner.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100" />
+	<look type="2048" head="54" legs="98" feet="21" addons="2"/>
+	<parameters>
+		<parameter key="message_greet" value="Ola |PLAYERNAME|. eu venho de muito longe para ca em busca de novos treinadores. mais antes voce poderia me {ajudar}?" />
+		<parameter key="message_decline" value="Talvez uma outra hora." />
+	</parameters>
+</npc>

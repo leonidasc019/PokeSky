@@ -1,0 +1,13 @@
+<npc name="Gary" script="Gary.lua" walkinterval="2000" floorchange="0">
+    <health now="100" max="100" />
+    <look type="2066" head="114" legs="95" feet="132" addons="1" />
+    <parameters>
+        <parameter key="message_greet" value="|PLAYERNAME|, voce nao e patetico como o ash ne {task}" />
+        <parameter key="message_walkaway" value="Nao fique com medo treinador, fale comigo se tiver coragem!" />
+        <parameter key="message_accept_task" value="Muito bem! Prepare-se, a primeira tarefa nao sera facil. Duvido que consiga completar!" />
+        <parameter key="message_task_in_progress" value="Voce ja esta em uma missao, eu sabia que voce iria ficar ocupado tentando me superar!" />
+        <parameter key="message_task_complete" value="Impressionante, |PLAYERNAME|! Voce completou a missao... Mas nao pense que vai me impressionar tão facilmente. Vamos ver se consegue mais!" />
+        <parameter key="message_no_task" value="Nao ha mais missoes para voce, mas não se anime. Eu sou o unico que pode desafiar o verdadeiro mestre!" />
+        <parameter key="message_reset_task" value="Missao resetada. Volte quando estiver pronto para tentar novamente, mas nao espere que eu facilite pra voce!" />
+    </parameters>
+</npc>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Zubat" nameDescription="a zubat" race="poison" race2="flying" experience="60" speed="80" manacost="0">
+	<level min="10" max="10"/>
+	<health now="2400" max="2400" />
+	<look type="41" head="113" body="57" legs="95" feet="113" corpse="26902" />
+	<targetchange interval="5000" chance="0" />
+	<flags>
+		<flag summonable="1" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag passive="0" />
+		<flag illusionable="1" />
+		<flag convinceable="1" />
+		<flag pushable="1" />
+		<flag canpushitems="0" />
+		<flag canpushcreatures="0" />
+		<flag targetdistance="1" />
+		<flag staticattack="97" />
+		<flag runonhealth="0" />
+		<flag dexentry="41" />
+		<flag portraitid="27157" />
+		<flag hasshiny="1" />
+		<flag hasmega="0" />
+		<flag flyable="552" />
+		<flag rideable="0" />
+		<flag surfable="0" />
+		<flag canteleport="0" />
+		<flag catchchance="26" />
+		<flag moveMagicAttackBase="30" />
+		<flag moveMagicDefenseBase="40" />
+	</flags>
+	<script>
+        	<event name="MonsterHealthChange"/>
+        	<event name="CorpseLevel"/>
+        	<event name="CorpseLoot"/>
+
+	</script>
+	<moves>
+
+		<move name="bite" interval="10000" isTarget="1" range="1"/>
+		<move name="poison fang" interval="20000" isTarget="1" range="1"/>
+		<move name="leech life" interval="15000" isTarget="1" range="1"/>
+		<move name="toxic" interval="30000"/>
+
+	</moves>
+	<evolutions>
+		<evolution name="Golbat" level="40" itemName="venom stone" count="1"/>
+
+	</evolutions>
+	<attacks>
+		<attack name="melee" interval="2000" min="-45" max="-45" />
+
+		<attack name="bite" interval="10000" chance="40" target="1" range="1"/>
+		<attack name="poison fang" interval="20000" chance="40" target="1" range="1"/>
+		<attack name="leech life" interval="15000" chance="40" target="1" range="1"/>
+		<attack name="toxic" interval="30000" chance="40"/>
+
+	</attacks>
+	<defenses armor="0" defense="35" >
+
+	</defenses>
+	<elements>
+	</elements>
+	<immunities>
+
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="ZUBAT!" />
+	</voices>
+	<loot>
+		<item name="venom stone" countmax="1" chance="40"/>
+		
+		<item name="bottle of poison" countmax="2" chance="40000"/>
+		<item name="straw" countmax="2" chance="40000"/>
+		<item name="tooth" countmax="1" chance="5000"/>
+		<item name="bat wing" countmax="1" chance="5000"/>
+
+	</loot>
+</monster>

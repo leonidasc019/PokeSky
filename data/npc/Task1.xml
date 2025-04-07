@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Liora" script="task1.lua" walkinterval="2000" floorchange="0">
+    <health now="100" max="100"/>
+    <look type="2050" head="142" legs="77" feet="70" addons="1"/>
+    <parameters>
+        <parameter key="message_greet" value="Ola, treinador! Eu me chamo Liora. Estou em busca de um favor. Preciso de 30 bag pollem de pokemon do tipo planta para completar uma pesquisa importante. Voce pode me ajudar com isso? Use {Help} para saber mais!"/>
+    </parameters>
+</npc>

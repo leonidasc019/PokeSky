@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Rivers" script="rivers.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100" />
+	<look type="2053" head="12" legs="56" feet="78" addons="1"/>
+	<parameters>
+		<parameter key="message_greet" value="Ola, |PLAYERNAME|! Voce deseja ir para {Trade Center} ou {Treining Center} ?" />
+	</parameters>
+</npc>

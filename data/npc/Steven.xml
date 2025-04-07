@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Steven" script="Steven.lua" walkinterval="2000" floorchange="0">
+    <health now="100" max="100"/>
+    <look type="2049" head="95" legs="66" feet="78" addons="1"/>
+    <parameters>
+        <parameter key="message_greet" value="Ola! Eu posso ajuda-lo a andar mais rapido na Agua . Voce esta interessado? {Yes}"/>
+        <parameter key="message_decline" value="opa volte depois" />
+    </parameters>
+</npc>

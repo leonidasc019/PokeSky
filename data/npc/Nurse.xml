@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Joy" script="nurse.lua" walkinterval="0" floorchange="0">
+	<health now="100" max="100" />
+	<look type="2226" head="39" legs="125" feet="57" addons="0" />
+	<parameters>
+		<parameter key="message_greet" value="Ola |PLAYERNAME|. Eu posso curar voce e seus Pokemon." />
+		<parameter key="message_decline" value="Seus Pokemon estao prontos para a batalha novamente!" />
+	</parameters>
+</npc>

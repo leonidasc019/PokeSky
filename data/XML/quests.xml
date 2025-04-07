@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quests>
+
+	<quest name="Boulder Badge" startstorageid="92000" startstoragevalue="0">
+		<mission name="Quest" storageid="92000" startvalue="0" endvalue="1">
+			<missionstate id="0" description="Derrote Brock em Pewter!" />
+			<missionstate id="1" description="Voce derrotou Brock e recebeu a Insignia da Rocha" />
+		</mission>
+	</quest>
+
+	<quest name="Cascade Badge" startstorageid="92001" startstoragevalue="0">
+		<mission name="Quest" storageid="92001" startvalue="0" endvalue="1">
+			<missionstate id="0" description="Derrote Misty em Cerulean!" />
+			<missionstate id="1" description="Voce derrotou Misty e recebeu a Insignia da Cascata" />
+		</mission>
+	</quest>
+
+	<quest name="Thunder Badge" startstorageid="92002" startstoragevalue="0">
+		<mission name="Quest" storageid="92002" startvalue="0" endvalue="1">
+			<missionstate id="0" description="Derrote Lt. Surge em Vermilion!" />
+			<missionstate id="1" description="Voce derrotou Lt. Surge e recebeu a Insignia do Trovao" />
+		</mission>
+	</quest>
+
+	<quest name="Rainbow Badge" startstorageid="92003" startstoragevalue="0">
+		<mission name="Quest" storageid="92003" startvalue="0" endvalue="1">
+			<missionstate id="0" description="Derrote Erika em Celadon!" />
+			<missionstate id="1" description="Voce derrotou Erika e recebeu a Insignia do Arco-Iris" />
+		</mission>
+	</quest>
+
+	<quest name="Soul Badge" startstorageid="92004" startstoragevalue="0">
+		<mission name="Quest" storageid="92004" startvalue="0" endvalue="1">
+			<missionstate id="0" description="Derrote Koga em Fuchsia!" />
+			<missionstate id="1" description="Voce derrotou Koga e recebeu a Insignia da Alma" />
+		</mission>
+	</quest>
+
+	<quest name="Marsh Badge" startstorageid="92005" startstoragevalue="0">
+		<mission name="Quest" storageid="92005" startvalue="0" endvalue="1">
+			<missionstate id="0" description="Derrote Sabrina em Saffron!" />
+			<missionstate id="1" description="Voce derrotou Sabrina e recebeu a Insignia da Lama" />
+		</mission>
+	</quest>
+
+	<quest name="Volcano Badge" startstorageid="92006" startstoragevalue="0">
+		<mission name="Quest" storageid="92006" startvalue="0" endvalue="1">
+			<missionstate id="0" description="Derrote Blaine em Cinnabar!" />
+			<missionstate id="1" description="Voce derrotou Blaine e recebeu a Insignia do Vulcao" />
+		</mission>
+	</quest>
+
+	<quest name="Earth Badge" startstorageid="92007" startstoragevalue="0">
+		<mission name="Quest" storageid="92007" startvalue="0" endvalue="1">
+			<missionstate id="0" description="Derrote Giovanni em Viridian!" />
+			<missionstate id="1" description="Voce derrotou Giovanni e recebeu a Insignia da Terra" />
+		</mission>
+	</quest>
+
+	<quest name="Zephyr Badge" startstorageid="92008" startstoragevalue="0">
+		<mission name="Quest" storageid="92008" startvalue="0" endvalue="1">
+			<missionstate id="0" description="Derrote o lider do ginasio e colecte sua insignea!" />
+			<missionstate id="1" description="Derrote o lider do ginasio e colecte sua insignea!" />
+		</mission>
+	</quest>
+
+	<quest name="Hive Badge" startstorageid="92009" startstoragevalue="0">
+		<mission name="Quest" storageid="92009" startvalue="0" endvalue="1">
+			<missionstate id="0" description="Derrote o lider do ginasio e colecte sua insignea!" />
+			<missionstate id="1" description="Derrote o lider do ginasio e colecte sua insignea!" />
+		</mission>
+	</quest>
+
+	<quest name="Plain Badge" startstorageid="92010" startstoragevalue="0">
+		<mission name="Quest" storageid="92010" startvalue="0" endvalue="1">
+			<missionstate id="0" description="Derrote o lider do ginasio e colecte sua insignea!" />
+			<missionstate id="1" description="Derrote o lider do ginasio e colecte sua insignea!" />
+		</mission>
+	</quest>
+
+	<quest name="Fog Badge" startstorageid="92011" startstoragevalue="0">
+		<mission name="Quest" storageid="92011" startvalue="0" endvalue="1">
+			<missionstate id="0" description="Derrote o lider do ginasio e colecte sua insignea!" />
+			<missionstate id="1" description="Derrote o lider do ginasio e colecte sua insignea!" />
+		</mission>
+	</quest>
+
+	<quest name="Storm Badge" startstorageid="92012" startstoragevalue="0">
+		<mission name="Quest" storageid="92012" startvalue="0" endvalue="1">
+			<missionstate id="0" description="Derrote o lider do ginasio e colecte sua insignea!" />
+			<missionstate id="1" description="Derrote o lider do ginasio e colecte sua insignea!" />
+		</mission>
+	</quest>
+
+	<quest name="Mineral Badge" startstorageid="92013" startstoragevalue="0">
+		<mission name="Quest" storageid="92013" startvalue="0" endvalue="1">
+			<missionstate id="0" description="Derrote o lider do ginasio e colecte sua insignea!" />
+			<missionstate id="1" description="Derrote o lider do ginasio e colecte sua insignea!" />
+		</mission>
+	</quest>
+
+	<quest name="Glacier Badge" startstorageid="92014" startstoragevalue="0">
+		<mission name="Quest" storageid="92014" startvalue="0" endvalue="1">
+			<missionstate id="0" description="Derrote o lider do ginasio e colecte sua insignea!" />
+			<missionstate id="1" description="Derrote o lider do ginasio e colecte sua insignea!" />
+		</mission>
+	</quest>
+
+	<quest name="Rising Badge" startstorageid="92015" startstoragevalue="0">
+		<mission name="Quest" storageid="92015" startvalue="0" endvalue="1">
+			<missionstate id="0" description="Derrote o lider do ginasio e colecte sua insignea!" />
+			<missionstate id="1" description="Derrote o lider do ginasio e colecte sua insignea!" />
+		</mission>
+	</quest>
+
+</quests>
+

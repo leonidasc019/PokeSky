@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF8"?>
+<monsters>
+<!-- <! Kanto >  -->
+    <monster name="Bulbasaur" file="Kanto/1bulbasaur.xml" />
+	<monster name="Ivysaur" file="Kanto/2ivysaur.xml" />
+	<monster name="Venusaur" file="Kanto/3venusaur.xml" />
+	<monster name="Charmander" file="Kanto/4charmander.xml" />
+	<monster name="Charmeleon" file="Kanto/5charmeleon.xml" />
+	<monster name="Charizard" file="Kanto/6charizard.xml" />
+	<monster name="Squirtle" file="Kanto/7squirtle.xml" />
+	<monster name="Wartortle" file="Kanto/8wartortle.xml" />
+	<monster name="Blastoise" file="Kanto/9blastoise.xml" />
+	<monster name="Caterpie" file="Kanto/10caterpie.xml" />
+	<monster name="Metapod" file="Kanto/11metapod.xml" />
+	<monster name="Butterfree" file="Kanto/12butterfree.xml" />
+	<monster name="Weedle" file="Kanto/13weedle.xml" />
+	<monster name="Kakuna" file="Kanto/14kakuna.xml" />
+	<monster name="Beedrill" file="Kanto/15beedrill.xml" />
+	<monster name="Pidgey" file="Kanto/16pidgey.xml" />
+	<monster name="Pidgeotto" file="Kanto/17pidgeotto.xml" />
+	<monster name="Pidgeot" file="Kanto/18pidgeot.xml" />
+	<monster name="Rattata" file="Kanto/19rattata.xml" />
+	<monster name="Raticate" file="Kanto/20raticate.xml" />
+	<monster name="Spearow" file="Kanto/21spearow.xml" />
+	<monster name="Fearow" file="Kanto/22fearow.xml" />
+	<monster name="Ekans" file="Kanto/23ekans.xml" />
+	<monster name="Arbok" file="Kanto/24arbok.xml" />
+	<monster name="Pikachu" file="Kanto/25pikachu.xml" />
+	<monster name="Raichu" file="Kanto/26raichu.xml" />
+	<monster name="Sandshrew" file="Kanto/27sandshrew.xml" />
+	<monster name="Sandslash" file="Kanto/28sandslash.xml" />
+	<monster name="Nidoran Female" file="Kanto/29nidoran female.xml" />
+	<monster name="Nidorina" file="Kanto/30nidorina.xml" />
+	<monster name="Nidoqueen" file="Kanto/31nidoqueen.xml" />
+	<monster name="Nidoran Male" file="Kanto/32nidoran male.xml" />
+	<monster name="Nidorino" file="Kanto/33nidorino.xml" />
+	<monster name="Nidoking" file="Kanto/34nidoking.xml" />
+	<monster name="Clefairy" file="Kanto/35clefairy.xml" />
+	<monster name="Clefable" file="Kanto/36clefable.xml" />
+	<monster name="Vulpix" file="Kanto/37vulpix.xml" />
+	<monster name="Ninetales" file="Kanto/38ninetales.xml" />
+	<monster name="Jigglypuff" file="Kanto/39jigglypuff.xml" />
+	<monster name="Wigglytuff" file="Kanto/40wigglytuff.xml" />
+	<monster name="Zubat" file="Kanto/41zubat.xml" />
+	<monster name="Golbat" file="Kanto/42golbat.xml" />
+	<monster name="Oddish" file="Kanto/43oddish.xml" />
+	<monster name="Gloom" file="Kanto/44gloom.xml" />
+	<monster name="Vileplume" file="Kanto/45vileplume.xml" />
+	<monster name="Paras" file="Kanto/46paras.xml" />
+	<monster name="Parasect" file="Kanto/47parasect.xml" />
+	<monster name="Venonat" file="Kanto/48venonat.xml" />
+	<monster name="Venomoth" file="Kanto/49venomoth.xml" />
+	<monster name="Diglett" file="Kanto/50diglett.xml" />
+	<monster name="Dugtrio" file="Kanto/51dugtrio.xml" />
+	<monster name="Meowth" file="Kanto/52meowth.xml" />
+	<monster name="Persian" file="Kanto/53persian.xml" />
+	<monster name="Psyduck" file="Kanto/54psyduck.xml" />
+	<monster name="Golduck" file="Kanto/55golduck.xml" />
+	<monster name="Mankey" file="Kanto/56mankey.xml" />
+	<monster name="Primeape" file="Kanto/57primeape.xml" />
+	<monster name="Growlithe" file="Kanto/58growlithe.xml" />
+	<monster name="Arcanine" file="Kanto/59arcanine.xml" />
+	<monster name="Poliwag" file="Kanto/60poliwag.xml" />
+	<monster name="Poliwhirl" file="Kanto/61poliwhirl.xml" />
+	<monster name="Poliwrath" file="Kanto/62poliwrath.xml" />
+	<monster name="Abra" file="Kanto/63abra.xml" />
+	<monster name="Kadabra" file="Kanto/64kadabra.xml" />
+	<monster name="Alakazam" file="Kanto/65alakazam.xml" />
+	<monster name="Machop" file="Kanto/66machop.xml" />
+	<monster name="Machoke" file="Kanto/67machoke.xml" />
+	<monster name="Machamp" file="Kanto/68machamp.xml" />
+	<monster name="Bellsprout" file="Kanto/69bellsprout.xml" />
+	<monster name="Weepinbell" file="Kanto/70weepinbell.xml" />
+	<monster name="Victreebel" file="Kanto/71victreebel.xml" />
+	<monster name="Tentacool" file="Kanto/72tentacool.xml" />
+	<monster name="Tentacruel" file="Kanto/73tentacruel.xml" />
+	<monster name="Geodude" file="Kanto/74geodude.xml" />
+	<monster name="Graveler" file="Kanto/75graveler.xml" />
+	<monster name="Golem" file="Kanto/76golem.xml" />
+	<monster name="Ponyta" file="Kanto/77ponyta.xml" />
+	<monster name="Rapidash" file="Kanto/78rapidash.xml" />
+	<monster name="Slowpoke" file="Kanto/79slowpoke.xml" />
+	<monster name="Slowbro" file="Kanto/80slowbro.xml" />
+	<monster name="Magnemite" file="Kanto/81magnemite.xml" />
+	<monster name="Magneton" file="Kanto/82magneton.xml" />
+	<monster name="Farfetch'd" file="Kanto/83farfetch'd.xml" />
+	<monster name="Doduo" file="Kanto/84doduo.xml" />
+	<monster name="Dodrio" file="Kanto/85dodrio.xml" />
+	<monster name="Seel" file="Kanto/86seel.xml" />
+	<monster name="Dewgong" file="Kanto/87dewgong.xml" />
+	<monster name="Grimer" file="Kanto/88grimer.xml" />
+	<monster name="Muk" file="Kanto/89muk.xml" />
+	<monster name="Shellder" file="Kanto/90shellder.xml" />
+	<monster name="Cloyster" file="Kanto/91cloyster.xml" />
+	<monster name="Gastly" file="Kanto/92gastly.xml" />
+	<monster name="Haunter" file="Kanto/93haunter.xml" />
+	<monster name="Gengar" file="Kanto/94gengar.xml" />
+	<monster name="Onix" file="Kanto/95onix.xml" />
+	<monster name="Drowzee" file="Kanto/96drowzee.xml" />
+	<monster name="Hypno" file="Kanto/97hypno.xml" />
+	<monster name="Krabby" file="Kanto/98krabby.xml" />
+	<monster name="Kingler" file="Kanto/99kingler.xml" />
+	<monster name="Voltorb" file="Kanto/100voltorb.xml" />
+	<monster name="Electrode" file="Kanto/101electrode.xml" />
+	<monster name="Exeggcute" file="Kanto/102exeggcute.xml" />
+	<monster name="Exeggutor" file="Kanto/103exeggutor.xml" />
+	<monster name="Cubone" file="Kanto/104cubone.xml" />
+	<monster name="Marowak" file="Kanto/105marowak.xml" />
+	<monster name="Hitmonlee" file="Kanto/106hitmonlee.xml" />
+	<monster name="Hitmonchan" file="Kanto/107hitmonchan.xml" />
+	<monster name="Lickitung" file="Kanto/108lickitung.xml" />
+	<monster name="Koffing" file="Kanto/109koffing.xml" />
+	<monster name="Weezing" file="Kanto/110weezing.xml" />
+	<monster name="Rhyhorn" file="Kanto/111rhyhorn.xml" />
+	<monster name="Rhydon" file="Kanto/112rhydon.xml" />
+	<monster name="Chansey" file="Kanto/113chansey.xml" />
+	<monster name="Tangela" file="Kanto/114tangela.xml" />
+	<monster name="Kangaskhan" file="Kanto/115kangaskhan.xml" />
+	<monster name="Horsea" file="Kanto/116horsea.xml" />
+	<monster name="Seadra" file="Kanto/117seadra.xml" />
+	<monster name="Goldeen" file="Kanto/118goldeen.xml" />
+	<monster name="Seaking" file="Kanto/119seaking.xml" />
+	<monster name="Staryu" file="Kanto/120staryu.xml" />
+	<monster name="Starmie" file="Kanto/121starmie.xml" />
+	<monster name="Mr.Mime" file="Kanto/122mr.mime.xml" />
+	<monster name="Scyther" file="Kanto/123scyther.xml" />
+	<monster name="Jynx" file="Kanto/124jynx.xml" />
+	<monster name="Electabuzz" file="Kanto/125electabuzz.xml" />
+	<monster name="Magmar" file="Kanto/126magmar.xml" />
+	<monster name="Pinsir" file="Kanto/127pinsir.xml" />
+	<monster name="Tauros" file="Kanto/128tauros.xml" />
+	<monster name="Magikarp" file="Kanto/129magikarp.xml" />
+	<monster name="Gyarados" file="Kanto/130gyarados.xml" />
+	<monster name="Lapras" file="Kanto/131lapras.xml" />
+	<monster name="Ditto" file="Kanto/132ditto.xml" />
+	<monster name="Eevee" file="Kanto/133eevee.xml" />
+	<monster name="Vaporeon" file="Kanto/134vaporeon.xml" />
+	<monster name="Jolteon" file="Kanto/135jolteon.xml" />
+	<monster name="Flareon" file="Kanto/136flareon.xml" />
+	<monster name="Porygon" file="Kanto/137porygon.xml" />
+	<monster name="Omanyte" file="Kanto/138omanyte.xml" />
+	<monster name="Omastar" file="Kanto/139omastar.xml" />
+	<monster name="Kabuto" file="Kanto/140kabuto.xml" />
+	<monster name="Kabutops" file="Kanto/141kabutops.xml" />
+	<monster name="Aerodactyl" file="Kanto/142aerodactyl.xml" />
+	<monster name="Snorlax" file="Kanto/143snorlax.xml" />
+	<monster name="Articuno" file="Kanto/144articuno.xml" />
+	<monster name="Zapdos" file="Kanto/145zapdos.xml" />
+	<monster name="Moltres" file="Kanto/146moltres.xml" />
+	<monster name="Dratini" file="Kanto/147dratini.xml" />
+	<monster name="Dragonair" file="Kanto/148dragonair.xml" />
+	<monster name="Dragonite" file="Kanto/149dragonite.xml" />
+	<monster name="Mewtwo" file="Kanto/150mewtwo.xml" />
+	<monster name="Mew" file="Kanto/151mew.xml" />
+
+<!-- <! Johto > -->
+	
+	<monster name="Chikorita" file="Johto/152chikorita.xml" />
+	<monster name="Bayleef" file="Johto/153bayleef.xml" />
+	<monster name="Meganium" file="Johto/154meganium.xml" />
+	<monster name="Cyndaquil" file="Johto/155cyndaquil.xml" />
+	<monster name="Quilava" file="Johto/156quilava.xml" />
+	<monster name="Typhlosion" file="Johto/157typhlosion.xml" />
+	<monster name="Totodile" file="Johto/158totodile.xml" />
+	<monster name="Croconaw" file="Johto/159croconaw.xml" />
+	<monster name="Feraligatr" file="Johto/160feraligatr.xml" />
+	<monster name="Sentret" file="Johto/161sentret.xml" />
+	<monster name="Furret" file="Johto/162furret.xml" />
+	<monster name="Hoothoot" file="Johto/163hoothoot.xml" />
+	<monster name="Noctowl" file="Johto/164noctowl.xml" />
+	<monster name="Ledyba" file="Johto/165ledyba.xml" />
+	<monster name="Ledian" file="Johto/166ledian.xml" />
+	<monster name="Spinarak" file="Johto/167spinarak.xml" />
+	<monster name="Ariados" file="Johto/168ariados.xml" />
+	<monster name="Crobat" file="Johto/169crobat.xml" />
+	<monster name="Chinchou" file="Johto/170chinchou.xml" />
+	<monster name="Lanturn" file="Johto/171lanturn.xml" />
+	<monster name="Pichu" file="Johto/172pichu.xml" />
+	<monster name="Cleffa" file="Johto/173cleffa.xml" />
+	<monster name="Igglybuff" file="Johto/174igglybuff.xml" />
+	<monster name="Togepi" file="Johto/175togepi.xml" />
+	<monster name="Togetic" file="Johto/176togetic.xml" />
+	<monster name="Natu" file="Johto/177natu.xml" />
+	<monster name="Xatu" file="Johto/178xatu.xml" />
+	<monster name="Mareep" file="Johto/179mareep.xml" />
+	<monster name="Flaaffy" file="Johto/180flaaffy.xml" />
+	<monster name="Ampharos" file="Johto/181ampharos.xml" />
+	<monster name="Bellossom" file="Johto/182bellossom.xml" />
+	<monster name="Marill" file="Johto/183marill.xml" />
+	<monster name="Azumarill" file="Johto/184azumarill.xml" />
+	<monster name="Sudowoodo" file="Johto/185sudowoodo.xml" />
+	<monster name="Politoed" file="Johto/186politoed.xml" />
+	<monster name="Hoppip" file="Johto/187hoppip.xml" />
+	<monster name="Skiploom" file="Johto/188skiploom.xml" />
+	<monster name="Jumpluff" file="Johto/189jumpluff.xml" />
+	<monster name="Aipom" file="Johto/190aipom.xml" />
+	<monster name="Sunkern" file="Johto/191sunkern.xml" />
+	<monster name="Sunflora" file="Johto/192sunflora.xml" />
+	<monster name="Yanma" file="Johto/193yanma.xml" />
+	<monster name="Wooper" file="Johto/194wooper.xml" />
+	<monster name="Quagsire" file="Johto/195quagsire.xml" />
+	<monster name="Espeon" file="Johto/196espeon.xml" />
+	<monster name="Umbreon" file="Johto/197umbreon.xml" />
+	<monster name="Murkrow" file="Johto/198murkrow.xml" />
+	<monster name="Slowking" file="Johto/199slowking.xml" />
+	<monster name="Misdreavus" file="Johto/200misdreavus.xml" />
+	<monster name="Unown" file="Johto/201unown.xml" />
+	<monster name="Wobbuffet" file="Johto/202wobbuffet.xml" />
+	<monster name="Girafarig" file="Johto/203girafarig.xml" />
+	<monster name="Pineco" file="Johto/204pineco.xml" />
+	<monster name="Forretress" file="Johto/205forretress.xml" />
+	<monster name="Dunsparce" file="Johto/206dunsparce.xml" />
+	<monster name="Gligar" file="Johto/207gligar.xml" />
+	<monster name="Steelix" file="Johto/208steelix.xml" />
+	<monster name="Snubbull" file="Johto/209snubbull.xml" />
+	<monster name="Granbull" file="Johto/210granbull.xml" />
+	<monster name="Qwilfish" file="Johto/211qwilfish.xml" />
+	<monster name="Scizor" file="Johto/212scizor.xml" />
+	<monster name="Shuckle" file="Johto/213shuckle.xml" />
+	<monster name="Heracross" file="Johto/214heracross.xml" />
+	<monster name="Sneasel" file="Johto/215sneasel.xml" />
+	<monster name="Teddiursa" file="Johto/216teddiursa.xml" />
+	<monster name="Ursaring" file="Johto/217ursaring.xml" />
+	<monster name="Slugma" file="Johto/218slugma.xml" />
+	<monster name="Magcargo" file="Johto/219magcargo.xml" />
+	<monster name="Swinub" file="Johto/220swinub.xml" />
+	<monster name="Piloswine" file="Johto/221piloswine.xml" />
+	<monster name="Corsola" file="Johto/222corsola.xml" />
+	<monster name="Remoraid" file="Johto/223remoraid.xml" />
+	<monster name="Octillery" file="Johto/224octillery.xml" />
+	<monster name="Delibird" file="Johto/225delibird.xml" />
+	<monster name="Mantine" file="Johto/226mantine.xml" />
+	<monster name="Skarmory" file="Johto/227skarmory.xml" />
+	<monster name="Houndour" file="Johto/228houndour.xml" />
+	<monster name="Houndoom" file="Johto/229houndoom.xml" />
+	<monster name="Kingdra" file="Johto/230kingdra.xml" />
+	<monster name="Phanpy" file="Johto/231phanpy.xml" />
+	<monster name="Donphan" file="Johto/232donphan.xml" />
+	<monster name="Porygon2" file="Johto/233porygon2.xml" />
+	<monster name="Stantler" file="Johto/234stantler.xml" />
+	<monster name="Smeargle" file="Johto/235smeargle.xml" />
+	<monster name="Tyrogue" file="Johto/236tyrogue.xml" />
+	<monster name="Hitmontop" file="Johto/237hitmontop.xml" />
+	<monster name="Smoochum" file="Johto/238smoochum.xml" />
+	<monster name="Elekid" file="Johto/239elekid.xml" />
+	<monster name="Magby" file="Johto/240magby.xml" />
+	<monster name="Miltank" file="Johto/241miltank.xml" />
+	<monster name="Blissey" file="Johto/242blissey.xml" />
+	<monster name="Raikou" file="Johto/243raikou.xml" />
+	<monster name="Entei" file="Johto/244entei.xml" />
+	<monster name="Suicune" file="Johto/245suicune.xml" />
+	<monster name="Larvitar" file="Johto/246larvitar.xml" />
+	<monster name="Pupitar" file="Johto/247pupitar.xml" />
+	<monster name="Tyranitar" file="Johto/248tyranitar.xml" />
+	<monster name="Lugia" file="Johto/249lugia.xml" />
+	<monster name="Ho-Oh" file="Johto/250ho-oh.xml" />
+	<monster name="Celebi" file="Johto/251celebi.xml" />
+
+<!-- <! Hoenn > -->
+
+	<monster name="Treecko" file="Hoenn/252treecko.xml" />
+	<monster name="Grovyle" file="Hoenn/253grovyle.xml" />
+	<monster name="Sceptile" file="Hoenn/254sceptile.xml" />
+	<monster name="Torchic" file="Hoenn/255torchic.xml" />
+	<monster name="Combusken" file="Hoenn/256combusken.xml" />
+	<monster name="Blaziken" file="Hoenn/257blaziken.xml" />
+	<monster name="Mudkip" file="Hoenn/258mudkip.xml" />
+	<monster name="Marshtomp" file="Hoenn/259marshtomp.xml" />
+	<monster name="Swampert" file="Hoenn/260swampert.xml" />
+	<monster name="Poochyena" file="Hoenn/261poochyena.xml" />
+	<monster name="Mightyena" file="Hoenn/262migthyena.xml" />
+	<monster name="Zigzagoon" file="Hoenn/263zigzagoon.xml" />
+	<monster name="Linoone" file="Hoenn/264linoone.xml" />
+	<monster name="Wurmple" file="Hoenn/265wurmple.xml" />
+	<monster name="Silcoon" file="Hoenn/266silcoon.xml" />
+	<monster name="Beautifly" file="Hoenn/267beautifly.xml" />
+	<monster name="Cascoon" file="Hoenn/268cascoon.xml" />
+	<monster name="Dustox" file="Hoenn/269dustox.xml" />
+	<monster name="Lotad" file="Hoenn/270lotad.xml" />
+	<monster name="Lombre" file="Hoenn/271lombre.xml" />
+	<monster name="Ludicolo" file="Hoenn/272ludicolo.xml" />
+	<monster name="Seedot" file="Hoenn/273seedot.xml" />
+	<monster name="Nuzleaf" file="Hoenn/274nuzleaf.xml" />
+	<monster name="Shiftry" file="Hoenn/275shiftry.xml" />
+	<monster name="Taillow" file="Hoenn/276taillow.xml" />
+	<monster name="Swellow" file="Hoenn/277swellow.xml" />
+	<monster name="Wingull" file="Hoenn/278wingull.xml" />
+	<monster name="Pelipper" file="Hoenn/279pelipper.xml" />
+	<monster name="Ralts" file="Hoenn/280ralts.xml" />
+	<monster name="Kirlia" file="Hoenn/281kirlia.xml" />
+	<monster name="Gardevoir" file="Hoenn/282gardevoir.xml" />
+	<monster name="Surskit" file="Hoenn/283surskit.xml" />
+	<monster name="Masquerain" file="Hoenn/284masquerain.xml" />
+	<monster name="Shroomish" file="Hoenn/285shroomish.xml" />
+	<monster name="Breloom" file="Hoenn/286breloom.xml" />
+	<monster name="Slakoth" file="Hoenn/287slakoth.xml" />
+	<monster name="Vigoroth" file="Hoenn/288vigoroth.xml" />
+	<monster name="Slaking" file="Hoenn/289slaking.xml" />
+	<monster name="Nincada" file="Hoenn/290nincada.xml" />
+	<monster name="Ninjask" file="Hoenn/291ninjask.xml" />
+	<monster name="Shedinja" file="Hoenn/292shedinja.xml" />
+	<monster name="Whismur" file="Hoenn/293whismur.xml" />
+	<monster name="Loudred" file="Hoenn/294loudred.xml" />
+	<monster name="Exploud" file="Hoenn/295exploud.xml" />
+	<monster name="Makuhita" file="Hoenn/296makuhita.xml" />
+	<monster name="Hariyama" file="Hoenn/297hariyama.xml" />
+	<monster name="Azurill" file="Hoenn/298azurill.xml" />
+	<monster name="Nosepass" file="Hoenn/299nosepass.xml" />
+	<monster name="Skitty" file="Hoenn/300skitty.xml" />
+	<monster name="Delcatty" file="Hoenn/301delcatty.xml" />
+	<monster name="Sableye" file="Hoenn/302sableye.xml" />
+	<monster name="Mawile" file="Hoenn/303mawile.xml" />
+	<monster name="Aron" file="Hoenn/304aron.xml" />
+	<monster name="Lairon" file="Hoenn/305lairon.xml" />
+	<monster name="Aggron" file="Hoenn/306aggron.xml" />
+	<monster name="Meditite" file="Hoenn/307meditite.xml" />
+	<monster name="Medicham" file="Hoenn/308medicham.xml" />
+	<monster name="Electrike" file="Hoenn/309electrike.xml" />
+	<monster name="Manectric" file="Hoenn/310manectric.xml" />
+	<monster name="Plusle" file="Hoenn/311plusle.xml" />
+	<monster name="Minun" file="Hoenn/312minun.xml" />
+	<monster name="Volbeat" file="Hoenn/313volbeat.xml" />
+	<monster name="Illumise" file="Hoenn/314illumise.xml" />
+	<monster name="Roselia" file="Hoenn/315roselia.xml" />
+	<monster name="Gulpin" file="Hoenn/316gulpin.xml" />
+	<monster name="Swalot" file="Hoenn/317swalot.xml" />
+	<monster name="Carvanha" file="Hoenn/318carvanha.xml" />
+	<monster name="Sharpedo" file="Hoenn/319sharpedo.xml" />
+	<monster name="Wailmer" file="Hoenn/320wailmer.xml" />
+	<monster name="Wailord" file="Hoenn/321wailord.xml" />
+	<monster name="Numel" file="Hoenn/322numel.xml" />
+	<monster name="Camerupt" file="Hoenn/323camerupt.xml" />
+	<monster name="Torkoal" file="Hoenn/324torkoal.xml" />
+	<monster name="Spoink" file="Hoenn/325spoink.xml" />
+	<monster name="Grumpig" file="Hoenn/326grumpig.xml" />
+	<monster name="Spinda" file="Hoenn/327spinda.xml" />
+	<monster name="Trapinch" file="Hoenn/328trapinch.xml" />
+	<monster name="Vibrava" file="Hoenn/329vibrava.xml" />
+	<monster name="Flygon" file="Hoenn/330flygon.xml" />
+	<monster name="Cacnea" file="Hoenn/331cacnea.xml" />
+	<monster name="Cacturne" file="Hoenn/332cacturne.xml" />
+	<monster name="Swablu" file="Hoenn/333swablu.xml" />
+	<monster name="Altaria" file="Hoenn/334altaria.xml" />
+	<monster name="Zangoose" file="Hoenn/335zangoose.xml" />
+	<monster name="Seviper" file="Hoenn/336seviper.xml" />
+	<monster name="Lunatone" file="Hoenn/337lunatone.xml" />
+	<monster name="Solrock" file="Hoenn/338solrock.xml" />
+	<monster name="Barboach" file="Hoenn/339barboach.xml" />
+	<monster name="Wishcash" file="Hoenn/340wishcash.xml" />
+	<monster name="Corphish" file="Hoenn/341corphish.xml" />
+	<monster name="Crawdaunt" file="Hoenn/342crawdaunt.xml" />
+	<monster name="Baltoy" file="Hoenn/343baltoy.xml" />
+	<monster name="Claydol" file="Hoenn/344claydol.xml" />
+	<monster name="Lileep" file="Hoenn/345lileep.xml" />
+	<monster name="Cradily" file="Hoenn/346cradily.xml" />
+	<monster name="Anorith" file="Hoenn/347anorith.xml" />
+	<monster name="Armaldo" file="Hoenn/348armaldo.xml" />
+	<monster name="Feebas" file="Hoenn/349feebas.xml" />
+	<monster name="Milotic" file="Hoenn/350milotic.xml" />
+	<monster name="Castform" file="Hoenn/351castform.xml" />
+	<monster name="Kecleon" file="Hoenn/352kecleon.xml" />
+	<monster name="Shuppet" file="Hoenn/353shuppet.xml" />
+	<monster name="Banette" file="Hoenn/354banette.xml" />
+	<monster name="Duskull" file="Hoenn/355duskull.xml" />
+	<monster name="Dusclops" file="Hoenn/356dusclops.xml" />
+	<monster name="Tropius" file="Hoenn/357tropius.xml" />
+	<monster name="Chimecho" file="Hoenn/358chimecho.xml" />
+	<monster name="Absol" file="Hoenn/359absol.xml" />
+	<monster name="Wynaut" file="Hoenn/360wynaut.xml" />
+	<monster name="Snorunt" file="Hoenn/361snorunt.xml" />
+	<monster name="Glalie" file="Hoenn/362glalie.xml" />
+	<monster name="Spheal" file="Hoenn/363spheal.xml" />
+	<monster name="Sealeo" file="Hoenn/364sealeo.xml" />
+	<monster name="Walrein" file="Hoenn/365walrein.xml" />
+	<monster name="Clamperl" file="Hoenn/366clamperl.xml" />
+	<monster name="Huntail" file="Hoenn/367huntail.xml" />
+	<monster name="Gorebyss" file="Hoenn/368gorebyss.xml" />
+	<monster name="Relicanth" file="Hoenn/369relicanth.xml" />
+	<monster name="Luvdisc" file="Hoenn/370luvdisc.xml" />
+	<monster name="Bagon" file="Hoenn/371bagon.xml" />
+	<monster name="Shelgon" file="Hoenn/372shelgon.xml" />
+	<monster name="Salamence" file="Hoenn/373salamence.xml" />
+	<monster name="Beldum" file="Hoenn/374beldum.xml" />
+	<monster name="Metang" file="Hoenn/375metang.xml" />
+	<monster name="Metagross" file="Hoenn/376metagross.xml" />
+	<monster name="Regirock" file="Hoenn/377regirock.xml" />
+	<monster name="Regice" file="Hoenn/378regice.xml" />
+	<monster name="Registeel" file="Hoenn/379registeel.xml" />
+	<monster name="Latias" file="Hoenn/380latias.xml" />
+	<monster name="Latios" file="Hoenn/381latios.xml" />
+	<monster name="Kyogre" file="Hoenn/382kyogre.xml" />
+	<monster name="Groudon" file="Hoenn/383groudon.xml" />
+	<monster name="Rayquaza" file="Hoenn/384rayquaza.xml" />
+	<monster name="Jirachi" file="Hoenn/385jirachi.xml" />
+	<monster name="Deoxys" file="Hoenn/386deoxys.xml" />
+
+<!-- <! Sinnoh > -->
+
+	<monster name="Turtwig" file="Sinnoh/387turtwig.xml" />
+	<monster name="Grotle" file="Sinnoh/388grotle.xml" />
+	<monster name="Torterra" file="Sinnoh/389torterra.xml" />
+	<monster name="Chimchar" file="Sinnoh/390chimchar.xml" />
+	<monster name="Monferno" file="Sinnoh/391monferno.xml" />
+	<monster name="Infernape" file="Sinnoh/392infernape.xml" />
+	<monster name="Piplup" file="Sinnoh/393piplup.xml" />
+	<monster name="Prinplup" file="Sinnoh/394prinplup.xml" />
+	<monster name="Empoleon" file="Sinnoh/395empoleon.xml" />
+	<monster name="Starly" file="Sinnoh/396starly.xml" />
+	<monster name="Staravia" file="Sinnoh/397staravia.xml" />
+	<monster name="Staraptor" file="Sinnoh/398staraptor.xml" />
+	<monster name="Bidoof" file="Sinnoh/399bidoof.xml" />
+	<monster name="Bibarel" file="Sinnoh/400bibarel.xml" />
+	<monster name="Kricketot" file="Sinnoh/401kricketot.xml" />
+	<monster name="Kricketune" file="Sinnoh/402kricketune.xml" />
+	<monster name="Shinx" file="Sinnoh/403shinx.xml" />
+	<monster name="Luxio" file="Sinnoh/404luxio.xml" />
+	<monster name="Luxray" file="Sinnoh/405luxray.xml" />
+	<monster name="Budew" file="Sinnoh/406budew.xml" />
+	<monster name="Roserade" file="Sinnoh/407roserade.xml" />
+	<monster name="Cranidos" file="Sinnoh/408cranidos.xml" />
+	<monster name="Rampardos" file="Sinnoh/409rampardos.xml" />
+	<monster name="Shieldon" file="Sinnoh/410shieldon.xml" />
+	<monster name="Bastiodon" file="Sinnoh/411bastiodon.xml" />
+	<monster name="Burmy" file="Sinnoh/412burmy.xml" />
+	<monster name="Wormadam" file="Sinnoh/413wormadam.xml" />
+	<monster name="Mothim" file="Sinnoh/414mothim.xml" />
+	<monster name="Combee" file="Sinnoh/415combee.xml" />
+	<monster name="Vespiquen" file="Sinnoh/416vespiquen.xml" />
+	<monster name="Pachirisu" file="Sinnoh/417pachirisu.xml" />
+	<monster name="Buizel" file="Sinnoh/418buizel.xml" />
+	<monster name="Floatzel" file="Sinnoh/419floatzel.xml" />
+	<monster name="Cherubi" file="Sinnoh/420cherubi.xml" />
+	<monster name="Cherrim" file="Sinnoh/421cherrim.xml" />
+	<monster name="Shellos" file="Sinnoh/422shellos.xml" />
+	<monster name="Gastrodon" file="Sinnoh/423gastrodon.xml" />
+	<monster name="Ambipom" file="Sinnoh/424ambipom.xml" />
+	<monster name="Drifloon" file="Sinnoh/425drifloon.xml" />
+	<monster name="Drifblim" file="Sinnoh/426drifblim.xml" />
+	<monster name="Buneary" file="Sinnoh/427buneary.xml" />
+	<monster name="Lopunny" file="Sinnoh/428lopunny.xml" />
+	<monster name="Mismagius" file="Sinnoh/429mismagius.xml" />
+	<monster name="Honchkrow" file="Sinnoh/430honchkrow.xml" />
+	<monster name="Glameow" file="Sinnoh/431glameow.xml" />
+	<monster name="Purugly" file="Sinnoh/432purugly.xml" />
+	<monster name="Chingling" file="Sinnoh/433chingling.xml" />
+	<monster name="Stunky" file="Sinnoh/434stunky.xml" />
+	<monster name="Skuntank" file="Sinnoh/435skuntank.xml" />
+	<monster name="Bronzor" file="Sinnoh/436bronzor.xml" />
+	<monster name="Bronzong" file="Sinnoh/437bronzong.xml" />
+	<monster name="Bonsly" file="Sinnoh/438bonsly.xml" />
+	<monster name="Mime Jr." file="Sinnoh/439mimejr.xml" />
+	<monster name="Happiny" file="Sinnoh/440happiny.xml" />
+	<monster name="Chatot" file="Sinnoh/441chatot.xml" />
+	<monster name="Spiritomb" file="Sinnoh/442spiritomb.xml" />
+	<monster name="Gible" file="Sinnoh/443gible.xml" />
+	<monster name="Gabite" file="Sinnoh/444gabite.xml" />
+	<monster name="Garchomp" file="Sinnoh/445garchomp.xml" />
+	<monster name="Munchlax" file="Sinnoh/446munchlax.xml" />
+	<monster name="Riolu" file="Sinnoh/447riolu.xml" />
+	<monster name="Lucario" file="Sinnoh/448lucario.xml" />
+	<monster name="Hippopotas" file="Sinnoh/449hippopotas.xml" />
+	<monster name="Hippowdon" file="Sinnoh/450hippowdon.xml" />
+	<monster name="Skorupi" file="Sinnoh/451skorupi.xml" />
+	<monster name="Drapion" file="Sinnoh/452drapion.xml" />
+	<monster name="Croagunk" file="Sinnoh/453croagunk.xml" />
+	<monster name="Toxicroak" file="Sinnoh/454toxicroak.xml" />
+	<monster name="Carnivine" file="Sinnoh/455carnivine.xml" />
+	<monster name="Finneon" file="Sinnoh/456finneon.xml" />
+	<monster name="Lumineon" file="Sinnoh/457lumineon.xml" />
+	<monster name="Mantyke" file="Sinnoh/458mantyke.xml" />
+	<monster name="Snover" file="Sinnoh/459snover.xml" />
+	<monster name="Abomasnow" file="Sinnoh/460abomasnow.xml" />
+	<monster name="Weavile" file="Sinnoh/461weavile.xml" />
+	<monster name="Magnezone" file="Sinnoh/462magnezone.xml" />
+	<monster name="Lickilicky" file="Sinnoh/463lickilicky.xml" />
+	<monster name="Rhyperior" file="Sinnoh/464rhyperior.xml" />
+	<monster name="Tangrowth" file="Sinnoh/465tangrowth.xml" />
+	<monster name="Electivire" file="Sinnoh/466electivire.xml" />
+	<monster name="Magmortar" file="Sinnoh/467magmortar.xml" />
+	<monster name="Togekiss" file="Sinnoh/468togekiss.xml" />
+	<monster name="Yanmega" file="Sinnoh/469yanmega.xml" />
+	<monster name="Leafeon" file="Sinnoh/470leafeon.xml" />
+	<monster name="Glaceon" file="Sinnoh/471glaceon.xml" />
+	<monster name="Gliscor" file="Sinnoh/472gliscor.xml" />
+	<monster name="Mamoswine" file="Sinnoh/473mamoswine.xml" />
+	<monster name="PorygonZ" file="Sinnoh/474porygon-z.xml" />
+	<monster name="Gallade" file="Sinnoh/475gallade.xml" />
+	<monster name="Probopass" file="Sinnoh/476probopass.xml" />
+	<monster name="Dusknoir" file="Sinnoh/477dusknoir.xml" />
+	<monster name="Froslass" file="Sinnoh/478froslass.xml" />
+	<monster name="Rotom" file="Sinnoh/479rotom.xml" />
+	<monster name="Uxie" file="Sinnoh/480uxie.xml" />
+	<monster name="Mesprit" file="Sinnoh/481mesprit.xml" />
+	<monster name="Azelf" file="Sinnoh/482azelf.xml" />
+	<monster name="Dialga" file="Sinnoh/483dialga.xml" />
+	<monster name="Palkia" file="Sinnoh/484palkia.xml" />
+	<monster name="Heatran" file="Sinnoh/485heatran.xml" />
+	<monster name="Regigigas" file="Sinnoh/486regigigas.xml" />
+	<monster name="Giratina" file="Sinnoh/487giratina.xml" />
+	<monster name="Cresselia" file="Sinnoh/488cresselia.xml" />
+	<monster name="Phione" file="Sinnoh/489phione.xml" />
+	<monster name="Manaphy" file="Sinnoh/490manaphy.xml" />
+	<monster name="Darkrai" file="Sinnoh/491darkrai.xml" />
+	<monster name="Shaymin" file="Sinnoh/492shaymin.xml" />
+	<monster name="Arceus" file="Sinnoh/493arceus.xml" />
+
+<!-- Shinys Kanto -->
+	<monster name="Shiny Bulbasaur" file="KantoShinys/1shiny bulbasaur.xml" />
+	<monster name="Shiny Ivysaur" file="KantoShinys/2shiny ivysaur.xml" />
+	<monster name="Shiny Venusaur" file="KantoShinys/3shiny venusaur.xml" />
+	<monster name="Shiny Charmander" file="KantoShinys/4shiny charmander.xml" />
+	<monster name="Shiny Charmeleon" file="KantoShinys/5shiny charmeleon.xml" />
+	<monster name="Shiny Charizard" file="KantoShinys/6shiny charizard.xml" />
+	<monster name="Shiny Squirtle" file="KantoShinys/7shiny squirtle.xml" />
+	<monster name="Shiny Wartortle" file="KantoShinys/8shiny wartortle.xml" />
+	<monster name="Shiny Blastoise" file="KantoShinys/9shiny blastoise.xml" />
+	<monster name="Shiny Caterpie" file="KantoShinys/10shiny caterpie.xml" />
+	<monster name="Shiny Metapod" file="KantoShinys/11shiny metapod.xml" />
+	<monster name="Shiny Butterfree" file="KantoShinys/12shiny butterfree.xml" />
+	<monster name="Shiny Weedle" file="KantoShinys/13shiny weedle.xml" />
+	<monster name="Shiny Kakuna" file="KantoShinys/14shiny kakuna.xml" />
+	<monster name="Shiny Beedrill" file="KantoShinys/15shiny beedrill.xml" />
+	<monster name="Shiny Pidgey" file="KantoShinys/16shiny pidgey.xml" />
+	<monster name="Shiny Pidgeotto" file="KantoShinys/17shiny pidgeotto.xml" />
+	<monster name="Shiny Pidgeot" file="KantoShinys/18shiny pidgeot.xml" />
+	<monster name="Shiny Rattata" file="KantoShinys/19shiny rattata.xml" />
+	<monster name="Shiny Raticate" file="KantoShinys/20shiny raticate.xml" />
+	<monster name="Shiny Spearow" file="KantoShinys/21shiny spearow.xml" />
+	<monster name="Shiny Fearow" file="KantoShinys/22shiny fearow.xml" />
+	<monster name="Shiny Ekans" file="KantoShinys/23shiny ekans.xml" />
+	<monster name="Shiny Arbok" file="KantoShinys/24shiny arbok.xml" />
+	<monster name="Shiny Pikachu" file="KantoShinys/25shiny pikachu.xml" />
+	<monster name="Shiny Raichu" file="KantoShinys/26shiny raichu.xml" />
+	<monster name="Shiny Sandshrew" file="KantoShinys/27shiny sandshrew.xml" />
+	<monster name="Shiny Sandslash" file="KantoShinys/28shiny sandslash.xml" />
+	<monster name="Shiny Nidoran Female" file="KantoShinys/29shiny nidoran female.xml" />
+	<monster name="Shiny Nidorina" file="KantoShinys/30shiny nidorina.xml" />
+	<monster name="Shiny Nidoqueen" file="KantoShinys/31shiny nidoqueen.xml" />
+	<monster name="Shiny Nidoran Male" file="KantoShinys/32shiny nidoran male.xml" />
+	<monster name="Shiny Nidorino" file="KantoShinys/33shiny nidorino.xml" />
+	<monster name="Shiny Nidoking" file="KantoShinys/34shiny nidoking.xml" />
+	<monster name="Shiny Clefairy" file="KantoShinys/35shiny clefairy.xml" />
+	<monster name="Shiny Clefable" file="KantoShinys/36shiny clefable.xml" />
+	<monster name="Shiny Vulpix" file="KantoShinys/37shiny vulpix.xml" />
+	<monster name="Shiny Ninetales" file="KantoShinys/38shiny ninetales.xml" />
+	<monster name="Shiny Jigglypuff" file="KantoShinys/39shiny jigglypuff.xml" />
+	<monster name="Shiny Wigglytuff" file="KantoShinys/40shiny wigglytuff.xml" />
+	<monster name="Shiny Zubat" file="KantoShinys/41shiny zubat.xml" />
+	<monster name="Shiny Golbat" file="KantoShinys/42shiny golbat.xml" />
+	<monster name="Shiny Oddish" file="KantoShinys/43shiny oddish.xml" />
+	<monster name="Shiny Gloom" file="KantoShinys/44shiny gloom.xml" />
+	<monster name="Shiny Vileplume" file="KantoShinys/45shiny vileplume.xml" />
+	<monster name="Shiny Paras" file="KantoShinys/46shiny paras.xml" />
+	<monster name="Shiny Parasect" file="KantoShinys/47shiny parasect.xml" />
+	<monster name="Shiny Venonat" file="KantoShinys/48shiny venonat.xml" />
+	<monster name="Shiny Venomoth" file="KantoShinys/49shiny venomoth.xml" />
+	<monster name="Shiny Diglett" file="KantoShinys/50shiny diglett.xml" />
+	<monster name="Shiny Dugtrio" file="KantoShinys/51shiny dugtrio.xml" />
+	<monster name="Shiny Meowth" file="KantoShinys/52shiny meowth.xml" />
+	<monster name="Shiny Persian" file="KantoShinys/53shiny persian.xml" />
+	<monster name="Shiny Psyduck" file="KantoShinys/54shiny psyduck.xml" />
+	<monster name="Shiny Golduck" file="KantoShinys/55shiny golduck.xml" />
+	<monster name="Shiny Mankey" file="KantoShinys/56shiny mankey.xml" />
+	<monster name="Shiny Primeape" file="KantoShinys/57shiny primeape.xml" />
+	<monster name="Shiny Growlithe" file="KantoShinys/58shiny growlithe.xml" />
+	<monster name="Shiny Arcanine" file="KantoShinys/59shiny arcanine.xml" />
+	<monster name="Shiny Poliwag" file="KantoShinys/60shiny poliwag.xml" />
+	<monster name="Shiny Poliwhirl" file="KantoShinys/61shiny poliwhirl.xml" />
+	<monster name="Shiny Poliwrath" file="KantoShinys/62shiny poliwrath.xml" />
+	<monster name="Shiny Abra" file="KantoShinys/63shiny abra.xml" />
+	<monster name="Shiny Kadabra" file="KantoShinys/64shiny kadabra.xml" />
+	<monster name="Shiny Alakazam" file="KantoShinys/65shiny alakazam.xml" />
+	<monster name="Shiny Machop" file="KantoShinys/66shiny machop.xml" />
+	<monster name="Shiny Machoke" file="KantoShinys/67shiny machoke.xml" />
+	<monster name="Shiny Machamp" file="KantoShinys/68shiny machamp.xml" />
+	<monster name="Shiny Bellsprout" file="KantoShinys/69shiny bellsprout.xml" />
+	<monster name="Shiny Weepinbell" file="KantoShinys/70shiny weepinbell.xml" />
+	<monster name="Shiny Victreebel" file="KantoShinys/71shiny victreebel.xml" />
+	<monster name="Shiny Tentacool" file="KantoShinys/72shiny tentacool.xml" />
+	<monster name="Shiny Tentacruel" file="KantoShinys/73shiny tentacruel.xml" />
+	<monster name="Shiny Geodude" file="KantoShinys/74shiny geodude.xml" />
+	<monster name="Shiny Graveler" file="KantoShinys/75shiny graveler.xml" />
+	<monster name="Shiny Golem" file="KantoShinys/76shiny golem.xml" />
+	<monster name="Shiny Ponyta" file="KantoShinys/77shiny ponyta.xml" />
+	<monster name="Shiny Rapidash" file="KantoShinys/78shiny rapidash.xml" />
+	<monster name="Shiny Slowpoke" file="KantoShinys/79shiny slowpoke.xml" />
+	<monster name="Shiny Slowbro" file="KantoShinys/80shiny slowbro.xml" />
+	<monster name="Shiny Magnemite" file="KantoShinys/81shiny magnemite.xml" />
+	<monster name="Shiny Magneton" file="KantoShinys/82shiny magneton.xml" />
+	<monster name="Shiny farfetch'd" file="KantoShinys/83shiny farfetch'd.xml" />
+	<monster name="Shiny Doduo" file="KantoShinys/84shiny doduo.xml" />
+	<monster name="Shiny Dodrio" file="KantoShinys/85shiny dodrio.xml" />
+	<monster name="Shiny Seel" file="KantoShinys/86shiny seel.xml" />
+	<monster name="Shiny Dewgong" file="KantoShinys/87shiny dewgong.xml" />
+	<monster name="Shiny Grimer" file="KantoShinys/88shiny grimer.xml" />
+	<monster name="Shiny Muk" file="KantoShinys/89shiny muk.xml" />
+	<monster name="Shiny Shellder" file="KantoShinys/90shiny shellder.xml" />
+	<monster name="Shiny Cloyster" file="KantoShinys/91shiny cloyster.xml" />
+	<monster name="Shiny Gastly" file="KantoShinys/92shiny gastly.xml" />
+	<monster name="Shiny Haunter" file="KantoShinys/93shiny haunter.xml" />
+	<monster name="Shiny Gengar" file="KantoShinys/94shiny gengar.xml" />
+	<monster name="Shiny Onix" file="KantoShinys/95shiny onix.xml" />
+	<monster name="Shiny Drowzee" file="KantoShinys/96shiny drowzee.xml" />
+	<monster name="Shiny Hypno" file="KantoShinys/97shiny hypno.xml" />
+	<monster name="Shiny Krabby" file="KantoShinys/98shiny krabby.xml" />
+	<monster name="Shiny Kingler" file="KantoShinys/99shiny kingler.xml" />
+	<monster name="Shiny Voltorb" file="KantoShinys/100shiny voltorb.xml" />
+	<monster name="Shiny Electrode" file="KantoShinys/101shiny electrode.xml" />
+	<monster name="Shiny Exeggcute" file="KantoShinys/102shiny exeggcute.xml" />
+	<monster name="Shiny Exeggutor" file="KantoShinys/103shiny exeggutor.xml" />
+	<monster name="Shiny Cubone" file="KantoShinys/104shiny cubone.xml" />
+	<monster name="Shiny Marowak" file="KantoShinys/105shiny marowak.xml" />
+	<monster name="Shiny Hitmonlee" file="KantoShinys/106shiny hitmonlee.xml" />
+	<monster name="Shiny Hitmonchan" file="KantoShinys/107shiny hitmonchan.xml" />
+	<monster name="Shiny Lickitung" file="KantoShinys/108shiny lickitung.xml" />
+	<monster name="Shiny Koffing" file="KantoShinys/109shiny koffing.xml" />
+	<monster name="Shiny Weezing" file="KantoShinys/110shiny weezing.xml" />
+	<monster name="Shiny Rhyhorn" file="KantoShinys/111shiny rhyhorn.xml" />
+	<monster name="Shiny Rhydon" file="KantoShinys/112shiny rhydon.xml" />
+	<monster name="Shiny Chansey" file="KantoShinys/113shiny chansey.xml" />
+	<monster name="Shiny Tangela" file="KantoShinys/114shiny tangela.xml" />
+	<monster name="Shiny Kangaskhan" file="KantoShinys/115shiny kangaskhan.xml" />
+	<monster name="Shiny Horsea" file="KantoShinys/116shiny horsea.xml" />
+	<monster name="Shiny Seadra" file="KantoShinys/117shiny seadra.xml" />
+	<monster name="Shiny Goldeen" file="KantoShinys/118shiny goldeen.xml" />
+	<monster name="Shiny Seaking" file="KantoShinys/119shiny seaking.xml" />
+	<monster name="Shiny Staryu" file="KantoShinys/120shiny staryu.xml" />
+	<monster name="Shiny Starmie" file="KantoShinys/121shiny starmie.xml" />
+	<monster name="Shiny Mr. Mime" file="KantoShinys/122shiny mr. mime.xml" />
+	<monster name="Shiny Scyther" file="KantoShinys/123shiny scyther.xml" />
+	<monster name="Shiny Jynx" file="KantoShinys/124shiny jynx.xml" />
+	<monster name="Shiny Electabuzz" file="KantoShinys/125shiny electabuzz.xml" />
+	<monster name="Shiny Magmar" file="KantoShinys/126shiny magmar.xml" />
+	<monster name="Shiny Pinsir" file="KantoShinys/127shiny pinsir.xml" />
+	<monster name="Shiny Tauros" file="KantoShinys/128shiny tauros.xml" />
+	<monster name="Shiny Magikarp" file="KantoShinys/129shiny magikarp.xml" />
+	<monster name="Shiny Gyarados" file="KantoShinys/130shiny gyarados.xml" />
+	<monster name="Shiny Lapras" file="KantoShinys/131shiny lapras.xml" />
+	<monster name="Shiny Ditto" file="KantoShinys/132shiny ditto.xml" />
+	<monster name="Shiny Eevee" file="KantoShinys/133shiny eevee.xml" />
+	<monster name="Shiny Vaporeon" file="KantoShinys/134shiny vaporeon.xml" />
+	<monster name="Shiny Jolteon" file="KantoShinys/135shiny jolteon.xml" />
+	<monster name="Shiny Flareon" file="KantoShinys/136shiny flareon.xml" />
+	<monster name="Shiny Porygon" file="KantoShinys/137shiny porygon.xml" />
+	<monster name="Shiny Omanyte" file="KantoShinys/138shiny omanyte.xml" />
+	<monster name="Shiny Omastar" file="KantoShinys/139shiny omastar.xml" />
+	<monster name="Shiny Kabuto" file="KantoShinys/140shiny kabuto.xml" />
+	<monster name="Shiny Kabutops" file="KantoShinys/141shiny kabutops.xml" />
+	<monster name="Shiny Aerodactyl" file="KantoShinys/142shiny aerodactyl.xml" />
+	<monster name="Shiny Snorlax" file="KantoShinys/143shiny snorlax.xml" />
+	<monster name="Shiny Articuno" file="KantoShinys/144shiny articuno.xml" />
+	<monster name="Shiny Zapdos" file="KantoShinys/145shiny zapdos.xml" />
+	<monster name="Shiny Moltres" file="KantoShinys/146shiny moltres.xml" />
+	<monster name="Shiny Dratini" file="KantoShinys/147shiny dratini.xml" />
+	<monster name="Shiny Dragonair" file="KantoShinys/148shiny dragonair.xml" />
+	<monster name="Shiny Dragonite" file="KantoShinys/149shiny dragonite.xml" />
+	<monster name="Shiny Mewtwo" file="KantoShinys/150shiny mewtwo.xml" />
+	<monster name="Shiny Mew" file="KantoShinys/151shiny mew.xml" />
+
+<!-- Shinys Johto -->
+	<monster name="Shiny Chikorita" file="JohtoShinys/152shiny chikorita.xml" />
+
+
+<!-- Shinys Hoenn -->
+	<monster name="Shiny Ludicolo" file="HoennShinys/272shiny ludicolo.xml" />
+
+
+<!-- Shinys Sinnoh -->
+
+
+
+</monsters>

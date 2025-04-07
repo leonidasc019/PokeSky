@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Sophia" script="default.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100" />
+	<look type="2054" head="0" legs="128" feet="128" addons="0" />
+	<parameters>
+		<parameter key="message_greet" value="Ola, |PLAYERNAME|! Eu sou {trade}, e ouvi dizer que voce e um treinador habilidoso. Sera que poderiamos fazer um negocio? Estou interessada nas suas pedras (stones). Voce venderia algumas para mim?." />
+		<parameter key="message_decline" value="|TOTALCOST| voltei com dinheiro" />
+		<parameter key="module_shop" value="1" />
+		<parameter key="shop_sellable" value="
+		Leaf Stone,26731,3000;
+		water stone,26736,3000;
+		venom stone,26735,3000;
+		thunder stone,26734,3000;
+		rock stone,26733,3000;
+		punch stone,26732,3000;
+		fire stone,26728,3000;
+		ice stone,26730,3000;
+		cocoon stone,26724,3000;
+		darkness stone,26726,3000;
+		earth stone,26742,3000;
+		enigma stone,26727,3000;
+		heart stone,26729,3000;
+		metal coat,26747,3000;
+		sun stones,26748,3000;
+		feather stone,26743,3000;
+		king's rock stone,26746,3000;
+		dragon stone,26744,3000;" />
+		<!-- <parameter key="shop_buyable" value="leaf stone,26731,3000;water stone,26736,3000;venom stone,26735,3000;thunder stone,26734,3000;rock stone,26733,3000;punch stone,26732,3000;fire stone,26728,3000;ice stone,26730,3000;cocoon stone,26724,3000;crystal stone,26725,3000;crystal stone,26725,3000;darkness stone,26726,3000;earth stone,26742,3000;enigma stone,26727,3000;heart stone,26729,3000;metal coat,26747,3000;sun stones,26748,3000;feather stone,26743,3000;king's rock stone,26746,3000;dragon stone,26744,3000;" /> -->
+	</parameters>
+</npc>
+

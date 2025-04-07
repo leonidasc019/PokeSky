@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<movements>
+
+	<movevent event="StepIn" actionid="100" script="premium_tile.lua" />
+	<movevent event="StepIn" actionid="104" script="opendoor.lua" />
+					<!-- Hoveboard Tiles Itigar -->
+	<movevent event="StepIn" itemid="231" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="231" script="hoveboard.lua" />
+	<movevent event="StepIn" itemid="9059" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="9059" script="hoveboard.lua" />
+	<movevent event="StepIn" itemid="8033" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="8033" script="hoveboard.lua" />
+	<movevent event="StepIn" itemid="10637" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="10637" script="hoveboard.lua" />
+
+					<!-- Mergulho Tiles Itigar -->
+	<movevent event="StepIn" itemid="5407" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="5407" script="hoveboard.lua" />
+	<movevent event="StepIn" itemid="5405" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="5405" script="hoveboard.lua" />
+	<movevent event="StepIn" itemid="5406" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="5406" script="hoveboard.lua" />
+	<movevent event="StepIn" itemid="5408" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="5408" script="hoveboard.lua" />
+	<movevent event="StepIn" itemid="5409" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="5409" script="hoveboard.lua" />
+	<movevent event="StepIn" itemid="5410" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="5410" script="hoveboard.lua" />
+
+					<!-- Esqui Tiles Itigar -->
+	<movevent event="StepIn" itemid="7145" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="7145" script="hoveboard.lua" />
+	<movevent event="StepIn" itemid="670" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="670" script="hoveboard.lua" />
+	<movevent event="StepIn" itemid="6683" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="6683" script="hoveboard.lua" />
+	<movevent event="StepIn" itemid="6686" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="6686" script="hoveboard.lua" />
+	<movevent event="StepIn" itemid="6684" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="6684" script="hoveboard.lua" />
+	<movevent event="StepIn" itemid="6580" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="6580" script="hoveboard.lua" />
+	<movevent event="StepIn" itemid="6685" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="6685" script="hoveboard.lua" />
+	<movevent event="StepIn" itemid="6581" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="6581" script="hoveboard.lua" />
+	<movevent event="StepIn" itemid="6582" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="6582" script="hoveboard.lua" />
+	<movevent event="StepIn" itemid="6583" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="6583" script="hoveboard.lua" />
+	<movevent event="StepIn" itemid="6584" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="6584" script="hoveboard.lua" />
+	<movevent event="StepIn" itemid="6585" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="6585" script="hoveboard.lua" />
+	<movevent event="StepIn" itemid="6586" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="6586" script="hoveboard.lua" />
+	<movevent event="StepIn" itemid="6587" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="6587" script="hoveboard.lua" />
+	<movevent event="StepIn" itemid="6588" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="6588" script="hoveboard.lua" />
+	<movevent event="StepIn" itemid="6589" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="6589" script="hoveboard.lua" />
+	<movevent event="StepIn" itemid="6590" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="6590" script="hoveboard.lua" />
+	<movevent event="StepIn" itemid="6591" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="6591" script="hoveboard.lua" />
+	<movevent event="StepIn" itemid="6592" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="6592" script="hoveboard.lua" />
+	<movevent event="StepIn" itemid="6593" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="6593" script="hoveboard.lua" /> 
+	<movevent event="StepIn" itemid="671" script="hoveboard.lua" />
+	<movevent event="StepOut" itemid="671" script="hoveboard.lua" />
+
+	<!-- Surf-->
+	<movevent event="StepIn" fromid="4608" toid="4625" script="surf.lua" />
+	<movevent event="StepOut" fromid="4608" toid="4625" script="surf.lua" />
+	<movevent event="StepIn" fromid="4664" toid="4666" script="surf.lua" />
+	<movevent event="StepOut" fromid="4664" toid="4666" script="surf.lua" />
+	<movevent event="StepIn" fromid="4820" toid="4825" script="surf.lua" />
+	<movevent event="StepOut" fromid="4820" toid="4825" script="surf.lua" />
+
+	<!-- Decaying tiles -->
+	<movevent event="StepIn" itemid="293" script="decay.lua" />
+	<movevent event="StepIn" itemid="461" script="decay.lua" />
+
+	<!-- Traps -->
+	<movevent event="StepIn" itemid="1510" script="trap.lua" />
+	<movevent event="StepOut" itemid="1511" script="trap.lua" />
+	<movevent event="StepIn" itemid="1513" script="trap.lua" />
+	<movevent event="StepIn" itemid="2579" script="trap.lua" />
+	<movevent event="RemoveItem" itemid="2579" script="trap.lua" />
+	<movevent event="StepIn" itemid="4208" script="trap.lua" />
+	<movevent event="StepOut" itemid="4209" script="trap.lua" />
+
+</movements>

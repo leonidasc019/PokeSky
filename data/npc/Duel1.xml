@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Kaito" script="duel1.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100" />
+	<look type="2000" head="112" legs="28" feet="91" addons="1"/>
+	<parameters>
+		<parameter key="message_greet" value="Eu sou Kaito, um treinador Pokemon! Prepare-se para o desafio, |PLAYERNAME|. Vamos ver quem e o melhor!" />
+        <parameter key="message_decline" value="Tome seu tempo, mas nao demore muito. O desafio este esperando." />
+	</parameters>
+</npc>

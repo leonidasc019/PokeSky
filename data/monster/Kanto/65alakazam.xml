@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Alakazam" nameDescription="an alakazam" race="psychic" race2="none" experience="230" speed="160" manacost="0">
+	<level min="100" max="100"/>
+	<health now="16000" max="16000" />
+	<look type="65" head="113" body="57" legs="95" feet="113" corpse="26926" />
+	<targetchange interval="5000" chance="0" />
+	<flags>
+		<flag summonable="1" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag passive="0" />
+		<flag illusionable="1" />
+		<flag convinceable="1" />
+		<flag pushable="1" />
+		<flag canpushitems="0" />
+		<flag canpushcreatures="0" />
+		<flag targetdistance="1" />
+		<flag staticattack="97" />
+		<flag runonhealth="0" />
+		<flag dexentry="65" />
+		<flag portraitid="27181" />
+		<flag hasshiny="1" />
+		<flag hasmega="0" />
+		<flag flyable="0" />
+		<flag rideable="0" />
+		<flag surfable="0" />
+		<flag canteleport="1" />
+		<flag catchchance="11" />
+		<flag moveMagicAttackBase="135" />
+		<flag moveMagicDefenseBase="95" />
+	</flags>
+	<script>
+        	<event name="MonsterHealthChange"/>
+        	<event name="CorpseLevel"/>
+        	<event name="CorpseLoot"/>
+
+	</script>
+	<moves>
+		<move name="double slap" interval="13000" isTarget="1" range="6"/>
+		<move name="hypnosis" interval="16000" isTarget="1" range="6"/>
+		<move name="zen headbutt" interval="15000" isTarget="1"/>
+		<move name="psybeam" interval="16000" isTarget="1"/>
+
+	</moves>
+	<evolutions>
+
+	</evolutions>
+	<attacks>
+		<attack name="melee" interval="13000" min="-50" max="-50" />
+		<attack name="double slap" interval="16000" chance="40" range="1" target="1"/>
+		<attack name="zen headbutt" interval="15000" chance="40" target="1"/>
+		<attack name="confusion" interval="16000" chance="40"/>
+
+	</attacks>
+	<defenses armor="0" defense="45" >
+
+	</defenses>
+	<elements>
+	</elements>
+	<immunities>
+
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="ALAKAZAM!" />
+	</voices>
+	<loot>
+		<item name="enigma stone" countmax="1" chance="225"/>
+		<item name="blue gem" countmax="2" chance="10000"/>
+		<item name="future orb" countmax="2" chance="30000"/>
+		<item name="psychic spoon" countmax="1" chance="10000"/>
+
+	</loot>
+</monster>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<outfits>
+	<!-- Female outfits -->
+	<outfit type="0" looktype="2000" name="Pokemon Trainer" premium="no" unlocked="yes" enabled="yes" />
+	<outfit type="0" looktype="2012" name="Fishing" premium="no" unlocked="yes" enabled="yes" />
+
+	<!--Unlocked outfits Female-->
+	<outfit type="0" looktype="2067" name="Trainer" premium="no" unlocked="no" enabled="yes" />
+
+
+
+	<!-- Male outfits -->
+	<outfit type="1" looktype="2001" name="Pokemon Trainer" premium="no" unlocked="yes" enabled="yes" />
+	<outfit type="1" looktype="2013" name="Fishing" premium="no" unlocked="yes" enabled="yes" />
+	<!--Unlocked outfits Male-->
+    <outfit type="1" looktype="2068" name="Trainer" premium="no" unlocked="no" enabled="yes" />
+
+    <!-- Vip -->
+    <outfit type="0" looktype="2203" name="Elite Outfit" premium="yes" unlocked="yes" enabled="yes" />
+    <outfit type="1" looktype="2202" name="Elite Outfit" premium="yes" unlocked="yes" enabled="yes" />
+
+	<!-- NPC CILIAN -->
+    <!-- Punk Outfit -->
+    <outfit type="0" looktype="2045" name="Punk Outfit" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2044" name="Punk Outfit" premium="no" unlocked="no" enabled="yes" />
+    <!-- Social Outfit -->
+    <outfit type="0" looktype="2040" name="Social Outfit" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2041" name="Social Outfit" premium="no" unlocked="no" enabled="yes" />
+    <!-- Rapper Outfit -->
+    <outfit type="0" looktype="2047" name="Rapper Outfit" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2048" name="Rapper Outfit" premium="no" unlocked="no" enabled="yes" />
+    <!-- Oriental Outfit -->
+    <outfit type="0" looktype="2050" name="Oriental Outfit" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2049" name="Oriental Outfit" premium="no" unlocked="no" enabled="yes" />
+    <!-- Hiker Outfit -->
+    <outfit type="0" looktype="2039" name="Hiker Outfit" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2046" name="Hiker Outfit" premium="no" unlocked="no" enabled="yes" />
+    <!-- Athletic Outfit -->
+    <outfit type="0" looktype="2043" name="Athletic Outfit" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2042" name="Athletic Outfit" premium="no" unlocked="no" enabled="yes" />
+    <!-- Mercenary Outfit -->
+    <outfit type="0" looktype="2205" name="Mercenary Outfit" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2204" name="Mercenary Outfit" premium="no" unlocked="no" enabled="yes" />
+    <!-- Nerd Outfit -->
+    <outfit type="0" looktype="2207" name="Nerd Outfit" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2206" name="Nerd Outfit" premium="no" unlocked="no" enabled="yes" />
+    <!-- Adventurer Outfit -->
+    <outfit type="0" looktype="2201" name="Adventurer Outfit" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2200" name="Adventurer Outfit" premium="no" unlocked="no" enabled="yes" />
+    <!-- Jamaican Outfit -->
+    <outfit type="0" looktype="2052" name="Jamaican Outfit" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2051" name="Jamaican Outfit" premium="no" unlocked="no" enabled="yes" />
+
+
+    <!-- Shop Male -->
+    <outfit type="1" looktype="2213" name="Outfit Poliwag" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2214" name="Outfit Zapdos" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2222" name="Outfit Sonic" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2249" name="Outfit Arcanjo" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2241" name="Outfit Blue Exorcist" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2210" name="Outfit Venusaur" premium="no" unlocked="no" enabled="yes" />
+
+    <!-- Shop Female -->
+    <outfit type="0" looktype="2220" name="Outfit Eevee" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="0" looktype="2248" name="Outfit Arcanja" premium="no" unlocked="no" enabled="yes" />   
+    <outfit type="0" looktype="2211" name="Outfit Venusaur" premium="no" unlocked="no" enabled="yes" />  
+
+
+
+    <!-- Coleçao One Piece apenas adms-->
+    <outfit type="1" looktype="2162" name="Brook" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2163" name="Zoro" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2164" name="Vivi" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2165" name="Brook" premium="no" unlocked="no" enabled="yes" />    
+    <outfit type="1" looktype="2166" name="Nami" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2167" name="Robin" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2168" name="Mihawk" premium="no" unlocked="no" enabled="yes" />    
+    <outfit type="1" looktype="2169" name="Nami" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2170" name="Chopper" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2171" name="Gin" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2172" name="Alvida" premium="no" unlocked="no" enabled="yes" />    
+    <outfit type="1" looktype="2173" name="Usopp" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2174" name="Alvida" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2175" name="Franky" premium="no" unlocked="no" enabled="yes" />   
+    <outfit type="1" looktype="2176" name="Hancock" premium="no" unlocked="no" enabled="yes" />    
+    <outfit type="1" looktype="2177" name="Morgan" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2178" name="Usopp" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2179" name="Sanji" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2180" name="Luffy" premium="no" unlocked="no" enabled="yes" />    
+    <outfit type="1" looktype="2181" name="Killer" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2182" name="Law" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2183" name="Reiju" premium="no" unlocked="no" enabled="yes" />  
+    <outfit type="1" looktype="2184" name="Smoker" premium="no" unlocked="no" enabled="yes" />    
+    <outfit type="1" looktype="2185" name="Buggy" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2186" name="Doflamingo" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2187" name="Buggy" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2188" name="Vivi" premium="no" unlocked="no" enabled="yes" />    
+    <outfit type="1" looktype="2189" name="Brook" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2190" name="Capitao" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2191" name="Law" premium="no" unlocked="no" enabled="yes" />   
+    <outfit type="1" looktype="2192" name="Killer" premium="no" unlocked="no" enabled="yes" />    
+    <outfit type="1" looktype="2193" name="Luffy" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2194" name="Nami" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2195" name="Vivi" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2196" name="Robin" premium="no" unlocked="no" enabled="yes" />    
+    <outfit type="1" looktype="2197" name="Vivi" premium="no" unlocked="no" enabled="yes" />
+    <outfit type="1" looktype="2198" name="Tashigi" premium="no" unlocked="no" enabled="yes" />
+
+</outfits>

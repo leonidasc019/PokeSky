@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Todd" script="todd.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100" />
+	<look type="2042" head="76" legs="45" feet="12" addons="3"/>
+	<parameters>
+		<parameter key="message_greet" value="Ola |PLAYERNAME|! Vejo que esta em busca de um novo caminho. Eu posso te ajudar a se tornar um {hunter}, {catcher}, {healer}, {blocker} ou {explorer}. Qual destino deseja seguir?" />
+		<parameter key="message_decline" value="Tudo bem, volte quando estiver pronto para escolher seu caminho!" />
+	</parameters>
+</npc>
+

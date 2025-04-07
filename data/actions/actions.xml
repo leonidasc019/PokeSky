@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+	<action itemid="27642" script="poke/potions.lua" allowfaruse="1" />
+	<action itemid="27643" script="poke/potions.lua" allowfaruse="1" />
+	<action itemid="27641" script="poke/potions.lua" allowfaruse="1" />
+	<action itemid="27647" script="poke/potions.lua" allowfaruse="1" />
+	<action itemid="27646" script="poke/potions.lua" allowfaruse="1" />
+
+	<action itemid="41664" script="poke/patins.lua" /> 
+
+	<action itemid="27644" script="poke/medicine.lua" allowfaruse="1" />
+
+    <action fromid="35819" toid="35823" script="poke/foodsburguers.lua"/>
+
+	<action itemid="41619" script="poke/toy_machine.lua"/>
+
+	<action fromid="35802" toid="35805" script="poke/food_machine.lua"/>
+
+	<action fromid="41614" toid="41617" script="poke/eggsbox.lua" />
+
+	<action itemid="26820" script="tools/fishing.lua" allowfaruse="1" />
+
+	<action itemid="7575" script="poke/dive.lua" />
+
+	<action itemid="2272" script="poke/catch.lua" allowfaruse="1" />
+
+	<action fromid="38779" toid="38787" script="poke/vitamin.lua" allowfaruse="1" />
+
+	<action itemid="38681" script="poke/coincounter.lua" />
+
+	<action itemid="26662" script="poke/catch.lua" allowfaruse="1" />
+	<action itemid="26660" script="poke/catch.lua" allowfaruse="1" />
+	<action itemid="26659" script="poke/catch.lua" allowfaruse="1" />
+	<action itemid="26688" script="poke/catch.lua" allowfaruse="1" />
+	<action itemid="26683" script="poke/catch.lua" allowfaruse="1" />
+	<action itemid="26685" script="poke/catch.lua" allowfaruse="1" />
+	<action itemid="39065" script="poke/catch.lua" allowfaruse="1" />
+
+	<action itemid="27645" script="poke/revive.lua" allowfaruse="1" />
+
+	<action itemid="2325" script="poke/summon.lua" />
+	<action itemid="26661" script="poke/summon.lua" />
+	<action itemid="26672" script="poke/summon.lua" />
+	<action itemid="26663" script="poke/summon.lua" />
+	<action itemid="26675" script="poke/summon.lua" />
+	<action itemid="26669" script="poke/summon.lua" />
+	<action itemid="26674" script="poke/summon.lua" />
+	<action itemid="26670" script="poke/summon.lua" />
+	<action itemid="26681" script="poke/summon.lua" />
+	<action itemid="26666" script="poke/summon.lua" />
+	<action itemid="26678" script="poke/summon.lua" />
+	<action itemid="26667" script="poke/summon.lua" />
+	<action itemid="26679" script="poke/summon.lua" />
+	<action itemid="39064" script="poke/summon.lua" />
+	<action itemid="39063" script="poke/summon.lua" />
+
+	<action itemid="2263" script="poke/pokedex.lua" allowfaruse="1" />
+
+	<action itemid="2270" script="poke/order.lua" allowfaruse="1" />
+
+	<action itemid="2291" script="poke/evolution.lua" allowfaruse="1" />
+
+	<action fromid="26723" toid="26736" script="poke/evolution.lua" allowfaruse="1" />
+	<action fromid="26742" toid="26748" script="poke/evolution.lua" allowfaruse="1" />
+	<action itemid="26749" script="poke/evolution.lua" allowfaruse="1" />
+
+	<action itemid="26693" script="poke/boost.lua" />
+
+	<action fromid="3901" toid="3938" script="poke/constructionkits.lua" />
+	<action fromid="5086" toid="5088" script="poke/constructionkits.lua" />
+	<action itemid="6114" script="poke/constructionkits.lua" />
+	<action itemid="6115" script="poke/constructionkits.lua" />
+	<action itemid="6372" script="poke/constructionkits.lua" />
+	<action itemid="6373" script="poke/constructionkits.lua" />
+	<action itemid="8692" script="poke/constructionkits.lua" />
+	<action itemid="9974" script="poke/constructionkits.lua" />
+	<action itemid="11124" script="poke/constructionkits.lua" />
+	<action itemid="11126" script="poke/constructionkits.lua" />
+	<action itemid="11133" script="poke/constructionkits.lua" />
+	<action itemid="11205" script="poke/constructionkits.lua" />
+	<action itemid="14328" script="poke/constructionkits.lua" />
+	<action itemid="14329" script="poke/constructionkits.lua" />
+	<action itemid="16075" script="poke/constructionkits.lua" />
+	<action itemid="16099" script="poke/constructionkits.lua" />
+	<action itemid="20254" script="poke/constructionkits.lua" />
+	<action itemid="20255" script="poke/constructionkits.lua" />
+	<action itemid="20257" script="poke/constructionkits.lua" />
+	<!-- Reverse -->
+	<action itemid="2101" script="poke/constructionkits.lua" />
+    <action itemid="6371" script="poke/constructionkits.lua" />
+
+
+
+	<action fromid="1209" toid="1214" script="poke/doors.lua" />
+	<action fromid="1219" toid="1262" script="poke/doors.lua" />
+	<action fromid="1539" toid="1542" script="poke/doors.lua" />
+	<action fromid="2086" toid="2092" script="poke/doors.lua" />
+	<action fromid="3535" toid="3552" script="poke/doors.lua" />
+	<action fromid="4913" toid="4918" script="poke/doors.lua" />
+	<action fromid="5082" toid="5085" script="poke/doors.lua" />
+	<action fromid="5098" toid="5145" script="poke/doors.lua" />
+	<action fromid="5278" toid="5295" script="poke/doors.lua" />
+	<action fromid="5515" toid="5518" script="poke/doors.lua" />
+	<action fromid="5732" toid="5737" script="poke/doors.lua" />
+	<action fromid="5745" toid="5749" script="poke/doors.lua" />
+	<action fromid="6192" toid="6209" script="poke/doors.lua" />
+	<action fromid="6249" toid="6266" script="poke/doors.lua" />
+	<action fromid="6795" toid="6802" script="poke/doors.lua" />
+	<action fromid="6891" toid="6908" script="poke/doors.lua" />
+	<action fromid="7033" toid="7050" script="poke/doors.lua" />
+	<action fromid="7054" toid="7057" script="poke/doors.lua" />
+	<action fromid="8541" toid="8558" script="poke/doors.lua" />
+	<action fromid="9165" toid="9184" script="poke/doors.lua" />
+	<action fromid="9267" toid="9284" script="poke/doors.lua" />
+	<action fromid="10268" toid="10285" script="poke/doors.lua" />
+	<action fromid="10468" toid="10486" script="poke/doors.lua" />
+	<action fromid="10775" toid="10777" script="poke/doors.lua" />
+	<action fromid="10780" toid="10786" script="poke/doors.lua" />
+	<action fromid="10789" toid="10792" script="poke/doors.lua" />
+	<action fromid="12092" toid="12105" script="poke/doors.lua" />
+	<action fromid="12188" toid="12190" script="poke/doors.lua" />
+	<action fromid="12193" toid="12199" script="poke/doors.lua" />
+	<action fromid="12202" toid="12205" script="poke/doors.lua" />
+	<action fromid="19840" toid="19857" script="poke/doors.lua" />
+	<action fromid="19980" toid="19997" script="poke/doors.lua" />
+	<action fromid="20273" toid="20290" script="poke/doors.lua" />
+	<action fromid="17235" toid="17238" script="poke/doors.lua" />
+	<action fromid="18208" toid="18209" script="poke/doors.lua" />
+	<action fromid="13020" toid="13023" script="poke/doors.lua" />
+	<action fromid="35089" toid="35092" script="poke/doors.lua" />
+	<action fromid="35172" toid="35175" script="poke/doors.lua" />
+	<action fromid="35053" toid="35056" script="poke/doors.lua" />
+	<action fromid="34704" toid="34707" script="poke/doors.lua" />
+	<action fromid="34694" toid="34697" script="poke/doors.lua" />
+	<action fromid="39791" toid="39794" script="poke/doors.lua" />
+	<action itemid="10032" script="poke/doors.lua" />
+
+
+	<action fromid="7904" toid="7907" script="poke/bed_modification_kits.lua" />
+	<action itemid="20252" script="poke/bed_modification_kits.lua" />
+
+
+	<action itemid="430" script="poke/teleport.lua" />
+	<action itemid="1369" script="poke/teleport.lua" />
+	<action itemid="1386" script="poke/teleport.lua" />
+	<action itemid="3678" script="poke/teleport.lua" />
+	<action itemid="5543" script="poke/teleport.lua" />
+	<action itemid="39299" script="poke/teleport.lua" />
+	<action itemid="27640" script="poke/teleport.lua" />
+
+	<action itemid="2148" script="poke/changegold.lua" />
+	<action itemid="2152" script="poke/changegold.lua" />
+	<action itemid="2160" script="poke/changegold.lua" />
+	<action itemid="14405" function="market" />
+</actions>

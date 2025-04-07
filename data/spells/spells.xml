@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<spells>
+<!-- Moves -->
+
+
+
+
+
+
+
+      <instant group="attack" name="inferno" words="##m9" aggressive="1" direction="1" blockwalls="1" needlearn="1" script="moves/fire/inferno.lua" />
+
+      <instant group="attack" name="psyusion" words="##m11" aggressive="1" direction="0" blockwalls="1" needlearn="1" script="moves/psychic/psyusion.lua" />
+      <instant group="attack" name="leaf storm" words="##m12" aggressive="1" direction="0" blockwalls="1" needlearn="1" script="moves/grass/leaf_storm.lua" />
+      <instant group="attack" name="electric storm" words="##m13" aggressive="1" direction="0" blockwalls="1" needlearn="1" script="moves/electric/electric_storm.lua" />
+
+
+       <instant group="attack" name="flame storm" words="##m16" aggressive="1" direction="1" blockwalls="1" needlearn="1" script="moves/fire/flame_storm.lua" />
+       <instant group="attack" name="ice storm" words="##m17" aggressive="1" direction="1" blockwalls="1" needlearn="1" script="moves/ice/ice_storm.lua" />
+       <instant group="attack" name="falling rocks" words="##m18" aggressive="1" direction="1" blockwalls="1" needlearn="1" script="moves/rock/falling_rocks.lua" />
+       <instant group="attack" name="draco meteor" words="##m19" aggressive="1" direction="1" blockwalls="1" needlearn="1" script="moves/dragon/draco_meteor.lua" />
+       <instant group="attack" name="aurora beam" words="##m20" aggressive="1" direction="1" blockwalls="1" needlearn="1" script="moves/ice/aurora_beam.lua" />
+       <instant group="attack" name="hyper beam" words="##m21" aggressive="1" direction="1" blockwalls="1" needlearn="1" script="moves/normal/hyper_beam.lua" />
+       <instant group="attack" name="vine whip" words="##m22" aggressive="1" direction="1" blockwalls="1" needlearn="1" script="moves/grass/vine_whip.lua" />
+
+       <instant group="attack" name="poison gas" words="##m24" aggressive="1" direction="1" blockwalls="1" needlearn="1" script="moves/poison/poison_gas.lua" />
+       <instant group="attack" name="confusion" words="##m25" aggressive="1" direction="1" blockwalls="1" needlearn="1" script="moves/psychic/confusion.lua" />
+
+       <instant group="attack" name="sand attack" words="##m27" aggressive="1" direction="0" blockwalls="0" needlearn="1" script="moves/ground/sand_attack.lua" />
+       <instant group="attack" name="bulldoze" words="##m28" aggressive="1" direction="0" blockwalls="0" needlearn="1" script="moves/ground/bulldoze.lua" />
+       <instant group="attack" name="flamethrower" words="##m29" aggressive="1" direction="0" blockwalls="0" needlearn="1" script="moves/fire/flamethrower.lua" />
+       <instant group="attack" name="fire blast" words="##m30" aggressive="1" direction="0" blockwalls="0" needlearn="1" script="moves/fire/fire_blast.lua" />
+       <instant group="attack" name="hydro cannon" words="##m31" aggressive="1" direction="0" blockwalls="0" needlearn="1" script="moves/water/hydro_cannon.lua" />
+       <instant group="attack" name="wing attack" words="##m32" aggressive="1" direction="0" blockwalls="0" needlearn="1" script="moves/flying/wing_attack.lua" />
+       <instant group="attack" name="earth power" words="##m33" aggressive="1" direction="0" blockwalls="0" needlearn="1" script="moves/ground/earth_power.lua" />
+       <instant group="attack" name="assurance" words="##m34" aggressive="1" direction="0" blockwalls="0" needlearn="1" script="moves/dark/assurance.lua" />
+       <instant group="attack" name="dark wave" words="##m35" aggressive="1" direction="0" blockwalls="0" needlearn="1" script="moves/dark/dark_wave.lua" />
+       <instant group="attack" name="surf" words="##m36" aggressive="1" direction="0" blockwalls="0" needlearn="1" script="moves/water/surf.lua" />
+       <instant group="attack" name="muddy water" words="##m37" aggressive="1" direction="0" blockwalls="0" needlearn="1" script="moves/water/muddy_water.lua" />
+
+
+       <instant group="attack" name="frost power" words="##m40" aggressive="1" direction="0" blockwalls="0" needlearn="1" script="moves/ice/frost_power.lua" />
+       <instant group="attack" name="rock slide" words="##m41" aggressive="1" direction="0" blockwalls="0" needlearn="1" script="moves/rock/rock_slide.lua" />
+       <instant group="attack" name="metal sound" words="##m42" aggressive="1" direction="0" blockwalls="0" needlearn="1" script="moves/steel/metal_sound.lua" />
+       <instant group="attack" name="iron spiner" words="##m43" aggressive="1" direction="0" blockwalls="0" needlearn="1" script="moves/steel/iron_spiner.lua" />
+       <instant group="attack" name="thunder" words="##m44" aggressive="1" direction="0" blockwalls="0" needlearn="1" script="moves/electric/thunder.lua" />
+       <instant group="attack" name="thunder wave" words="##m45" aggressive="1" direction="0" blockwalls="1" needlearn="1" script="moves/electric/thunder_wave.lua" />
+       <instant group="attack" name="gust" words="##m46" aggressive="1" direction="0" blockwalls="0" needlearn="1" script="moves/flying/gust.lua" />
+       <instant group="attack" name="air cutter" words="##m47" aggressive="1" direction="0" blockwalls="0" needlearn="1" script="moves/flying/air_cutter.lua" />
+       <instant group="attack" name="signal beam" words="##m48" aggressive="1" direction="0" blockwalls="0" needlearn="1" script="moves/bug/signal_beam.lua" />
+       <instant group="attack" name="poison bomb" words="##m49" aggressive="1" direction="0" blockwalls="0" needlearn="1" script="moves/poison/poison_bomb.lua" />
+       <instant group="attack" name="acid" words="##m50" aggressive="1" direction="0" blockwalls="0" needlearn="1" script="moves/poison/acid.lua" />
+       <instant group="attack" name="sludge wave" words="##m51" aggressive="1" direction="0" blockwalls="0" needlearn="1" script="moves/poison/sludge_wave.lua" />
+
+
+        <instant group="attack" name="rock throw" words="##m54" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/rock/rock_throw.lua" />
+        <instant group="attack" name="sleep powder" words="##m55" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/grass/sleep_powder.lua" />
+
+        <instant group="attack" name="night shade" words="##m57" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/ghost/night_shade.lua" />
+        <instant group="attack" name="thunder shock" words="##m58" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/electric/thunder_shock.lua" />
+        <instant group="attack" name="bubble" words="##m59" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/water/bubble.lua" />
+        <instant group="attack" name="shadow ball" words="##m60" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/ghost/shadow_ball.lua" />
+        <instant group="attack" name="shadow punch" words="##m61" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/ghost/shadow_punch.lua" />
+        <instant group="attack" name="ice shard" words="##m62" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/ice/ice_shard.lua" />
+        <instant group="attack" name="triple punch" words="##m63" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/fighting/triple_punch.lua" />
+        <instant group="attack" name="fireball" words="##m64" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/fire/fireball.lua" />
+        <instant group="attack" name="sucker punch" words="##m65" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/dark/sucker_punch.lua" />
+        <instant group="attack" name="dragon breath" words="##m66" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/dragon/dragon_breath.lua" />
+        <instant group="attack" name="thunder bolt" words="##m67" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/electric/thunder_bolt.lua" />
+
+
+    <instant group="attack" name="razor leaf" words="##m70" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/grass/razor_leaf.lua" />
+    <instant group="attack" name="water gun" words="##m71" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/water/water_gun.lua" />
+    <instant group="attack" name="arm thrust" words="##m72" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/fighting/arm_thrust.lua" />
+    <instant group="attack" name="drill peck" words="##m73" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/flying/drill_peck.lua" />
+    <instant group="attack" name="quick attack" words="##m74" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/normal/quick_attack.lua" />
+    <instant group="attack" name="double slap" words="##m75" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/normal/double_slap.lua" />
+    <instant group="attack" name="sing" words="##m76" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/normal/sing.lua" />
+    <instant group="attack" name="fast attack" words="##m77" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/normal/fastattack.lua" />
+    <instant group="attack" name="iron tail" words="##m78" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/steel/iron_tail.lua" />
+
+    <instant group="attack" name="headbutt" words="##m80" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/normal/headbutt.lua" />
+    <instant group="attack" name="leech seed" words="##m81" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/grass/leech_seed.lua" />
+    <instant group="attack" name="bug bite" words="##m82" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/bug/bug_bite.lua" />
+    <instant group="attack" name="psybeam" words="##m83" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/psychic/psybeam.lua" />
+    <instant group="attack" name="ember" words="##m84" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/fire/ember.lua" />
+    <instant group="attack" name="scratch" words="##m85" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/normal/scratch.lua" />
+    <instant group="attack" name="fire fang" words="##m86" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/fire/fire_fang.lua" />
+    <instant group="attack" name="magma storm" words="##m87" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/fire/magma_storm.lua" />
+    <instant group="attack" name="string shot" words="##m88" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/bug/string_shot.lua" />
+    <instant group="attack" name="horn attack" words="##m89" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/normal/horn_attack.lua" />
+    <instant group="attack" name="poison sting" words="##m90" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/poison/poison_sting.lua" />
+    <instant group="attack" name="bite" words="##m91" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/dark/bite.lua" />
+    <instant group="attack" name="super fang" words="##m92" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/normal/super_fang.lua" />
+	<instant group="attack" name="bug buzz" words="##m104" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/bug/bug_buzz.lua" />
+	<instant group="attack" name="fury cutter" words="##m105" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/bug/fury_cutter.lua" />
+	<instant group="attack" name="leech life" words="##m106" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/bug/leech_life.lua" />
+	<instant group="attack" name="pin missile" words="##m107" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/bug/pin_missile.lua" />
+	<instant group="attack" name="silver wind" words="##m108" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/bug/silver_wind.lua" />
+	<instant group="attack" name="struggle bug" words="##m109" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/bug/struggle_bug.lua" />
+	<instant group="attack" name="twineedle" words="##m110" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/bug/twineedle.lua" />
+	<instant group="attack" name="crunch" words="##m111" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/dark/crunch.lua" />
+	<instant group="attack" name="dark pulse" words="##m112" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/dark/dark_pulse.lua" />
+	<instant group="attack" name="feint attack" words="##m113" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/dark/feint_attack.lua" />
+	<instant group="attack" name="knock off" words="##m114" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/dark/knock_off.lua" />
+	<instant group="attack" name="pursuit" words="##m115" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/dark/pursuit.lua" />
+	<instant group="attack" name="thief" words="##m116" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/dark/thief.lua" />
+	<instant group="attack" name="torment" words="##m117" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/dark/torment.lua" />
+	<instant group="attack" name="dragon claw" words="##m118" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/dragon/dragon_claw.lua" />
+	<instant group="attack" name="dragon rage" words="##m119" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/dragon/dragon_rage.lua" />
+	<instant group="attack" name="outrage" words="##m120" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/dragon/outrage.lua" />
+	<instant group="attack" name="twister" words="##m121" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/dragon/twister.lua" />
+	<instant group="attack" name="shock wave" words="##m122" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/electric/shock_wave.lua" />
+	<instant group="attack" name="spark" words="##m123" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/electric/spark.lua" />
+	<instant group="attack" name="thunder punch" words="##m124" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/electric/thunder_punch.lua" />
+	<instant group="attack" name="zap cannon" words="##m125" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/electric/zap_cannon.lua" />
+
+	<instant group="attack" name="brick break" words="##m126" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/fighting/brick_break.lua" />
+	<instant group="attack" name="cross chop" words="##m127" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/fighting/cross_chop.lua" />
+	<instant group="attack" name="double kick" words="##m128" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/fighting/double_kick.lua" />
+	<instant group="attack" name="dynamic punch" words="##m129" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/fighting/dynamic_punch.lua" />
+	<instant group="attack" name="focus punch" words="##m130" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/fighting/focus_punch.lua" />
+	<instant group="attack" name="high jump kick" words="##m131" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/fighting/high_jump_kick.lua" />
+	<instant group="attack" name="jump kick" words="##m132" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/fighting/jump_kick.lua" />
+	<instant group="attack" name="karate chop" words="##m133" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/fighting/karate_chop.lua" />
+	<instant group="attack" name="low kick" words="##m134" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/fighting/low_kick.lua" />
+	<instant group="attack" name="mach punch" words="##m135" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/fighting/mach_punch.lua" />
+	<instant group="attack" name="rock smash" words="##m136" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/fighting/rock_smash.lua" />
+	<instant group="attack" name="rolling kick" words="##m137" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/fighting/rolling_kick.lua" />
+	<instant group="attack" name="seismic toss" words="##m138" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/fighting/seismic_toss.lua" />
+	<instant group="attack" name="submission" words="##m139" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/fighting/submission.lua" />
+	<instant group="attack" name="fire punch" words="##m140" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/fire/fire_punch.lua" />
+	<instant group="attack" name="fire spin" words="##m141" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/fire/fire_spin.lua" />
+	<instant group="attack" name="flame wheel" words="##m142" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/fire/flame_wheel.lua" />
+	<instant group="attack" name="overheat" words="##m143" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/fire/overheat.lua" />
+	<instant group="attack" name="aerial ace" words="##m144" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/flying/aerial_ace.lua" />
+	<instant group="attack" name="air slash" words="##m145" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/flying/air_slash.lua" />
+	<instant group="attack" name="brave bird" words="##m146" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/flying/brave_bird.lua" />
+	<instant group="attack" name="fly" words="##m147" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/flying/fly.lua" />
+	<instant group="attack" name="hurricane" words="##m148" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/flying/hurricane.lua" />
+	<instant group="attack" name="peck" words="##m149" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/flying/peck.lua" />
+	<instant group="attack" name="sky attack" words="##m150" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/flying/sky_attack.lua" />
+	<instant group="attack" name="confuse ray" words="##m151" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/ghost/confuse_ray.lua" />
+	<instant group="attack" name="curse" words="##m152" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/ghost/curse.lua" />
+	<instant group="attack" name="lick" words="##m153" aggressive="1" direction="0" blockwalls="0" needtarget="1" needlearn="1" script="moves/ghost/lick.lua" />
+	<instant group="attack" name="absorb" words="##m154" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/grass/absorb.lua" />
+	<instant group="attack" name="leaf blade" words="##m155" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/grass/leaf_blade.lua" />
+	<instant group="attack" name="magical leaf" words="##m156" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/grass/magical_leaf.lua" />
+	<instant group="attack" name="mega drain" words="##m157" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/grass/mega_drain.lua" />
+	<instant group="attack" name="petal dance" words="##m158" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/grass/petal_dance.lua" />
+	<instant group="attack" name="solar beam" words="##m159" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/grass/solar_beam.lua" />
+	<instant group="attack" name="stun spore" words="##m160" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/grass/stun_spore.lua" />
+	<instant group="attack" name="synthesis" words="##m161" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/grass/synthesis.lua" />
+	<instant group="attack" name="bone club" words="##m162" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/ground/bone_club.lua" />
+	<instant group="attack" name="bonemerang" words="##m163" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/ground/bonemerang.lua" />
+	<instant group="attack" name="bone rush" words="##m164" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/ground/bone_rush.lua" />
+	<instant group="attack" name="dig" words="##m165" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/ground/dig.lua" />
+	<instant group="attack" name="earthquake" words="##m166" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/ground/earthquake.lua" />
+	<instant group="attack" name="magnitude" words="##m167" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/ground/magnitude.lua" />
+	<instant group="attack" name="mud bomb" words="##m168" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/ground/mud_bomb.lua" />
+	<instant group="attack" name="mud shot" words="##m169" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/ground/mud_shot.lua" />
+	<instant group="attack" name="mud slap" words="##m170" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/ground/mud_slap.lua" />
+	<instant group="attack" name="avalanche" words="##m171" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/ice/avalanche.lua" />
+	<instant group="attack" name="blizzard" words="##m172" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/ice/blizzard.lua" />
+	<instant group="attack" name="ice beam" words="##m173" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/ice/ice_beam.lua" />
+	<instant group="attack" name="ice punch" words="##m174" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/ice/ice_punch.lua" />
+	<instant group="attack" name="icy wind" words="##m175" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/ice/icy_wind.lua" />
+	<instant group="attack" name="powder snow" words="##m176" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/ice/powder_snow.lua" />
+
+	<instant group="attack" name="body slam" words="##m177" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/normal/body_slam.lua" />
+	<instant group="attack" name="disable" words="##m178" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/normal/disable.lua" />
+	<instant group="attack" name="egg bomb" words="##m179" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/normal/egg_bomb.lua" />
+	<instant group="attack" name="extreme speed" words="##m180" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/normal/extreme_speed.lua" />
+	<instant group="attack" name="fury attack" words="##m181" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/normal/fury_attack.lua" />
+	<instant group="attack" name="harden" words="##m182" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/normal/harden.lua" />
+	<instant group="attack" name="hyper fang" words="##m183" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/normal/hyper_fang.lua" />
+	<instant group="attack" name="hyper voice" words="##m184" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/normal/hyper_voice.lua" />
+	<instant group="attack" name="mega kick" words="##m185" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/normal/mega_kick.lua" />
+	<instant group="attack" name="mega punch" words="##m186" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/normal/mega_punch.lua" />
+	<instant group="attack" name="metronome" words="##m187" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/normal/metronome.lua" />
+	<instant group="attack" name="payday" words="##m188" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/normal/payday.lua" />
+	<instant group="attack" name="pound" words="##m189" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/normal/pound.lua" />
+	<instant group="attack" name="recover" words="##m190" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/normal/recover.lua" />
+	<instant group="attack" name="skull bash" words="##m191" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/normal/skull_bash.lua" />
+	<instant group="attack" name="slam" words="##m192" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/normal/slam.lua" />
+	<instant group="attack" name="slash" words="##m193" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/normal/slash.lua" />
+	<instant group="attack" name="soft boiled" words="##m194" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/normal/soft_boiled.lua" />
+	<instant group="attack" name="stomp" words="##m195" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/normal/stomp.lua" />
+	<instant group="attack" name="strength" words="##m196" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/normal/strength.lua" />
+	<instant group="attack" name="swift" words="##m197" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/normal/swift.lua" />
+	<instant group="attack" name="tackle" words="##m198" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/normal/tackle.lua" />
+	<instant group="attack" name="thrash" words="##m199" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/normal/thrash.lua" />
+	<instant group="attack" name="tri attack" words="##m200" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/normal/tri_attack.lua" />
+
+	<instant group="attack" name="acid armor" words="##m201" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/poison/acid_armor.lua" />
+	<instant group="attack" name="gunk shot" words="##m202" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/poison/gunk_shot.lua" />
+	<instant group="attack" name="poison fang" words="##m203" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/poison/poison_fang.lua" />
+	<instant group="attack" name="poison jab" words="##m204" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/poison/poison_jab.lua" />
+	<instant group="attack" name="poison powder" words="##m205" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/poison/poison_powder.lua" />
+	<instant group="attack" name="sludge" words="##m206" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/poison/sludge.lua" />
+	<instant group="attack" name="sludge bomb" words="##m207" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/poison/sludge_bomb.lua" />
+	<instant group="attack" name="toxic" words="##m208" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/poison/toxic.lua" />
+
+	<instant group="attack" name="dream eater" words="##m209" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/psychic/dream_eater.lua" />
+	<instant group="attack" name="future sight" words="##m210" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/psychic/future_sight.lua" />
+	<instant group="attack" name="hypnosis" words="##m211" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/psychic/hypnosis.lua" />
+	<instant group="attack" name="prismatic laser" words="##m212" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/psychic/prismatic_laser.lua" />
+	<instant group="attack" name="psychic" words="##m213" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/psychic/psychic.lua" />
+	<instant group="attack" name="psychic fangs" words="##m214" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/psychic/psychic_fangs.lua" />
+	<instant group="attack" name="psyshock" words="##m215" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/psychic/psyshock.lua" />
+	<instant group="attack" name="psystrike" words="##m216" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/psychic/psy_strike.lua" />
+	<instant group="attack" name="rest" words="##m217" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/psychic/rest.lua" />
+	<instant group="attack" name="zen headbutt" words="##m218" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/psychic/zen_headbutt.lua" />
+
+	<instant group="attack" name="ancient power" words="##m219" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/rock/ancient_power.lua" />
+	<instant group="attack" name="rock blast" words="##m220" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/rock/rock_blast.lua" />
+	<instant group="attack" name="rollout" words="##m221" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/rock/rollout.lua" />
+	<instant group="attack" name="smack down" words="##m222" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/rock/smack_down.lua" />
+	<instant group="attack" name="stone edge" words="##m223" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/rock/stone_edge.lua" />
+
+	<instant group="attack" name="gyro ball" words="##m224" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/steel/gyro_ball.lua" />
+	<instant group="attack" name="heavy slam" words="##m225" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/steel/heavy_slam.lua" />
+	<instant group="attack" name="iron head" words="##m226" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/steel/iron_head.lua" />
+	<instant group="attack" name="steel wing" words="##m227" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/steel/steel_wing.lua" />
+
+	<instant group="attack" name="clamp" words="##m228" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/water/clamp.lua" />
+	<instant group="attack" name="crabhammer" words="##m229" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/water/crabhammer.lua" />
+	<instant group="attack" name="hydro pump" words="##m230" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/water/hydro_pump.lua" />
+	<instant group="attack" name="waterfall" words="##m231" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/water/waterfall.lua" />
+	<instant group="attack" name="water pulse" words="##m232" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/water/water_pulse.lua" />
+
+	<instant group="attack" name="transform" words="##m233" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/psychic/transform.lua" />
+	<instant group="attack" name="metal claw" words="##m234" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/steel/metal_claw.lua" />
+
+	<instant group="attack" name="passive fighting" words="##m235" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="passives/fighting/passive_fighting.lua" />
+	<instant group="attack" name="passive ghost" words="##m236" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="passives/ghost/passive_ghost.lua" />
+	<instant group="attack" name="night slash" words="##m237" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/dark/night_slash.lua" />
+	<instant group="attack" name="doom desire" words="##m238" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/steel/doom_desire.lua" />
+	<instant group="attack" name="cosmic power" words="##m239" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/psychic/cosmic_power.lua" />
+
+    <instant group="attack" name="passive fire" words="##m93" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="passives/fire/passive_fire.lua" />
+	<instant group="attack" name="passive water" words="##m94" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="passives/water/passive_water.lua" />
+	<instant group="attack" name="passive grass" words="##m95" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="passives/grass/passive_grass.lua" />
+	<instant group="attack" name="passive electric" words="##m96" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="passives/electric/passive_electric.lua" />
+	<instant group="attack" name="passive ice" words="##m97" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="passives/ice/passive_ice.lua" />
+	<instant group="attack" name="passive poison" words="##m98" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="passives/poison/passive_poison.lua" />
+	<instant group="attack" name="passive flying" words="##m99" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="passives/flying/passive_flying.lua" />
+	<instant group="attack" name="passive rock" words="##m100" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="passives/rock/passive_rock.lua" />
+	<instant group="attack" name="passive psychic" words="##m101" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="passives/psychic/passive_psychic.lua" />
+	<instant group="attack" name="passive dark" words="##m102" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="passives/dark/passive_dark.lua" />
+	<instant group="attack" name="passive ground" words="##m103" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="passives/ground/passive_ground.lua" />
+
+	<instant group="attack" name="hammer arm" words="##m240" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/fighting/hammer_arm.lua" />
+	<instant group="attack" name="smog" words="##m241" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/poison/smog.lua" />
+	<instant group="attack" name="ultimate kick" words="##m242" aggressive="1" direction="0" blockwalls="0" needtarget="0" needlearn="1" script="moves/fighting/ultimate_kick.lua" />
+    <instant group="attack" name="petal blizzard" words="##m243" aggressive="1" direction="0" blockwalls="1" needlearn="1" script="moves/grass/petal_blizzard.lua" />
+    <instant group="attack" name="whirlwind" words="##m244" aggressive="1" direction="0" blockwalls="1" needlearn="1" script="moves/flying/whirlwind.lua" />
+		
+
+	<!-- House Spells -->
+	<instant spellid="71" name="House Guest List" words="!invite" selftarget="1" aggressive="0" function="editHouseGuest" />
+	<instant spellid="72" name="House Subowner List" words="!invitesub" selftarget="1" aggressive="0" function="editHouseSubOwner" />
+	<instant spellid="73" name="House Door List" words="!invitedoor" selftarget="1" aggressive="0" function="editHouseDoor" />
+	<instant spellid="74" name="House Kick" words="!kick" params="1" aggressive="0" function="houseKick" />
+
+</spells>

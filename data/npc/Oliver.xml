@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Oliver" script="default.lua" walkinterval="3000" floorchange="0">
+	<health now="100" max="100" />
+	<look type="2041" head="19" legs="60" feet="1" addons="0" />
+	<parameters>
+		<parameter key="message_greet" value="Ola |PLAYERNAME|. Eu faco {trade} com moveis para casa." />
+		<parameter key="message_decline" value="|TOTALCOST| e muito para voce? Saia ja daqui!" />
+		<parameter key="module_shop" value="1" />
+		<parameter key="shop_buyable" value="
+			amphora,2023,500,0;
+			blue pillow,1686,2500;
+			blue tapestry,1872,2500;
+			box,1738,1000;
+			chest,1740,1000;
+			crate,1739,1000;
+			cuckoo clock,1877,4000;
+			flower bowl,2102,600;
+			god flowers,2100,500;
+			goldfish bowl,5928,5000;
+			green pillow,1688,2500;
+			green tapestry,1860,2500;
+			heart pillow,1685,3000;
+			honey flower,2103,500;
+			orange tapestry,1866,2500;
+			picture,1852,5000;
+			picture,1854,5000;
+			picture,1853,5000;
+			potted flower,2104,500;
+			purple tapestry,1857,2500;
+			red pillow,1687,2500;
+			red tapestry,1869,2500;
+			round blue pillow,1690,2500;
+			round purple pillow,1692,2500;
+			round red pillow,1691,2500;
+			round turquoise pillow,1693,2500;
+			small blue pillow,1681,2000;
+			small green pillow,1679,2000;
+			small orange pillow,1682,2000;
+			small purple pillow,1678,2000;
+			small red pillow,1680,20;
+			small turquoise pillow,1683,20;
+			small white pillow,1684,2000;
+			treasure chest,1746,100000;
+			trophy stand,7936,5000;
+			vase,2008,300,0;
+			wall mirror,1851,4000;
+			wall mirror,1848,4000;
+			wall mirror,1845,4000;
+			water pipe,2099,4000;
+			white tapestry,1880,2500;
+			yellow pillow,1689,2500;
+			yellow tapestry,1863,2500;" />
+	</parameters>
+</npc>
+
+
+
+
+
+
+

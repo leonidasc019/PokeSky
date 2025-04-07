@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Storm" script="default.lua" walkinterval="3000" floorchange="0">
+	<health now="100" max="100" />
+	<look type="2202" head="5" legs="45" feet="10" addons="0" />
+	<parameters>
+		<parameter key="message_greet" value="Ola |PLAYERNAME|. eu vendo kits de decoraçoes {trade} vem olhe." />
+		<parameter key="message_decline" value="|TOTALCOST| ate mais treinador!" />
+		<parameter key="module_shop" value="1" />
+		<parameter key="shop_buyable" value="
+			wardrobe kit,20255,5000;
+			drawer kit,20257,4000;
+			cabinet kit,20254,9000;
+			trunk kit,3920,1000;
+			trough kit,3918,700;
+			telescope kit,3925,7000;
+			sofa chair kit,3905,5500;
+			square table kit,14329,2500;
+			small table kit,3908,20;
+			round table kit,14328,2500;
+			rocking chair kit,3904,2500;
+			red cushioned chair kit,3901,4000;
+			pendulum clock kit,3927,7500;
+			piano kit,3933,20000;
+			oven kit,6372,8000;
+			minotaur statue kit,3929,5000;
+			knight statue kit,3928,5000;
+			large amphora kit,3931,5000;
+			locker kit,3917,3000;
+			indoor plant kit,3937,800;
+			harp kit,3934,5000;
+			green cushioned chair kit,3902,4000;
+			globe kit,3926,5000;
+			dresser kit,3916,2500;
+			drawer kit,3915,1800;
+			coal basin kit,3932,2500;
+			chimney kit,8692,20000;
+			bookcase kit,6373,7000;
+			birdcage kit,3922,5000;
+			big table kit,3911,3000;
+			barrel kit,3919,1200;
+			armor rack kit,6114,9000;
+			weapon rack kit,6115,9000;
+			wooden chair kit,3903,1500;
+			table lamp kit,3924,3500;" />
+	</parameters>
+</npc>
+

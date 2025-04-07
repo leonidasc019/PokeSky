@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Professor Oak" script="ProfessorOak.lua" walkinterval="0" floorchange="0">
+    <health now="100" max="100" />
+    <look type="2151" head="32" legs="76" feet="43" addons="1" />
+    <parameters>
+        <parameter key="message_greet" value="Ola, |PLAYERNAME|! Pronto para escolher seu Pokemon inicial?" />
+        <parameter key="message_decline" value="Boa sorte em sua jornada, treinador!" />
+    </parameters>
+    <voices interval="3000" chance="50">
+        <voice sentence="Escolha sabiamente entre Bulbasaur, Charmander e Squirtle." />
+        <voice sentence="Um treinador sempre deve cuidar bem de seus Pokemons." />
+        <voice sentence="Estou aqui para ajudar novos treinadores em sua jornada!" />
+    </voices>
+</npc>

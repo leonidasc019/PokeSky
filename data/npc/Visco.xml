@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Visco" script="visco.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100" />
+	<look type="2088" head="32" legs="76" feet="43" addons="1"/>
+	<parameters>
+		<parameter key="message_greet" value="Ola |PLAYERNAME|. Se completar a {missao}, voce ganhara uma Outfit Misteriosa!" />
+		<parameter key="message_decline" value="Continue sua jornada, talvez em breve voce tenha a chance de voltar para esta missao." />
+	</parameters>
+</npc>

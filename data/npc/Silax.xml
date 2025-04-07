@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Silax" script="Silax.lua" walkinterval="2000" floorchange="0">
+    <health now="100" max="100"/>
+    <look type="2046" head="100" legs="85" feet="90" addons="1"/>
+    <parameters>
+        <parameter key="message_greet" value="Ola! Eu posso ajuda-lo a andar mais rapido na Areia . Voce esta interessado? {Yes}"/>
+        <parameter key="message_decline" value="opa volte depois" />
+    </parameters>
+</npc>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<monster name="Nidoking" nameDescription="a nidoking" race="ground" race2="poison" experience="230" speed="160" manacost="0">
+	<level min="70" max="70"/>
+	<health now="16000" max="16000" />
+	<look type="34" head="113" body="57" legs="95" feet="113" corpse="26895" />
+	<targetchange interval="5000" chance="0" />
+	<flags>
+		<flag summonable="1" />
+		<flag attackable="1" />
+		<flag hostile="1" />
+		<flag passive="0" />
+		<flag illusionable="1" />
+		<flag convinceable="1" />
+		<flag pushable="1" />
+		<flag canpushitems="0" />
+		<flag canpushcreatures="0" />
+		<flag targetdistance="1" />
+		<flag staticattack="97" />
+		<flag runonhealth="0" />
+		<flag dexentry="34" />
+		<flag portraitid="27150" />
+		<flag hasshiny="1" />
+		<flag hasmega="0" />
+		<flag flyable="0" />
+		<flag rideable="0" />
+		<flag surfable="0" />
+		<flag canteleport="0" />
+		<flag catchchance="11" />
+		<flag moveMagicAttackBase="85" />
+		<flag moveMagicDefenseBase="75" />
+	</flags>
+	<script>
+        	<event name="MonsterHealthChange"/>
+        	<event name="CorpseLevel"/>
+        	<event name="CorpseLoot"/>
+
+	</script>
+	<moves>
+		<move name="quick attack" interval="8000" isTarget="1" range="1"/>
+		<move name="poison fang" interval="20000" isTarget="1"/>
+		<move name="poison jab" interval="20000" isTarget="1"/>
+		<move name="toxic" interval="40000"/>
+		<move name="sludge bomb" interval="50000" isTarget="1"/>
+
+	</moves>
+	<evolutions>
+
+	</evolutions>
+	<attacks>
+		<attack name="melee" interval="2000" min="-102" max="-102" />
+
+		<attack name="quick attack" interval="8000" chance="40" target="1" range="1"/>
+		<attack name="poison fang" interval="20000" chance="40" target="1"/>
+		<attack name="poison jab" interval="20000" chance="40" target="1"/>
+		<attack name="toxic" interval="40000" chance="40" target="1"/>
+		<attack name="sludge bomb" interval="50000" chance="40" target="1"/>
+
+	</attacks>
+	<defenses armor="0" defense="77" >
+
+	</defenses>
+	<elements>
+	</elements>
+	<immunities>
+
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="NIDOKING!" />
+	</voices>
+	<loot>
+		<item name="venom stone" countmax="1" chance="225"/>
+		
+		<item name="bottle of poison" countmax="2" chance="40000"/>
+		<item name="sandbag" countmax="1" chance="5000"/>
+		<item name="male ear" countmax="2" chance="5000"/>
+
+	</loot>
+</monster>

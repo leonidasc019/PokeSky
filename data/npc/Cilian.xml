@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Cilian" script="cilian.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100" />
+	<look type="2045" head="32" legs="76" feet="43" addons="1"/>
+	<parameters>
+		<parameter key="message_greet" value="Ola |PLAYERNAME|, bem-vindo(a) a Star Clothes! Aqui voce pode encontrar roupas exclusivas para se destacar em Kanto. Confira nossa colecao! Diga {Offer}" />
+		<parameter key="message_decline" value="Parece que voce esta ocupado(a), entao va em frente e continue sua jornada. Quando estiver pronto(a), venha me visitar novamente!" />
+		<parameter key="message_offer" value="Nos temos as seguintes roupas: Punk, Social, Rapper, Oriental, Hiker, Athletic, Mercenary, Nerd, Adventurer e Jamaican. Escolha a sua!" />
+		<parameter key="message_buy" value="Voce deseja comprar esta roupa? Ela tem um preco unico e e uma verdadeira estrela do estilo!" />
+		<parameter key="message_already_have" value="Voce ja comprou esta roupa anteriormente. Volte sempre para conferir nossas novidades!" />
+		<parameter key="message_not_enough_money" value="Voce nao tem dinheiro suficiente para comprar esta roupa. Tente ganhar mais e volte quando estiver pronto(a)!" />
+		<parameter key="message_bye" value="Ate logo, espero ve-lo(a) em breve. Continue arrasando com seu estilo!" />
+	</parameters>
+</npc>
