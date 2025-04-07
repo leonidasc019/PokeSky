@@ -63,6 +63,7 @@
 	<action fromid="26723" toid="26736" script="poke/evolution.lua" allowfaruse="1" />
 	<action fromid="26742" toid="26748" script="poke/evolution.lua" allowfaruse="1" />
 	<action itemid="26749" script="poke/evolution.lua" allowfaruse="1" />
+	<action itemid="29478" script="poke/firstpoke.lua"/>
 
 	<action itemid="26693" script="poke/boost.lua" />
 
