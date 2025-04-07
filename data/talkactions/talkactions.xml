@@ -75,5 +75,6 @@
 	<talkaction words="!evspecialattack" script="!ev.lua"/>
 	<talkaction words="!evspecialdefense" script="!ev.lua"/>
 	<talkaction words="!evhp" script="!ev.lua"/>
+	<talkaction words="#firstpoke" separator=" " script="#firstpoke.lua" />
 
 </talkactions>
