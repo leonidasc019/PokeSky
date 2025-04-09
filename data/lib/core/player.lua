@@ -135,3 +135,7 @@ function Player.addManaSpent(...)
 	APPLY_SKILL_MULTIPLIER = true
 	return ret
 end
+
+function Player:getPokeballsCached()
+    return self:getSpecialStorage("pokes") or {}
+end

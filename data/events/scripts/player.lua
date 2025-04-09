@@ -229,6 +229,7 @@ function Player:onMoveItem(item, count, fromPosition, toPosition, fromCylinder, 
 			local isBallBeingUsed = item:getSpecialAttribute("isBeingUsed")
 			if isBallBeingUsed and isBallBeingUsed == 1 then
 				self:sendCancelMessage("Sorry, not possible while using Pokemon.")
+				doSendPokeTeamByClient(self:getId())
 				return false
 			end
 		elseif item:isContainer() then
@@ -237,6 +238,7 @@ function Player:onMoveItem(item, count, fromPosition, toPosition, fromCylinder, 
 				local isBallBeingUsed = balls[i]:getSpecialAttribute("isBeingUsed")
 				if isBallBeingUsed and isBallBeingUsed == 1 then
 					self:sendCancelMessage("Sorry, not possible while using Pokemon.")
+					doSendPokeTeamByClient(self:getId())
 					return false
 				end
 			end
@@ -248,7 +250,8 @@ end
 
 function Player:onItemMoved(item, count, fromPosition, toPosition, fromCylinder, toCylinder)
 	if item:isPokeball() or item:isContainer() then
-		self:refreshPokemonBar({}, {})
+		-- self:refreshPokemonBar({}, {})
+		doSendPokeTeamByClient(self:getId())
 	end
 end
 
@@ -297,8 +300,10 @@ function Player:onTradeRequest(target, item)
 end
 
 function Player:onTradeAccept(target, item, targetItem)
-	self:refreshPokemonBar({}, {})
-	target:refreshPokemonBar({}, {})
+	-- self:refreshPokemonBar({}, {})
+	-- target:refreshPokemonBar({}, {})
+	doSendPokeTeamByClient(self)
+	doSendPokeTeamByClient(target)
 	return true
 end
 

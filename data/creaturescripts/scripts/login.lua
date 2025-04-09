@@ -1,5 +1,10 @@
 function onLogin(player)
+	player:registerEvent("ExtendedOpcode")
 	player:registerEvent("RegisterWildBuffs")
+
+	-- Envia o opcode da New PokeBar
+	player:sendExtendedOpcode(53, json.encode({type = "request"}))
+
 	local loginStr = "Bem vindo ao " .. configManager.getString(configKeys.SERVER_NAME) .. "!"
 	if player:getLastLoginSaved() <= 0 then
 		loginStr = loginStr .. " Please choose your outfit."
@@ -34,7 +39,7 @@ function onLogin(player)
 	player:registerEvent("MonsterHealthChange")
 	player:registerEvent("GameStore")
 	player:updateQuestLog()
-	player:refreshPokemonBar({}, {})
+	-- player:refreshPokemonBar({}, {})
 
 	if player:isOnSurf() then
 		local totalSpeed = player:getStorageValue(storageLogoutSpeed) or 50
