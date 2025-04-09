@@ -26,6 +26,9 @@ Bem-vindo ao changelog completo com todas as implementações, melhorias e novid
 - Comandos visuais em texto amarelo.
 - Fly agora usa setas para cima/baixo.
 - Pokémon capturados podem andar no PZ.
+- Novo Chat Desenvolvido, tornado mais versatil, podendo posicionar, aumentar e diminuir, tornando o visual do client mais agradavél a todos gostos
+- ![image](https://github.com/user-attachments/assets/51cb2d94-6c59-4e00-9290-cd663f4e8fc0)
+
 
 ---
 
