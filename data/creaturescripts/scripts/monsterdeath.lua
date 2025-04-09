@@ -8,6 +8,7 @@ function onDeath(creature, corpse, killer, mostDamageKiller, unjustified, mostDa
 		creature:unregisterEvent("MonsterDeath")
 		-- player:say("Thanks, " .. creature:getName() .. "!", TALKTYPE_MONSTER_SAY)
 		item:setSpecialAttribute("isBeingUsed", 0)
+		doSendPokeTeamByClient(player)
 	end
     end
     return true

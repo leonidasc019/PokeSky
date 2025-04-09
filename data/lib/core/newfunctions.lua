@@ -1564,6 +1564,7 @@ function doReleaseSummon(cid, pos, effect, message, missile)
         table.insert(movesTable, ",")
         player:sendExtendedOpcode(52, table.concat(movesTable))
 		doSendGobackInformations(player, monster, "release")
+		doSendPokeTeamByClient(player:getId())
 
         return monster:getId()
     end
@@ -1636,6 +1637,7 @@ function doRemoveSummon(cid, effect, uid, message, missile)
 	end
 	doSendGobackInformations(player, summon, "remove")
 	summon:remove()
+	doSendPokeTeamByClient(player:getId())
 	return true
 end
 
@@ -1738,6 +1740,7 @@ function doAddPokeball(cid, name, level, boost, ballKey, dp, msg, ivString, gend
                 addBall = depot:addItem(balls[ballKey].usedOn, 1, INDEX_WHEREEVER, FLAG_NOLIMIT)
                 addEvent(doPlayerSendTextMessage, msg, cid, MESSAGE_EVENT_ADVANCE, "Since you are at maximum capacity, your ball was sent to CP.")
                 dp = true
+				doSendPokeTeamByClient(self)
             else
                 addBall = player:addItem(balls[ballKey].usedOn, 1)
                 addEvent(doPlayerSendTextMessage, msg, cid, MESSAGE_STATUS_WARNING, "Pokemon lost. Your CP is full!")
@@ -1747,7 +1750,8 @@ function doAddPokeball(cid, name, level, boost, ballKey, dp, msg, ivString, gend
 
         if addBall then
             -- Base de atributos
-            local baseHealth = monsterType:getMaxHealth()
+            local baseHealth = monsterType:getHealth()
+            print(baseHealth)
             local maxHealth = math.floor(baseHealth * statusGainFormula(player:getLevel(), level, boost, 0))
             
             -- Salvar atributos básicos na Pokébola
@@ -1756,7 +1760,7 @@ function doAddPokeball(cid, name, level, boost, ballKey, dp, msg, ivString, gend
             addBall:setSpecialAttribute("pokeBoost", boost)
             addBall:setSpecialAttribute("pokeExperience", getNeededExp(level))
             addBall:setSpecialAttribute("pokeMaxHealth", maxHealth)
-            addBall:setSpecialAttribute("pokeHealth", maxHealth)
+            addBall:setSpecialAttribute("pokeHealth", baseHealth)
             addBall:setSpecialAttribute("pokeLove", 0)
             addBall:setSpecialAttribute("pokeEv", 0)
             addBall:setSpecialAttribute("pokeGender", gender)
@@ -1792,7 +1796,7 @@ function doAddPokeball(cid, name, level, boost, ballKey, dp, msg, ivString, gend
 
                     -- Salvando os novos atributos na Pokébola
                     addBall:setSpecialAttribute("pokeMaxHealth", maxHealth)
-                    addBall:setSpecialAttribute("pokeHealth", maxHealth)
+                    addBall:setSpecialAttribute("pokeHealth", baseHealth)
                     addBall:setSpecialAttribute("pokeAttack", attack)
                     addBall:setSpecialAttribute("pokeDefense", defense)
                     addBall:setSpecialAttribute("pokeSpecialAttack", spAttack)
@@ -1805,7 +1809,7 @@ function doAddPokeball(cid, name, level, boost, ballKey, dp, msg, ivString, gend
             end
 
             if dp == false then
-                player:refreshPokemonBar({}, {})
+                -- player:refreshPokemonBar({}, {})
             end
             return true
         else
@@ -2337,30 +2341,30 @@ function MonsterType:isLegendary()
 	return false
 end
 
-function Player:refreshPokemonBar(add, remove)
-	local pokeballs = self:getPokeballs()
-	local pokemonsTable = {}
-	for i = 1, #pokeballs do
-		local ball = pokeballs[i]
-		local pokeName = ball:getSpecialAttribute("pokeName")
-		if not pokeName then -- fix ball bug
-			ball:remove()
-			print("WARNING! Player " .. self:getName() .. " had one ball removed!")
-		else
-			if not isInArray(remove, pokeName) then
-				table.insert(pokemonsTable, "," .. pokeName)
-			end
-		end
+-- function Player:refreshPokemonBar(add, remove)
+-- 	local pokeballs = self:getPokeballs()
+-- 	local pokemonsTable = {}
+-- 	for i = 1, #pokeballs do
+-- 		local ball = pokeballs[i]
+-- 		local pokeName = ball:getSpecialAttribute("pokeName")
+-- 		if not pokeName then -- fix ball bug
+-- 			ball:remove()
+-- 			print("WARNING! Player " .. self:getName() .. " had one ball removed!")
+-- 		else
+-- 			if not isInArray(remove, pokeName) then
+-- 				table.insert(pokemonsTable, "," .. pokeName)
+-- 			end
+-- 		end
 		
-	end
-	for i = 1, #add do
-		table.insert(pokemonsTable, "," .. add[i])
-	end
-	table.insert(pokemonsTable, ",")
-	self:sendExtendedOpcode(53, table.concat(pokemonsTable))
---	self:setSpecialStorage("pokes", pokeballs)
-	return true
-end
+-- 	end
+-- 	for i = 1, #add do
+-- 		table.insert(pokemonsTable, "," .. add[i])
+-- 	end
+-- 	table.insert(pokemonsTable, ",")
+-- 	self:sendExtendedOpcode(53, table.concat(pokemonsTable))
+-- --	self:setSpecialStorage("pokes", pokeballs)
+-- 	return true
+-- end
 
 --Itigar
 function Player:isSummonBlocked()
@@ -2583,6 +2587,93 @@ NATURES = {
     ["Timid"]     = { speed = 1.1, atk = 0.9 }   -- +Speed, -Atk
 }
 
+function Player:getPokeballsCached()
+    local cache = {}
+    local backpack = self:getSlotItem(CONST_SLOT_BACKPACK)
+    if not backpack then return cache end
+
+    for i = 0, backpack:getSize() - 1 do
+        local item = backpack:getItem(i)
+        if item and item:getSpecialAttribute("pokeName") then
+            table.insert(cache, item)
+        end
+    end
+
+    return cache
+end
+
 function getNatureBonus(nature)
     return NATURES[nature] or { atk = 1.0, def = 1.0, spatk = 1.0, spdef = 1.0, speed = 1.0 }
+end
+	-- Funções para New Pokebar
+function getPokeballsCached(player)
+	local balls = {}
+	for slot = CONST_SLOT_FIRST, CONST_SLOT_LAST do
+		local item = player:getSlotItem(slot)
+		if item and item:isPokeball() then
+			table.insert(balls, item)
+		end
+	end
+	return balls
+end
+
+function doUpdatePokebarOnRevive(player, index)
+	local player = type(player) == "userdata" and player or type(player) == "number" and Player(player)
+	player:sendExtendedOpcode(53, json.encode({update = true, index = index}))
+end
+
+function doSendPokeTeamByClient(player)
+
+    player = Player(player)
+    if not player then
+        return
+    end
+
+    local pokeballs = player:getPokeballsCached()
+    if not pokeballs then
+        return
+    end
+    if #pokeballs == 0 then
+        return
+    end
+
+    local pokemons = {}
+
+    for i, ball in ipairs(pokeballs) do
+        local pokeName = ball:getSpecialAttribute("pokeName") or ""
+      
+        local monsterType = MonsterType(pokeName)
+        if not monsterType then
+            return
+        end
+		local health = ball:getSpecialAttribute("pokeHealth") or 0
+		local maxHealth = ball:getSpecialAttribute("pokeMaxHealth") or monster:getTotalHealth()
+		local looktype = monsterType:getOutfit().lookType
+        local nickname = pokeName
+        local used = ball:getSpecialAttribute("isBeingUsed") == 1
+        local boost = ball:getSpecialAttribute("pokeBoost") or 0
+        local ballKey = getBallKey(ball:getId())
+
+        local pokemon = {
+            type = "PokeBar",
+            pokeid = "!p " .. i,
+            name = pokeName,
+            nickname = nickname,
+            use = used,
+            ball = ballKey,
+            health = health,
+            maxHealth = maxHealth,
+            looktype = looktype,
+            boost = boost,
+        }
+
+        table.insert(pokemons, pokemon)
+    end
+
+    -- Enviar os dados pro OTC
+    local success, result = pcall(json.encode, pokemons)
+    if not success then
+        return
+    end
+    player:sendExtendedOpcode(53, result)
 end

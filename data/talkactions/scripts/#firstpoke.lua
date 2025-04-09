@@ -18,8 +18,8 @@ function onSay(player, words, param)
 
         player:addSlotItems()
         local monsterType = MonsterType(pokemonName)
-        local baseHealth = monsterType:getMaxHealth()
-        local maxHealth = math.floor(baseHealth * statusGainFormula(player:getLevel(), 5, 0, 0)) * 1000
+        local baseHealth = monsterType:getHealth()
+        local maxHealth = math.floor(baseHealth * statusGainFormula(player:getLevel(), 10, 0, 0))
         local backpack = player:getSlotItem(CONST_SLOT_BACKPACK)
         local addPokeball = backpack:addItem(26661, 1)
 
@@ -82,6 +82,7 @@ function onSay(player, words, param)
 		end
 
         player:setStorageValue(58000, 1)
+        doSendPokeTeamByClient(player:getId())
     else
         player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Você ja escolheu seu Pokemon inicial.")
     end
