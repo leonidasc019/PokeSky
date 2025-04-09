@@ -1562,7 +1562,7 @@ function doReleaseSummon(cid, pos, effect, message, missile)
             end
         end
         table.insert(movesTable, ",")
-        player:sendExtendedOpcode(52, table.concat(movesTable))
+		player:sendSummonMoves()
 		doSendGobackInformations(player, monster, "release")
 		doSendPokeTeamByClient(player:getId())
 
@@ -1570,6 +1570,47 @@ function doReleaseSummon(cid, pos, effect, message, missile)
     end
     return true
 end
+
+-- New Poke Moves 
+function Player:sendSummonMoves()
+	local summon = self:getSummon()
+	if not summon then
+		return false
+	end
+
+	local monsterType = MonsterType(summon:getName())
+	if not monsterType then
+		return false
+	end
+
+	local ball = self:getUsingBall()
+	if not ball then
+		return false
+	end
+
+	local cleanedMoves = {}
+	local moves = monsterType:getMoveList()
+
+	for moveId, moveInfo in ipairs(moves) do
+		local moveCooldownKey = string.format("cd%d", moveId)
+		local moveCooldown = ball:getSpecialAttribute(moveCooldownKey) or 0
+
+		-- Cria uma versão limpa do moveInfo
+		local cleanedMove = {
+			name = moveInfo.name,
+			level = moveInfo.level,
+			bar = moveInfo.bar,
+			cooldown = moveInfo.cooldown,
+			cooldownReal = os.time() > moveCooldown and 0 or 1000 * math.floor(moveCooldown - os.time())
+		}
+
+		table.insert(cleanedMoves, cleanedMove)
+	end
+
+	self:sendExtendedOpcode(52, json.encode(cleanedMoves))
+	return true
+end
+
 
 function doRemoveSummon(cid, effect, uid, message, missile)
 	local player = Player(cid)
@@ -2677,3 +2718,5 @@ function doSendPokeTeamByClient(player)
     end
     player:sendExtendedOpcode(53, result)
 end
+
+
