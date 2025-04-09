@@ -1,122 +1,133 @@
-Lista do que foi corrigido da base Pota
+![POTA LOGO](https://github.com/user-attachments/assets/02b756bd-1697-4f70-a6d2-4561b785572b)
 
-  Melhorada a IA dos monstros e o tempo de resposta dos Pokémon selvagens e capturados para uma melhor experiência.
-  Agora, os Pokémon têm níveis para serem usados. Por exemplo, um Charizard capturado no nível 46 só poderá ser usado por jogadores de nível 46.
-  Adicionado um novo sistema de pesca com iscas.
-  Adicionado um novo NPC, Guru, que vende iscas.
-  Adicionado Blink para Pokémon do tipo Ghost/Psychic.
-  Adicionados Shining Stone e Metal Stone.
-  Sistema de Boost refeito. Agora é possível usar mais de um slot na máquina. É possível colocar mais de 100 stones, podendo chegar a até 1000 stones nos slots. Nova tabela de quantidade feita.
-  Nova outfit para a bike no estilo Poke X Games.
-  O Revive pode ser usado apenas com o Pokémon dentro da Pokébola.
-  Melhorados os textos de comando, agora estão amarelos (ex: monster say).
-  Fly agora possui as setas Up e Down.
-  Novos efeitos de drops de stones no estilo Poke X Games.
-  Feito do zero um novo sistema de efetividade, estilo Poke X Games.
-  Agora, Pokémon do tipo Elétrico não causam mais dano em Pokémon do tipo Ground, entre outros com essa vantagem.
-  Novo TC feito do zero, encontrado em todos os Centros Pokémon.
-  Adicionados treinos para testar o dano dentro do TC.
-  Melhorias no NPC Mark, Pokémon Collector. Todos os NPCs com novos visuais.
-  Adicionada uma comida nova, chamada Hambúrguer, que recupera a vida do jogador. Não pode ser usada em Pokémon.
-  Agora, Pokémon capturados podem andar dentro do PZ. Antes, ficavam parados.
-  Adicionado o NOVO CLIENT MASTER V8, melhorando o lag e a jogabilidade de forma geral.
-  Adicionada a área Outlands e um NPC no TC chamado Rivers, que cobrará 200k para levar o jogador a qualquer Outland (Sul, Norte, Leste).
-  Adicionados novos títulos para jogadores, como Líderes de Ginásios e NPCs.
-  Título "Shiny" agora aparece na cabeça do Pokémon Shiny.
-  Adicionado o nível na frente do nome do Pokémon, exemplo: "Charizard LV 56".
-  Adicionados 15 poderes novos de quase todos os elementos, como Elétrico, Ground, entre outros.
-  Refatorados quase todos os poderes para evitar sobrecargas.
-  Tela estendida para um maior campo de visão.
-  A EXP dos Pokémon agora é menor do que a EXP que o jogador ganha, tornando o jogo mais "pé no chão".
-  Melhorado o respawn de Shinys. Agora, a cada 100 Pokémon que você matar, tem a chance de aparecer 4 Shinys nesse tempo.
-  Sistema de boss agora pode nascer de qualquer Pokémon. Revisão e remake de todos os bosses serão feitos futuramente.
-  Adicionado o sistema de Clean Map e Global Save Clean, para limpar e salvar. Evita sobrecarregar o servidor com itens no chão e garante o save em caso de rollback.
-  Rework feito em Cerulean.
-  Adicionado novo NPC que vende comida no Trade Center.
-  Adicionados NPCs de tasks simples, como pegar itens.
-  Rework do Trade Center.
-  Adicionados 500 novos itens no jogo.
-  Adicionado sistema de comida para o player, com Mewburger, Snoburger, entre outros.
-  Adicionada a Food Machine, uma máquina de lanches. Pagando 3 notas azuis, você pega um lanche que cura o jogador por 10 minutos.
-  Adicionada a Toy Machine no Trade Center para os amantes de coleção, com toys Legendary, Raros, Épicos e Normais. Boa sorte!
-  Adicionados 20 novos NPCs de tasks, sendo 10 homens e 10 mulheres.
-  Adicionados 5 novos NPCs de desafio de duelo, sendo 3 homens e 2 mulheres.
-  Adicionado o NPC de tasks "Kill Pokémon", chamado Gary, no Trade Center.
-  Tirado o efeito puff Peito.
-  Tirado o texto verde de loot of Pokémon de cima do player e colocado no server log (motivo: menos poluição).
-  
-Outras melhorias e ajustes:
+# :sparkles: Atualizações e Melhorias da Base POTA
 
-  Ajustado o posicionamento dos Pokémon para ficarem junto ou atrás do treinador (anteriormente ficavam 1 sqm de distância).
-  Correções de vários erros.
-  Adicionado tempo de recarga (cooldown) para a invocação de poderes.
-  Adicionados Egg Boxes.
-  Remake completo da 1ª e 2ª gerações:
-  Reformulados todos os Pokémon.
-  Adicionados e removidos alguns Pokémon que tinham as habilidades Fly, Ride e Surf.
-  Movimentação e Imersão:
-  
-  Removido o delay nas movimentações diagonais, garantindo uma jogabilidade mais fluida.
-  Adicionado o Professor Oak, tornando o início do jogo mais coerente e imersivo.
-  Substituído o mapa pelo do Poké X Games, trazendo novos desafios e um visual renovado.
-  Novos Itens e Roupas:
-  
-  Roupa Esqui: Requer Ski Blades, Ski Boards e Ski Goggles.
-  Roupa Mergulho: Requer Air Cylinder, Air Duck Paw e Air Diving Goggles.
-  Roupa Hoverboard: Entregue 20 Notas Azuis para obtê-la.
-  
-NPCs e Outfits:
+Bem-vindo ao changelog completo com todas as implementações, melhorias e novidades adicionadas à base **POTA**!
 
-  Adicionada a NPC Cilian no shopping de Celadon. Ela vende diversos outfits exclusivos!
-  Removidos elementos desnecessários ao trocar de outfit, simplificando o sistema.
-  Balanceamento e Experiência:
-  
-  Removido o ganho de vida por nível para Pokémon selvagens.
-  (Motivo: Foco no balanceamento para que os Pokémon dos jogadores sejam mais fortes.)
-  Balanceamento completo dos Pokémon selvagens, tornando as batalhas mais desafiadoras e equilibradas.
-  Alterada a forma de ganho de experiência dos Pokémon:
-  Pokémon não ganham mais experiência junto com o jogador.
-  Agora, o up dos Pokémon será feito através de um item especial.
-  Efeitos em Condições de Status:
-  
-  Fogo: Agora, Pokémon afetados pela condição de fogo ficam com queimaduras visíveis, trazendo mais realismo.
-  Veneno: Pokémon atingidos pela condição de veneno agora ficam envenenados, com efeitos apropriados.
-Melhorias Visuais:
+---
 
-  Nascimento de Pokémon Selvagens: O surgimento de Pokémon selvagens agora conta com efeitos visuais, eliminando a aparência repentina e sem sentido de antes.
-  Shinys Selvagens: Pokémon shinys selvagens ganharam uma aura de estrelas ao aparecer, destacando sua raridade.
-  Shinys dos Jogadores: Os Pokémon shinys dos jogadores também receberam a aura de estrelas para maior destaque.
-  Ajustes no Sistema de Exibição:
-  
-  Nível dos Pokémon no Nome do Jogador: O nível do Pokémon não é mais exibido diretamente no nome. Para visualizá-lo, utilize o comando look enquanto ele estiver na Pokébola.
-Game Shop:
+## :robot: Inteligência Artificial e Mecânicas
+- IA dos monstros aprimorada com resposta mais rápida.
+- Pokémon agora têm níveis mínimos para uso conforme o nível do jogador.
+- Novo sistema de pesca com iscas.
+- NPC "Guru" adicionado para venda de iscas.
+- Blink adicionado para Pokémon dos tipos Ghost e Psychic.
+- Shining Stone e Metal Stone adicionados.
+- Boost System totalmente refeito com suporte até 1000 stones por slot.
 
-  Novidades na Loja: Agora é possível adquirir itens VIP, pacotes, mudanças de sexo e até um Shiny Ditto exclusivo!
-  Outfits Disponíveis: Diversos novos outfits foram adicionados, permitindo uma personalização ainda maior dos personagens.
+---
 
-Melhorias no Sistema de Pesca:
+## :bike: Visual e Experiência do Jogador
+- Nova outfit para bike no estilo PokeXGames.
+- Efeitos de drops no estilo PokeXGames.
+- Novo sistema de efetividade com interações tipo Pokémon (Ex: elétrico não afeta Ground).
+- Tela estendida para maior campo de visão.
+- Revive agora só pode ser usado com Pokémon dentro da Pokébola.
+- Comandos visuais em texto amarelo.
+- Fly agora usa setas para cima/baixo.
+- Pokémon capturados podem andar no PZ.
 
-  O sistema de pesca foi ajustado, agora funcionando de forma mais eficiente e com correção de bugs lógicos.
-  Sistema de Potions Reformulado:
-  
-  O sistema de potions foi completamente refeito, funcionando com base nos níveis e duração.
-  Caso o Pokémon sofra dano enquanto a potion estiver ativa, a cura será interrompida.
-  Novos Efeitos Visuais:
-  
-  Adicionados efeitos de maior qualidade, como a bola roxa do Gengar, elevando a experiência visual do jogo.
-  Remake de Shinys Até Sinnoh:
-  
-  Todos os Pokémon shinys até a geração Sinnoh receberam um remake.
-  Inclui novos visuais e animações para mounts, rides e surfs, proporcionando um design mais moderno e atraente.
-Ajuste na Distância de Summons:
+---
 
-  A distância dos summons foi ajustada para melhorar a jogabilidade e tornar o uso do lure mais eficiente.
-  Novos NPCs e Melhorias Gerais:
-  
-  Novos NPCs foram adicionados ao jogo, trazendo mais interatividade.
-  Balanceamento de Velocidade dos Pokémon Selvagens:
-  
-  A velocidade dos Pokémon selvagens foi balanceada, otimizando o uso de lures e tornando a jogabilidade mais dinâmica e equilibrada.
-  ![image](https://github.com/user-attachments/assets/02b756bd-1697-4f70-a6d2-4561b785572b)
-  ![image](https://github.com/user-attachments/assets/1992f3d2-ddab-4406-9ed3-d116bc555c97)
+## :sparkler: Melhorias Visuais
+- Efeitos no nascimento de Pokémon selvagens.
+- Shinys agora têm aura de estrelas (selvagens e jogadores).
+- Efeito de fogo (burn) e veneno (poison) visíveis nos Pokémon.
 
+---
+
+## :hammer_and_wrench: Sistemas Refeitos
+- **Sistema de Boost**: slots múltiplos com nova tabela de quantidade.
+- **Sistema de Potions**: com base em nível e duração; cura é interrompida ao sofrer dano.
+- **Sistema de Efetividade**: baseado em tipos como na franquia original.
+- **Sistema de Pesca** otimizado.
+- **Sistema de Summon** ajustado para melhor uso do lure.
+- **Sistema de EXP** balanceado (Pokémon ganham EXP via item especial).
+
+---
+
+## :video_game: Novos Sistemas
+- **Client Master V8**: melhor desempenho e jogabilidade.
+- **Clean Map & Global Save Clean**: limpa itens do chão e evita rollback.
+- **TC System** novo com NPC Gary (task de Kill Pokémon).
+- **Food Machine**: lanches que curam o jogador por 10 minutos.
+- **Toy Machine** com raridades (Legendary, Épico, etc.).
+- **Egg Boxes** adicionadas.
+- **Nova Barra de Habilidades com botão ORDER**:
+  ![Skill Bar](https://github.com/user-attachments/assets/6f9a0ffa-2ae4-4148-a470-2af8f11fe424)
+- **Novo Inventário leve e atualizado**:
+  ![Inventory](https://github.com/user-attachments/assets/31d4d71b-ce73-49c2-b277-da92560276d9)
+- **Nova Pokémon Bar**:
+  ![Pokemon Bar](https://github.com/user-attachments/assets/0e9ae22e-57ca-47be-8875-aa6089a763fa)
+
+---
+
+## :school_satchel: Início de Jogo Renovado
+- Novo Start Game com introdução ao Professor Carvalho:
+  ![Start Game](https://github.com/user-attachments/assets/18105df4-9ae1-4533-86c0-34aec95652b2)
+  ![Start Game 2](https://github.com/user-attachments/assets/42d24861-bf0f-42e9-827e-0a42971e0bb1)
+
+---
+
+## :round_pushpin: Mapa e Locais
+- **Rework completo de Cerulean**.
+- Novo mapa baseado no PokeXGames.
+- Nova área Outlands com NPC "Rivers" no TC (teleporte por 200k).
+- Rework do Trade Center.
+
+---
+
+## :busts_in_silhouette: NPCs e Tasks
+- +20 NPCs de tasks (10 homens / 10 mulheres).
+- +5 NPCs de duelos (3 homens / 2 mulheres).
+- NPC "Cilian" em Celadon com outfits exclusivos.
+- NPC de comida adicionado no TC.
+- NPC Mark (Pokémon Collector) melhorado.
+- Novos visuais para todos os NPCs.
+
+---
+
+## :tshirt: Novas Roupas
+- Roupa Esqui: Ski Blades + Ski Boards + Ski Goggles.
+- Roupa Mergulho: Air Cylinder + Air Duck Paw + Diving Goggles.
+- Roupa Hoverboard: entregue 20 Notas Azuis para obtê-la.
+
+---
+
+## :money_with_wings: Loja / Game Shop
+- Adição de itens VIP, pacotes, mudança de sexo e Shiny Ditto.
+- Vários novos outfits disponíveis para compra.
+
+---
+
+## :crossed_swords: Combate, Balanceamento e Poderes
+- Refatoração de quase todos os poderes para evitar sobrecargas.
+- +15 novos poderes de todos os elementos.
+- Balanceamento completo dos Pokémon selvagens.
+- Selvagens não ganham mais HP por nível (foco nos Pokémon dos players).
+- Pokémon não ganham mais EXP com o jogador (apenas via item).
+- Cooldown adicionado para invocação de poderes.
+- Velocidade dos selvagens balanceada.
+- Remake de todos os Shinys até a geração Sinnoh (com novas animações).
+- Feito Sistema para Facilitar e agilizar balancemaento de Pokemons Selvagens e de Players
+- Sistema de Evs Desenvolvido, abrindo mais o leque de possibilidades de build pokemon
+- Sistema de Ivs Desenvolvido para ajudar também e tornar o jogo mais versatil.
+- Sistema de Nature
+- Sistema de Sexo ( "Macho" / "Femêa")
+
+---
+
+## :recycle: Ajustes Gerais
+- Posicionamento de Pokémon agora fica junto ou atrás do treinador.
+- Removido texto verde de loot (agora vai para o server log).
+- Removido efeito puff Peito.
+- Delay nas movimentações diagonais eliminado.
+- Corrigidos vários bugs.
+
+---
+
+Feito com :heart: por Leônidas.
+
+---
+
+> Este README é atualizado constantemente com base nas melhorias aplicadas. Sinta-se à vontade para contribuir!
