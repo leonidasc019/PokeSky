@@ -1595,13 +1595,16 @@ function Player:sendSummonMoves()
 		local moveCooldownKey = string.format("cd%d", moveId)
 		local moveCooldown = ball:getSpecialAttribute(moveCooldownKey) or 0
 
-		-- Cria uma versão limpa do moveInfo
+		-- Se moveInfo.speed for nil, usa um fallback (como interval, 10000 etc.)
+		local cooldown = moveInfo.speed or moveInfo.cooldown or moveInfo.interval or 10000
+
 		local cleanedMove = {
 			name = moveInfo.name,
-			level = moveInfo.level,
-			bar = moveInfo.bar,
-			cooldown = moveInfo.cooldown,
-			cooldownReal = os.time() > moveCooldown and 0 or 1000 * math.floor(moveCooldown - os.time())
+			level = moveInfo.level or 0,
+			bar = moveInfo.bar or 0,
+			speed = cooldown,
+			passive = moveInfo.passive or 0,
+			cooldownReal = math.max(0, (moveCooldown - os.time()) * 1000)
 		}
 
 		table.insert(cleanedMoves, cleanedMove)
@@ -1610,6 +1613,7 @@ function Player:sendSummonMoves()
 	self:sendExtendedOpcode(52, json.encode(cleanedMoves))
 	return true
 end
+
 
 
 function doRemoveSummon(cid, effect, uid, message, missile)
@@ -1710,7 +1714,6 @@ function doEvolveSummon(cid, evolutionName)
 
 		addEvent(doRemoveSummon, 4000, master:getId(), false, nil, false)
 		addEvent(doReleaseSummon, 4001, master:getId(), summonPos, false, false)
-		master:refreshPokemonBar({}, {})
 		return true
 	else
 		print("WARNING! Problem on evolution to " .. evolutionName .. " player " .. master:getName())
