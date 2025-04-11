@@ -19,6 +19,7 @@
 	<event type="move" name="RemoveSummon" script="removesummon.lua" />
 	<event type="modalwindow" name="ModalWindowHelper" script="modalwindowhelper.lua" />
 	<event type="extendedopcode" name="GameStore" script="game_store.lua" />
-	<event type="kill" name="Task" script="task.lua" />
+	<event type="kill" name="onKillPokemon" script="task_kill.lua"/>
+	<event type="login" name="onLoginKillPokemon" script="task_kill.lua"/>
 	
 </creaturescripts>

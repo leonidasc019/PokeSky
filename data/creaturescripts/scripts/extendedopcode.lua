@@ -11,6 +11,11 @@ function onExtendedOpcode(player, opcode, buffer)
       end
    end
 
+	if opcode == OPCODE_TASKS_KILL then
+		player:handleTasksKill(buffer)
+		return
+	end
+
    	if opcode == OPCODE_LANGUAGE then
 		-- otclient language
 		if buffer == 'en' or buffer == 'pt' then
