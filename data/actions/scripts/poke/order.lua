@@ -115,7 +115,7 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 	if target:isCreature() then
 		if target ~= player and target:isMonster() then
 			local name = player:getSummonNameFromBall()
-			if name == "Ditto" or name == "Shiny ditto" or name == "Xmas ditto" then
+			if name == "Ditto" or name == "Shiny Ditto" or name == "Xmas ditto" then
 				local ball = player:getUsingBall()
 				local dittoTime = ball:getSpecialAttribute("dittoTime")
 				if dittoTime and os.time() < dittoTime then
@@ -133,12 +133,12 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 				end
 
 				local ballKey = getBallKey(ball:getId())
-				ball:setSpecialAttribute("dittoTime", os.time() + 2 * 60 * 60)
+				ball:setSpecialAttribute("dittoTime", os.time() + 2 * 30)
 				ball:setSpecialAttribute("dittoTransform", targetName)
 				doRemoveSummon(player:getId(), false, false, false)
 				ball:setBeingUsed()
 				doReleaseSummon(player:getId(), summonPos, false, false)
-				player:say(name .. ", transform into a " .. targetName .. "!", TALKTYPE_MONSTER_SAY)
+				player:say(name .. ", transforme-se em " .. targetName .. "!", TALKTYPE_MONSTER_SAY)
 				summonPos:sendMagicEffect(80)
 				return true
 			else

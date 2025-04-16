@@ -1447,6 +1447,12 @@ function doTransformPokeball(item)
 	return false
 end
 
+local function getLookTypeByName(monsterName)
+    if not monsterName or monsterName == "" then return 0 end
+    local mType = MonsterType(monsterName)
+    return mType and mType:getOutfit().lookType or 0
+end
+
 function doReleaseSummon(cid, pos, effect, message, missile)
     local player = Player(cid)
     if not player then return false end
@@ -1463,12 +1469,41 @@ function doReleaseSummon(cid, pos, effect, message, missile)
         return false
     end
 
-    if name == "Ditto" or name == "Shiny ditto" or name == "Xmas ditto" then
-        local dittoTime = ball:getSpecialAttribute("dittoTime")
-        if dittoTime and os.time() < dittoTime then
-            name = ball:getSpecialAttribute("dittoTransform")
-        end
-    end
+	if name == "Ditto" or name == "Shiny Ditto" then
+	    local originalName = name
+	    local placeDitto = originalName
+	    local transform = ball:getSpecialAttribute("dittoTransform")
+	    local ditto1 = ball:getSpecialAttribute("dittoTransform1")
+	    local ditto2 = ball:getSpecialAttribute("dittoTransform2")
+
+	    -- Se existir uma transformação, altera o nome mas usa o nome original para placeDitto
+	    if transform then
+	        name = transform
+	    end
+
+	    -- Se o Pokémon for Shiny Ditto, garante que placeDitto seja "Shiny Ditto"
+	    if originalName == "Shiny Ditto" then 
+	        placeDitto = "Shiny Ditto"
+	    end
+
+	    local imagePath = "ballmemory.png"
+	    -- Usa um storage separado (por exemplo 70000001) pra não conflitar com eventos
+	    if player:getStorageValue(70000001) ~= 1 then
+	        imagePath = "shop.png"
+	    end
+
+	    local data = {
+	        a     = placeDitto,
+	        looka = (placeDitto and getLookTypeByName(placeDitto)) or 0,
+	        b     = ditto1 or "",
+	        lookb = (ditto1 and getLookTypeByName(ditto1)) or 0,
+	        c     = ditto2 or "",
+	        lookc = (ditto2 and getLookTypeByName(ditto2)) or 0,
+	        img   = imagePath
+	    }
+
+	    player:sendExtendedOpcode(144, json.encode(data))
+	end
 
     local monsterType = MonsterType(name)
     if not monsterType:isConvinceable() or not monsterType:isIllusionable() or not monsterType:isSummonable() then
@@ -1503,7 +1538,16 @@ function doReleaseSummon(cid, pos, effect, message, missile)
             end
         end
 
+        -- Se o dittoTransform for igual ao próprio nome da ball, limpa
+		if ball:getSpecialAttribute("pokeName") == ball:getSpecialAttribute("dittoTransform") then
+		    ball:setSpecialAttribute("dittoTransform", nil)
+		end
+
         player:addSummon(monster)
+        -- Protege o pokeName original se for Ditto
+		if originalName == "Ditto" or originalName == "Shiny Ditto" then
+		    ball:setSpecialAttribute("pokeName", originalName)
+		end
         monster:setDirection(ball:getSpecialAttribute("pokeLookDir") or DIRECTION_SOUTH)
         if summonBoost >= maxBoost then
             doStartAurea(monster)
@@ -1666,6 +1710,7 @@ function doRemoveSummon(cid, effect, uid, message, missile)
 		else
 			print("WARNING! Player " .. player:getName() .. " had problems on remove summon: ball does not exist.")
 		end
+	else
 	end
 	if summon:isEvolving() then 
 		player:setStorageValue(storageEvolving, -1)
@@ -1680,6 +1725,12 @@ function doRemoveSummon(cid, effect, uid, message, missile)
 			-- player:say("Thanks, " .. summonName .. "!", TALKTYPE_MONSTER_SAY)
 		end
 	end
+ 	-- DITTO MEMORY FECHAR
+    if ball and (ball:getSpecialAttribute("pokeName") == "Ditto" or 
+                 ball:getSpecialAttribute("pokeName") == "Shiny ditto" or 
+                 ball:getSpecialAttribute("dittoTransform")) then
+        player:sendExtendedOpcode(144, "close")
+    end
 	doSendGobackInformations(player, summon, "remove")
 	summon:remove()
 	doSendPokeTeamByClient(player:getId())
@@ -1795,7 +1846,6 @@ function doAddPokeball(cid, name, level, boost, ballKey, dp, msg, ivString, gend
         if addBall then
             -- Base de atributos
             local baseHealth = monsterType:getHealth()
-            print(baseHealth)
             local maxHealth = math.floor(baseHealth * statusGainFormula(player:getLevel(), level, boost, 0))
             
             -- Salvar atributos básicos na Pokébola
@@ -2412,8 +2462,7 @@ end
 
 --Itigar
 function Player:isSummonBlocked()
-
-	--volte se quiser delay na hora de soltar pokemon
+	-- Pode ativar delay aqui se quiser
     -- if os.time() > self:getStorageValue(storageDelay) then
     --     self:setStorageValue(storageDelay, os.time() + 1)
     -- else
@@ -2423,7 +2472,7 @@ function Player:isSummonBlocked()
 
 	if self:getSlotItem(CONST_SLOT_LEFT) == nil then
 		self:sendCancelMessage("Sorry, not possible. You need a wand to control your summon.")
-                return true
+        return true
 	end
 
 	if self:getStorageValue(storageRide) == 1 then
@@ -2441,10 +2490,34 @@ function Player:isSummonBlocked()
 		return true
 	end
 
-	if self:getStorageValue(storageEvent) > 0 then
-		self:sendCancelMessage("Sorry, not possible while on event.")
-		return true
-	end
+	-- -- Liberar Ditto em evento apenas se for reinvocação da mesma forma
+	-- if self:getStorageValue(storageEvent) > 0 then
+	-- 	local ball = self:getUsingBall()
+	-- 	if ball then
+	-- 		local pokeName = ball:getSpecialAttribute("pokeName")
+	-- 		local dittoTransform = ball:getSpecialAttribute("dittoTransform")
+	-- 		local summon = self:getSummon()
+	-- 		if summon then
+	-- 		end
+	-- 		-- Se for Ditto, e ele NÃO estiver transformado (ou transformado nele mesmo), libera
+	-- 		if (pokeName == "Ditto" or pokeName == "Shiny Ditto" or pokeName == "Mega Ditto") then
+	-- 			if not dittoTransform or dittoTransform == pokeName then
+	-- 				return false
+	-- 			else
+	-- 				return false
+	-- 			end
+	-- 		end
+	-- 	end
+
+	-- 	self:sendCancelMessage("Sorry, not possible while on event.")
+	-- 	return true
+	-- end
+
+	-- Verificação de Storage original.
+	-- if self:getStorageValue(storageEvent) > 0 then
+	-- 	self:sendCancelMessage("Sorry, not possible while on event.")
+	-- 	return true
+	-- end
 
 	if self:getStorageValue(storageEvolving) == 1 then
 		self:sendCancelMessage("Sorry, not possible while evolving.")
@@ -2453,6 +2526,7 @@ function Player:isSummonBlocked()
 
 	return false
 end
+
 
 function doSendGobackInformations(player, summon, actionId)
 	if not summon then return end

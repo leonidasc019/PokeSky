@@ -21,5 +21,6 @@
 	<event type="extendedopcode" name="GameStore" script="game_store.lua" />
 	<event type="kill" name="onKillPokemon" script="task_kill.lua"/>
 	<event type="login" name="onLoginKillPokemon" script="task_kill.lua"/>
-	
+	<event type="login" name="PokeBarLogin" script="pokebar_login.lua"/>
+
 </creaturescripts>

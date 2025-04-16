@@ -22,10 +22,7 @@ function onSay(player, words, param)
         print("[Pokebar DEBUG] Nenhum Pokémon encontrado na posição " .. index)
         return false
     end
-
-    -- Debug: Mostrar qual Pokémon está sendo chamado
-    print(string.format("[Pokebar DEBUG] Chamando Pokémon: %s (pokeid: %s, looktype: %d)", data.name, data.pokeid or "?", data.looktype or -1))
-
+    
     -- Se já tiver um summon, remove primeiro
     if hasSummons(player) then
         local usingBall = player:getUsingBall()
