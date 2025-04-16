@@ -47,7 +47,7 @@ Bem-vindo ao changelog completo com todas as implementações, melhorias e novid
 - **Sistema de Summon** ajustado para melhor uso do lure.
 - **Sistema de EXP** balanceado (Pokémon ganham EXP via item especial).
 - **Sistema Ditto Refeito e adicionado Ditto Memory
-  ![image](https://github.com/user-attachments/assets/c178d9ab-0981-4393-97ef-e2846eaccd49)
+- **![image](https://github.com/user-attachments/assets/c178d9ab-0981-4393-97ef-e2846eaccd49)
 
 ---
 
@@ -65,7 +65,7 @@ Bem-vindo ao changelog completo com todas as implementações, melhorias e novid
 - **Nova Pokémon Bar**:
   ![Pokemon Bar](https://github.com/user-attachments/assets/0e9ae22e-57ca-47be-8875-aa6089a763fa)
 - **Novo Módulo de Teleporte
-  ![image](https://github.com/user-attachments/assets/aa49b6be-10d3-4581-b906-809cf5bf97a4)
+- **![image](https://github.com/user-attachments/assets/aa49b6be-10d3-4581-b906-809cf5bf97a4)
 
 
 ---
