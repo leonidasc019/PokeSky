@@ -76,5 +76,9 @@
 	<talkaction words="!evspecialdefense" script="!ev.lua"/>
 	<talkaction words="!evhp" script="!ev.lua"/>
 	<talkaction words="#firstpoke" separator=" " script="#firstpoke.lua" />
-
+	<talkaction words="/ditto" separator=" " script="dittosys.lua" />
+		 <talkaction words="/ditto save1" separator=" " script="dittosys.lua" />
+		 <talkaction words="/ditto save2" separator=" " script="dittosys.lua" />
+		 <talkaction words="/ditto use1" separator=" " script="dittosys.lua" />
+		 <talkaction words="/ditto use2" separator=" " script="dittosys.lua" />
 </talkactions>
