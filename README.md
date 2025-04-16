@@ -47,7 +47,7 @@ Bem-vindo ao changelog completo com todas as implementações, melhorias e novid
 - **Sistema de Summon** ajustado para melhor uso do lure.
 - **Sistema de EXP** balanceado (Pokémon ganham EXP via item especial).
 - **Sistema Ditto Refeito e adicionado Ditto Memory
-- **![image](https://github.com/user-attachments/assets/c178d9ab-0981-4393-97ef-e2846eaccd49)
+- ![image](https://github.com/user-attachments/assets/c178d9ab-0981-4393-97ef-e2846eaccd49)
 
 ---
 
@@ -59,21 +59,21 @@ Bem-vindo ao changelog completo com todas as implementações, melhorias e novid
 - **Toy Machine** com raridades (Legendary, Épico, etc.).
 - **Egg Boxes** adicionadas.
 - **Nova Barra de Habilidades com botão ORDER**:
-  ![Skill Bar](https://github.com/user-attachments/assets/6f9a0ffa-2ae4-4148-a470-2af8f11fe424)
+- ![Skill Bar](https://github.com/user-attachments/assets/6f9a0ffa-2ae4-4148-a470-2af8f11fe424)
 - **Novo Inventário leve e atualizado**:
-  ![Inventory](https://github.com/user-attachments/assets/31d4d71b-ce73-49c2-b277-da92560276d9)
+- ![Inventory](https://github.com/user-attachments/assets/31d4d71b-ce73-49c2-b277-da92560276d9)
 - **Nova Pokémon Bar**:
-  ![Pokemon Bar](https://github.com/user-attachments/assets/0e9ae22e-57ca-47be-8875-aa6089a763fa)
+- ![Pokemon Bar](https://github.com/user-attachments/assets/0e9ae22e-57ca-47be-8875-aa6089a763fa)
 - **Novo Módulo de Teleporte
-- **![image](https://github.com/user-attachments/assets/aa49b6be-10d3-4581-b906-809cf5bf97a4)
+- ![image](https://github.com/user-attachments/assets/aa49b6be-10d3-4581-b906-809cf5bf97a4)
 
 
 ---
 
 ## :school_satchel: Início de Jogo Renovado
 - Novo Start Game com introdução ao Professor Carvalho:
-  ![Start Game](https://github.com/user-attachments/assets/18105df4-9ae1-4533-86c0-34aec95652b2)
-  ![Start Game 2](https://github.com/user-attachments/assets/42d24861-bf0f-42e9-827e-0a42971e0bb1)
+- ![Start Game](https://github.com/user-attachments/assets/18105df4-9ae1-4533-86c0-34aec95652b2)
+- ![Start Game 2](https://github.com/user-attachments/assets/42d24861-bf0f-42e9-827e-0a42971e0bb1)
 
 ---
 
@@ -134,7 +134,7 @@ Bem-vindo ao changelog completo com todas as implementações, melhorias e novid
 
 ---
 
-Feito com :heart: por Leônidas.
+Modificado por Leônidas Dos Santos Chersoni.
 
 ---
 
