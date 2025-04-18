@@ -246,8 +246,6 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 			local flyOutfit = monsterType:isFlyable()
 			local rideOutfit = monsterType:isRideable()    
 			local summonSpeed = summon:getTotalSpeed() + player:getSpeed()
-			print(summonSpeed)
-			print(ball:getSpecialAttribute("pokeSpeed"))
 			local storage = 0
 			-- Colocando pra utilizar os atributos obtidos pelo Iv e Ev
 			local ball = player:getUsingBall()
