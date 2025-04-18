@@ -1,0 +1,4 @@
+-- Storages usados Ditto memory
+70000001
+70000002
+-- Fim

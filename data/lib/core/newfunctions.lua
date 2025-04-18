@@ -1475,6 +1475,7 @@ function doReleaseSummon(cid, pos, effect, message, missile)
 	    local transform = ball:getSpecialAttribute("dittoTransform")
 	    local ditto1 = ball:getSpecialAttribute("dittoTransform1")
 	    local ditto2 = ball:getSpecialAttribute("dittoTransform2")
+	    local ditto3 = ball:getSpecialAttribute("dittoTransform3")
 
 	    -- Se existir uma transformação, altera o nome mas usa o nome original para placeDitto
 	    if transform then
@@ -1487,9 +1488,14 @@ function doReleaseSummon(cid, pos, effect, message, missile)
 	    end
 
 	    local imagePath = "ballmemory.png"
+	    local imagePath2 = "ballmemory.png"
 	    -- Usa um storage separado (por exemplo 70000001) pra não conflitar com eventos
 	    if player:getStorageValue(70000001) ~= 1 then
 	        imagePath = "shop.png"
+	    end
+	    -- Usa um storage separado (por exemplo 70000001) pra não conflitar com eventos
+	    if player:getStorageValue(70000002) ~= 1 then
+	        imagePath2 = "shop.png"
 	    end
 
 	    local data = {
@@ -1499,7 +1505,10 @@ function doReleaseSummon(cid, pos, effect, message, missile)
 	        lookb = (ditto1 and getLookTypeByName(ditto1)) or 0,
 	        c     = ditto2 or "",
 	        lookc = (ditto2 and getLookTypeByName(ditto2)) or 0,
-	        img   = imagePath
+	        d     = ditto3 or "",
+	        lookd = (ditto3 and getLookTypeByName(ditto3)) or 0,
+	        img   = imagePath,
+	        img2  = imagePath2
 	    }
 
 	    player:sendExtendedOpcode(144, json.encode(data))

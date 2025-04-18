@@ -26,6 +26,18 @@
 		<attribute key="description" value="Vitamina de cálcio aumenta o ataque especial (Sp. Attack) do Pokémon." />
 	</item>
 
+	<item id="41684" article="a" name="ditto memory" plural="Ditto Memory">
+		<attribute key="description" value="Pergaminho que ajuda seu Ditto a Memorizar mais um Pokemon" />
+	</item>
+
+	<item id="41685" article="a" name="super ditto memory" plural="Super Ditto Memory">
+		<attribute key="description" value="Pergaminho capaz de  liberar o ultimo espaco de Memoria" />
+	</item>
+
+	<item id="38779" article="a" name="calcium vitamin" plural="Vitamina de calcio">
+		<attribute key="description" value="Vitamina de cálcio aumenta o ataque especial (Sp. Attack) do Pokémon." />
+	</item>
+
 	<item id="38780" article="a" name="carbos vitamin" plural="Vitamina de carbos">
 		<attribute key="description" value="Vitamina de carbos aumenta a velocidade (Speed) do Pokémon." />
 	</item>

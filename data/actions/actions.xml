@@ -66,6 +66,8 @@
 	<action itemid="29478" script="poke/firstpoke.lua"/>
 
 	<action itemid="26693" script="poke/boost.lua" />
+	<action itemid="41684" script="poke/ditto_memory.lua" />
+	<action itemid="41685" script="poke/super_ditto_memory.lua" />
 
 	<action fromid="3901" toid="3938" script="poke/constructionkits.lua" />
 	<action fromid="5086" toid="5088" script="poke/constructionkits.lua" />
