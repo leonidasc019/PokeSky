@@ -4299,6 +4299,9 @@
 	<spawn centerx="16295" centery="16350" centerz="6" radius="1">
 		<monster name="Zubat" x="0" y="0" z="6" spawntime="60" />
 	</spawn>
+	<spawn centerx="16199" centery="16352" centerz="6" radius="1">
+		<npc name="Rivers" x="0" y="0" z="6" spawntime="60" />
+	</spawn>
 	<spawn centerx="16265" centery="16352" centerz="6" radius="1">
 		<monster name="Zubat" x="0" y="0" z="6" spawntime="60" />
 	</spawn>
@@ -5034,6 +5037,9 @@
 	<spawn centerx="16069" centery="16475" centerz="6" radius="1">
 		<monster name="Machoke" x="0" y="0" z="6" spawntime="60" />
 	</spawn>
+	<spawn centerx="16461" centery="16475" centerz="6" radius="1">
+		<npc name="Rivers" x="0" y="0" z="6" spawntime="60" />
+	</spawn>
 	<spawn centerx="16770" centery="16475" centerz="6" radius="1">
 		<monster name="Onix" x="0" y="0" z="6" spawntime="60" />
 	</spawn>
@@ -5567,17 +5573,20 @@
 	<spawn centerx="16347" centery="16682" centerz="6" radius="1">
 		<monster name="Venusaur" x="0" y="0" z="6" spawntime="60" />
 	</spawn>
+	<spawn centerx="16268" centery="16683" centerz="6" radius="1">
+		<npc name="Visco" x="-1" y="1" z="6" spawntime="15" direction="2" />
+	</spawn>
 	<spawn centerx="16439" centery="16683" centerz="6" radius="1">
 		<monster name="Victreebel" x="0" y="0" z="6" spawntime="60" />
-	</spawn>
-	<spawn centerx="16267" centery="16684" centerz="6" radius="1">
-		<npc name="Visco" x="0" y="0" z="6" spawntime="15" direction="2" />
 	</spawn>
 	<spawn centerx="16428" centery="16684" centerz="6" radius="1">
 		<monster name="Venusaur" x="0" y="0" z="6" spawntime="60" />
 	</spawn>
 	<spawn centerx="16938" centery="16684" centerz="6" radius="1">
 		<monster name="Blastoise" x="0" y="0" z="6" spawntime="60" />
+	</spawn>
+	<spawn centerx="16258" centery="16685" centerz="6" radius="1">
+		<npc name="Rivers" x="-1" y="0" z="6" spawntime="60" direction="1" />
 	</spawn>
 	<spawn centerx="16385" centery="16686" centerz="6" radius="1">
 		<monster name="Venusaur" x="0" y="0" z="6" spawntime="60" />
@@ -5717,12 +5726,18 @@
 	<spawn centerx="16875" centery="16763" centerz="6" radius="1">
 		<monster name="Starmie" x="0" y="1" z="6" spawntime="60" />
 	</spawn>
+	<spawn centerx="16214" centery="16775" centerz="6" radius="1">
+		<npc name="Rivers" x="0" y="0" z="6" spawntime="60" />
+	</spawn>
 	<spawn centerx="16220" centery="16781" centerz="6" radius="1">
 		<npc name="Nurse Chansey" x="-1" y="0" z="6" spawntime="60" />
 		<npc name="Nurse" x="0" y="0" z="6" spawntime="60" />
 	</spawn>
 	<spawn centerx="16246" centery="16784" centerz="6" radius="1">
 		<npc name="Mark" x="0" y="0" z="6" spawntime="60" />
+	</spawn>
+	<spawn centerx="16675" centery="16798" centerz="6" radius="1">
+		<npc name="Rivers" x="0" y="0" z="6" spawntime="60" />
 	</spawn>
 	<spawn centerx="16260" centery="16800" centerz="6" radius="1">
 		<monster name="Geodude" x="0" y="0" z="6" spawntime="60" />
@@ -7072,6 +7087,9 @@
 	</spawn>
 	<spawn centerx="16125" centery="16332" centerz="7" radius="1">
 		<monster name="Fearow" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="16571" centery="16332" centerz="7" radius="1">
+		<npc name="Rivers" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="16664" centery="16332" centerz="7" radius="1">
 		<monster name="Diglett" x="0" y="0" z="7" spawntime="60" />
@@ -8796,6 +8814,9 @@
 	<spawn centerx="16713" centery="16489" centerz="7" radius="1">
 		<monster name="Weedle" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
+	<spawn centerx="16772" centery="16489" centerz="7" radius="1">
+		<npc name="Rivers" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="16262" centery="16490" centerz="7" radius="1">
 		<monster name="Kakuna" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
@@ -8937,6 +8958,9 @@
 	</spawn>
 	<spawn centerx="16247" centery="16501" centerz="7" radius="1">
 		<monster name="Caterpie" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="16600" centery="16501" centerz="7" radius="1">
+		<npc name="Rivers" x="-1" y="-1" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="17174" centery="16501" centerz="7" radius="1">
 		<monster name="Exeggcute" x="0" y="0" z="7" spawntime="60" />
@@ -9559,6 +9583,9 @@
 	</spawn>
 	<spawn centerx="16155" centery="16562" centerz="7" radius="1">
 		<monster name="Nidoran Female" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
+	<spawn centerx="16200" centery="16562" centerz="7" radius="1">
+		<npc name="Rivers" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="16532" centery="16562" centerz="7" radius="1">
 		<monster name="Weepinbell" x="0" y="0" z="7" spawntime="60" />
@@ -10342,6 +10369,9 @@
 	<spawn centerx="16395" centery="16635" centerz="7" radius="1">
 		<monster name="Venusaur" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
+	<spawn centerx="16604" centery="16635" centerz="7" radius="1">
+		<npc name="Rivers" x="0" y="0" z="7" spawntime="60" />
+	</spawn>
 	<spawn centerx="16749" centery="16635" centerz="7" radius="1">
 		<monster name="Machoke" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
@@ -10795,8 +10825,8 @@
 	<spawn centerx="16238" centery="16690" centerz="7" radius="1">
 		<monster name="Pidgey" x="0" y="0" z="7" spawntime="60" />
 	</spawn>
-	<spawn centerx="16228" centery="16691" centerz="7" radius="1">
-		<monster name="Bellsprout" x="0" y="0" z="7" spawntime="60" />
+	<spawn centerx="16227" centery="16691" centerz="7" radius="1">
+		<monster name="Bellsprout" x="1" y="0" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="16316" centery="16691" centerz="7" radius="1">
 		<monster name="Weepinbell" x="0" y="0" z="7" spawntime="60" />
@@ -12012,15 +12042,6 @@
 	<spawn centerx="17199" centery="16011" centerz="8" radius="1">
 		<npc name="Nurse Chansey" x="-1" y="0" z="8" spawntime="15" direction="2" />
 		<npc name="Nurse" x="0" y="0" z="8" spawntime="15" direction="2" />
-	</spawn>
-	<spawn centerx="17169" centery="16017" centerz="8" radius="1">
-		<monster name="Venusaur" x="0" y="0" z="8" spawntime="6" direction="2" />
-	</spawn>
-	<spawn centerx="17198" centery="16017" centerz="8" radius="1">
-		<monster name="Blastoise" x="0" y="0" z="8" spawntime="6" direction="2" />
-	</spawn>
-	<spawn centerx="17184" centery="16025" centerz="8" radius="1">
-		<monster name="Charizard" x="0" y="0" z="8" spawntime="6" direction="2" />
 	</spawn>
 	<spawn centerx="17203" centery="16073" centerz="8" radius="1">
 		<npc name="Gary" x="0" y="0" z="8" spawntime="15" direction="2" />
