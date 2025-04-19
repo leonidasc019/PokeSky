@@ -1627,28 +1627,22 @@ end
 -- New Poke Moves 
 function Player:sendSummonMoves()
 	local summon = self:getSummon()
-	if not summon then
-		return false
-	end
+	if not summon then return false end
 
 	local monsterType = MonsterType(summon:getName())
-	if not monsterType then
-		return false
-	end
+	if not monsterType then return false end
 
 	local ball = self:getUsingBall()
-	if not ball then
-		return false
-	end
+	if not ball then return false end
 
 	local cleanedMoves = {}
 	local moves = monsterType:getMoveList()
 
+	-- Adiciona os golpes normais
 	for moveId, moveInfo in ipairs(moves) do
 		local moveCooldownKey = string.format("cd%d", moveId)
 		local moveCooldown = ball:getSpecialAttribute(moveCooldownKey) or 0
 
-		-- Se moveInfo.speed for nil, usa um fallback (como interval, 10000 etc.)
 		local cooldown = moveInfo.speed or moveInfo.cooldown or moveInfo.interval or 10000
 
 		local cleanedMove = {
@@ -1663,9 +1657,45 @@ function Player:sendSummonMoves()
 		table.insert(cleanedMoves, cleanedMove)
 	end
 
+	-- Adiciona golpes plate/sketch (do 1 ao 10 por segurança)
+	for i = 1, 12 do
+		local plate = ball:getSpecialAttribute("plate" .. i)
+		local sketch = ball:getSpecialAttribute("sketch" .. i)
+
+		local customMoveStr = plate or sketch
+		if customMoveStr and customMoveStr ~= "0" then
+			local moveName = customMoveStr:split("|")[1]
+			local moveCooldownKey = "cd" .. tostring(i)
+			local moveCooldown = ball:getSpecialAttribute(moveCooldownKey) or 0
+
+			local cleanedMove = {
+				name = moveName,
+				level = 0,
+				bar = 0,
+				speed = 10000, -- ou um valor fixo para TM
+				passive = 0,
+				cooldownReal = math.max(0, (moveCooldown - os.time()) * 1000)
+			}
+
+			-- Verifica se já não tem esse golpe (para não duplicar)
+			local alreadyExists = false
+			for _, m in pairs(cleanedMoves) do
+				if m.name == moveName then
+					alreadyExists = true
+					break
+				end
+			end
+
+			if not alreadyExists then
+				table.insert(cleanedMoves, cleanedMove)
+			end
+		end
+	end
+
 	self:sendExtendedOpcode(52, json.encode(cleanedMoves))
 	return true
 end
+
 
 
 
