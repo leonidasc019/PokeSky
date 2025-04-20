@@ -5,8 +5,12 @@ stonesId = { -- lixo
 {"Water", 2267},
 {"Fire", 1}
 }
--- Ajustes  Pokemons Selvagens
 
+addonnumber = {
+-----------   --------------
+[101] = {name = 'TesteDoido', surf = 0, fly = 101, ride = 0, poke='Charizard'},
+}
+-- Ajustes  Pokemons Selvagens
 SBonusMelee = 1.5
 SBonusDefense = 1.5
 SBonusSAtack = 1.5
@@ -1586,6 +1590,21 @@ function doReleaseSummon(cid, pos, effect, message, missile)
         monster:registerEvent("MonsterHealthChange")
         monster:registerEvent("MonsterDeath")
 
+		if ball:getSpecialAttribute('usingaddon') and ball:getSpecialAttribute('usingaddon') ~= 0 then
+			local addon = Condition(CONDITION_OUTFIT)
+			addon:setTicks(-1)
+			-- if string.find(player:getSummon():getName() , "Mega ") then
+			-- 	if addonmega[ball:getSpecialAttribute('usingaddon')] then
+			-- 		addon:setOutfit({lookType = ball:getSpecialAttribute('usingaddon')})
+			-- 	else
+			-- 		addon:setOutfit({lookType = ball:getSpecialAttribute('usingaddon')})
+			-- 	end
+			-- else
+				addon:setOutfit({lookType = ball:getSpecialAttribute('usingaddon')})
+			-- end
+			Creature(monster):addCondition(addon)
+		end
+
         -- Transferindo ataques para a UI
         local movesTable = {}
         local moves = monsterType:getMoveList()
@@ -1657,14 +1676,14 @@ function Player:sendSummonMoves()
 		table.insert(cleanedMoves, cleanedMove)
 	end
 
-	-- Adiciona golpes plate/sketch (do 1 ao 10 por segurança)
+	-- Adiciona golpes plate/sketch (do 1 ao 12 por segurança)
 	for i = 1, 12 do
 		local plate = ball:getSpecialAttribute("plate" .. i)
 		local sketch = ball:getSpecialAttribute("sketch" .. i)
-
 		local customMoveStr = plate or sketch
-		if customMoveStr and customMoveStr ~= "0" then
-			local moveName = customMoveStr:split("|")[1]
+
+		if customMoveStr and tostring(customMoveStr) ~= "0" then
+			local moveName = tostring(customMoveStr):split("|")[1]
 			local moveCooldownKey = "cd" .. tostring(i)
 			local moveCooldown = ball:getSpecialAttribute(moveCooldownKey) or 0
 
@@ -1672,12 +1691,11 @@ function Player:sendSummonMoves()
 				name = moveName,
 				level = 0,
 				bar = 0,
-				speed = 10000, -- ou um valor fixo para TM
+				speed = 10000,
 				passive = 0,
 				cooldownReal = math.max(0, (moveCooldown - os.time()) * 1000)
 			}
 
-			-- Verifica se já não tem esse golpe (para não duplicar)
 			local alreadyExists = false
 			for _, m in pairs(cleanedMoves) do
 				if m.name == moveName then
@@ -1695,9 +1713,6 @@ function Player:sendSummonMoves()
 	self:sendExtendedOpcode(52, json.encode(cleanedMoves))
 	return true
 end
-
-
-
 
 function doRemoveSummon(cid, effect, uid, message, missile)
 	local player = Player(cid)

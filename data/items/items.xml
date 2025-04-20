@@ -34,6 +34,28 @@
 		<attribute key="description" value="Pergaminho capaz de  liberar o ultimo espaco de Memoria" />
 	</item>
 
+	<item id="41689" article="a" name="box addon" plural="Box Addon">
+		<attribute key="description" value=" " />
+	</item>
+
+	<item id="41687" article="a" name="pergaminho addon" plural="Pergaminho Addon">
+		<attribute key="description" value=" " />
+	</item>
+
+	<item id="41688" article="a" name="addon" plural="Addon">
+		<attribute key="description" value=" " />
+	</item>
+
+
+	<item id="41686" article="a" name="tm parts" plural="TM Parts">
+		<attribute key="description" value="Pedaços de um pergaminho de TM" />
+	</item>
+
+
+	<item id="41690" article="a" name="tm reset" plural="TM Reset">
+		<attribute key="description" value="Reseta TM adicionado ao Pokemon" />
+	</item>
+
 	<item id="38779" article="a" name="calcium vitamin" plural="Vitamina de calcio">
 		<attribute key="description" value="Vitamina de cálcio aumenta o ataque especial (Sp. Attack) do Pokémon." />
 	</item>

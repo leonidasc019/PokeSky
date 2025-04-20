@@ -28,6 +28,9 @@ function onStepIn(creature, item, position, fromPosition)
         local summonSpeed = summon:getTotalSpeed()
         local monsterType = MonsterType(summonName)
         local surfOutfit = monsterType:isSurfable()
+        if player:getUsingBall():getSpecialAttribute("usingaddon") and player:getUsingBall():getSpecialAttribute("usingaddon") ~= monsterType:getOutfit().lookType then
+            outfit = addonnumber[player:getUsingBall():getSpecialAttribute("usingaddon")].surf
+        end
        
         -- Colocando pra utilizar os atributos obtidos pelo Iv e Ev
         local ball = creature:getUsingBall()
