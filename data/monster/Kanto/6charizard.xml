@@ -2,7 +2,7 @@
 <monster name="Charizard" nameDescription="a charizard" race="fire" race2="flying" experience="230" speed="160" manacost="0">
 	<level min="80" max="80"/>
 	<health now="16000" max="16000" />
-	<look type="6" head="113" body="57" legs="95" feet="113" corpse="26867" />
+	<look type="2565" head="113" body="57" legs="95" feet="113" corpse="26867" />
 	<targetchange interval="5000" chance="0" />
 	<flags>
 		<flag summonable="1" />
@@ -21,7 +21,7 @@
 		<flag portraitid="27122" />
 		<flag hasshiny="1" />
 		<flag hasmega="0" />
-		<flag flyable="501" />
+		<flag flyable="2564" />
 		<flag rideable="0" />
 		<flag surfable="0" />
 		<flag canteleport="0" />

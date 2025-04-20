@@ -8,7 +8,7 @@ stonesId = { -- lixo
 
 addonnumber = {
 -----------   --------------
-[101] = {name = 'TesteDoido', surf = 0, fly = 101, ride = 0, poke='Charizard'},
+[6] = {name = 'Charizard OLD 1', surf = 0, fly = 501, ride = 0, poke='Charizard'},
 }
 -- Ajustes  Pokemons Selvagens
 SBonusMelee = 1.5

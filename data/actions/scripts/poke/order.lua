@@ -290,15 +290,15 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 					outfit.lookType = flyOutfit
 				end
 			else -- none
-                local usingAddon = player:getUsingBall():getSpecialAttribute("usingaddon")
-                if usingAddon and usingAddon ~= monsterType:getOutfit().lookType then
-                    outfit.lookType = addonnumber[usingAddon].fly
-                else
-                    outfit.lookType = flyOutfit
-                end
 				player:sendCancelMessage("Sorry, not possible. You can not get ride or fly in your summon.")
 				return true
 			end
+            local usingAddon = player:getUsingBall():getSpecialAttribute("usingaddon")
+            if usingAddon and usingAddon ~= monsterType:getOutfit().lookType then
+                outfit.lookType = addonnumber[usingAddon].fly
+            else
+                outfit.lookType = flyOutfit
+            end
 
 	
 			summon:walk(toPosition, 1, {action = "mount", playerId = player:getId(), outfit = outfit, speed = summonSpeed, storage = storage})
