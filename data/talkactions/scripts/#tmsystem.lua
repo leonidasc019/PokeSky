@@ -2,10 +2,10 @@ local tms = {"magma storm"}
 
 local tmtable = {
 	["magma storm"] = {
-		cd = 5000,
+		cd = 50000,
 		target = 0,
 		range = 0,
-		qtd = 5,
+		qtd = 50,
 		level = 1,
 		tipo = "Fire",
 		canlearn = {"charizard"}
@@ -91,7 +91,7 @@ function onSay(player, words, param)
 			player:sendTextMessage(MESSAGE_STATUS_CONSOLE_BLUE, "Este pokemon ja sabe este ataque.")
 			return false
 		end
-		local itemremove = 26662
+		local itemremove = 41686
 		local quantity = tmtable[tmnome].qtd
 		if not tonumber(quantity) then
 			if #getMoves(player.uid) < moveslot then moveslot = #getMoves(player.uid) + 1 end

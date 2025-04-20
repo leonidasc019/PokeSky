@@ -261,6 +261,15 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 				else
 					outfit.lookType = rideOutfit
 				end
+                if player:getUsingBall():getSpecialAttribute("usingaddon") and player:getUsingBall():getSpecialAttribute("usingaddon") ~= monsterType:getOutfit().lookType then
+                    if string.find(player:getSummon():getName(), "Mega ") then
+                        outfit.lookType = addonnumber[player:getUsingBall():getSpecialAttribute("usingaddon")].ride
+                    else
+                        outfit.lookType = addonnumber[player:getUsingBall():getSpecialAttribute("usingaddon")].ride
+                    end
+                else
+                    outfit.lookType = rideOutfit
+                end
 			elseif rideOutfit == 0 and flyOutfit > 0 then -- fly
 				if flyOutfit > 1 then outfit.lookType = flyOutfit end
 				msg = msg .. ", let me fly on you!"
@@ -281,9 +290,16 @@ function onUse(player, item, fromPosition, target, toPosition, isHotkey)
 					outfit.lookType = flyOutfit
 				end
 			else -- none
+                local usingAddon = player:getUsingBall():getSpecialAttribute("usingaddon")
+                if usingAddon and usingAddon ~= monsterType:getOutfit().lookType then
+                    outfit.lookType = addonnumber[usingAddon].fly
+                else
+                    outfit.lookType = flyOutfit
+                end
 				player:sendCancelMessage("Sorry, not possible. You can not get ride or fly in your summon.")
 				return true
 			end
+
 	
 			summon:walk(toPosition, 1, {action = "mount", playerId = player:getId(), outfit = outfit, speed = summonSpeed, storage = storage})
 			if string.find(msg, "^Shiny ") then

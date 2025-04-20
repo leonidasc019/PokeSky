@@ -85,4 +85,6 @@
 	<talkaction words="/ditto use3" separator=" " script="dittosys.lua" />
 	<talkaction words="!resettm" script="!resettm.lua" />
 	<talkaction words="#tmsystem" separator=" " script="#tmsystem.lua" />
+	<talkaction words="/removeraddons" separator=" " script="removeraddons.lua"/>
+	<talkaction words="#addonsystem" separator=" " script="#addonsystem.lua" />
 </talkactions>

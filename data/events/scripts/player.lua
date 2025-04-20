@@ -64,6 +64,12 @@ function Player:onLook(thing, position, distance)
             end
         end
     end
+	if thing:isItem() and thing:getSpecialAttribute("addon") then
+		description = string.format("%s\nAddon: %s.", description, addonnumber[tonumber(thing:getSpecialAttribute("addon"))].name)
+	end
+	if thing:isItem() and thing:getSpecialAttribute("addon") then
+		description = string.format("%s\nAddon: %s.", description, addonnumber[tonumber(thing:getSpecialAttribute("addon"))].name)
+	end
 
     -- Se o item for uma Pokébola, exibir os atributos do Pokémon dentro dela
     if thing:isItem() and thing:isPokeball() then
