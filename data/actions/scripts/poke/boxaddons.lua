@@ -1,7 +1,6 @@
 local addon = {
 	-- Novos Addons
-	['TesteDoido'] = {add = 101, chance = 10},
-
+	['Charizard OLD 1'] = {add = 6, chance = 10},
 	--FIM
 }
 
