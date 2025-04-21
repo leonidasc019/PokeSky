@@ -10827,6 +10827,7 @@
 	</spawn>
 	<spawn centerx="16227" centery="16691" centerz="7" radius="1">
 		<monster name="Bellsprout" x="1" y="0" z="7" spawntime="60" />
+		<npc name="Saulo" x="0" y="1" z="7" spawntime="60" />
 	</spawn>
 	<spawn centerx="16316" centery="16691" centerz="7" radius="1">
 		<monster name="Weepinbell" x="0" y="0" z="7" spawntime="60" />

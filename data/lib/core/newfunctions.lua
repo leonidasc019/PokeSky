@@ -1543,12 +1543,19 @@ function doReleaseSummon(cid, pos, effect, message, missile)
 
     local monster = Game.createMonster(name, newPos, true, true, summonLevel, summonBoost)
     if monster then
+
         if message then
             local monsterName = monster:getName()
+    	    -- ✅ Adiciona nickname visual aqui
+			local nickname = ball:getSpecialAttribute("nick")
+			if nickname then
+				monster:setNickname(nickname)
+			end
             if string.find(monsterName, "Shiny ") == 1 then
                 monsterName = string.sub(monsterName, 7)
                 doSendShinyAura(monster)
             end
+            print(monsterName)
         end
 
         -- Se o dittoTransform for igual ao próprio nome da ball, limpa
