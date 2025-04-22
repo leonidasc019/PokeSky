@@ -1195,58 +1195,41 @@ function Player.getUsingBall(self)
 --	end
 end
 
-function MonsterType.getRaceName(self)
-	local raceNumber = self:getRace()
-	if raceNumber == 1 then return "venon" end
-	if raceNumber == 2 then return "blood" end
-	if raceNumber == 3 then return "undead" end
-	if raceNumber == 4 then return "fire" end
-	if raceNumber == 5 then return "energy" end
-	if raceNumber == 6 then return "grass" end
-	if raceNumber == 7 then return "normal" end
-	if raceNumber == 8 then return "water" end
-	if raceNumber == 9 then return "flying" end
-	if raceNumber == 10 then return "poison" end
-	if raceNumber == 11 then return "electric" end
-	if raceNumber == 12 then return "ground" end
-	if raceNumber == 13 then return "psychic" end
-	if raceNumber == 14 then return "rock" end
-	if raceNumber == 15 then return "ice" end
-	if raceNumber == 16 then return "bug" end
-	if raceNumber == 17 then return "dragon" end
-	if raceNumber == 18 then return "ghost" end
-	if raceNumber == 19 then return "dark" end
-	if raceNumber == 20 then return "steel" end
-	if raceNumber == 21 then return "fairy" end
-	if raceNumber == 22 then return "fighting" end
-	return "none"
+local raceNames = {
+    ["1"] = "venon", ["venon"] = "venon",
+    ["2"] = "blood", ["blood"] = "blood",
+    ["3"] = "undead", ["undead"] = "undead",
+    ["4"] = "fire", ["fire"] = "fire",
+    ["5"] = "energy", ["energy"] = "energy",
+    ["6"] = "grass", ["grass"] = "grass",
+    ["7"] = "normal", ["normal"] = "normal",
+    ["8"] = "water", ["water"] = "water",
+    ["9"] = "flying", ["flying"] = "flying",
+    ["10"] = "poison", ["poison"] = "poison",
+    ["11"] = "electric", ["electric"] = "electric",
+    ["12"] = "ground", ["ground"] = "ground",
+    ["13"] = "psychic", ["psychic"] = "psychic",
+    ["14"] = "rock", ["rock"] = "rock",
+    ["15"] = "ice", ["ice"] = "ice",
+    ["16"] = "bug", ["bug"] = "bug",
+    ["17"] = "dragon", ["dragon"] = "dragon",
+    ["18"] = "ghost", ["ghost"] = "ghost",
+    ["19"] = "dark", ["dark"] = "dark",
+    ["20"] = "steel", ["steel"] = "steel",
+    ["21"] = "fairy", ["fairy"] = "fairy",
+    ["22"] = "fighting", ["fighting"] = "fighting"
+}
+
+function MonsterType:getRaceName()
+	local race = self:getRace()
+	if not race then return "none" end
+	return raceNames[tostring(race)] or "none"
 end
 
-function MonsterType.getRace2Name(self)
-	local raceNumber = self:getRace2()
-	if raceNumber == 1 then return "venon" end
-	if raceNumber == 2 then return "blood" end
-	if raceNumber == 3 then return "undead" end
-	if raceNumber == 4 then return "fire" end
-	if raceNumber == 5 then return "energy" end
-	if raceNumber == 6 then return "grass" end
-	if raceNumber == 7 then return "normal" end
-	if raceNumber == 8 then return "water" end
-	if raceNumber == 9 then return "flying" end
-	if raceNumber == 10 then return "poison" end
-	if raceNumber == 11 then return "electric" end
-	if raceNumber == 12 then return "ground" end
-	if raceNumber == 13 then return "psychic" end
-	if raceNumber == 14 then return "rock" end
-	if raceNumber == 15 then return "ice" end
-	if raceNumber == 16 then return "bug" end
-	if raceNumber == 17 then return "dragon" end
-	if raceNumber == 18 then return "ghost" end
-	if raceNumber == 19 then return "dark" end
-	if raceNumber == 20 then return "steel" end
-	if raceNumber == 21 then return "fairy" end
-	if raceNumber == 22 then return "fighting" end
-	return "none"
+function MonsterType:getRace2Name()
+	local race = self:getRace2()
+	if not race then return "none" end
+	return raceNames[tostring(race)] or "none"
 end
 
 --function searchInContainer(container, itemId)
@@ -1517,7 +1500,7 @@ function doReleaseSummon(cid, pos, effect, message, missile)
 
 	    player:sendExtendedOpcode(144, json.encode(data))
 	end
-
+	local pokeName = ball:getSpecialAttribute("pokeName")
     local monsterType = MonsterType(name)
     if not monsterType:isConvinceable() or not monsterType:isIllusionable() or not monsterType:isSummonable() then
         print("WARNING: Monster " .. name .. " cannot be summoned.")
@@ -1525,6 +1508,32 @@ function doReleaseSummon(cid, pos, effect, message, missile)
         ball:setSpecialAttribute("isBeingUsed", 0)
         return false
     end
+	local type1 = ball:getSpecialAttribute("pokeType1")
+	local type2 = ball:getSpecialAttribute("pokeType2")
+	local EvBaseHp = ball:getSpecialAttribute("EvBaseHp")
+	local EvBaseAtk = ball:getSpecialAttribute("EvBaseAtk")
+	local EvBaseDef = ball:getSpecialAttribute("EvBaseDef")
+	local EvBaseSpAtk = ball:getSpecialAttribute("EvBaseSpAtk")
+	local EvBaseSpDef = ball:getSpecialAttribute("EvBaseSpDef")
+	local EvBaseSpeed = ball:getSpecialAttribute("EvBaseSpeed")	
+	if not EvBaseHp then ball:setSpecialAttribute("EvBaseHp", "0") end
+	if not EvBaseAtk then ball:setSpecialAttribute("EvBaseAtk", "0") end
+	if not EvBaseDef then ball:setSpecialAttribute("EvBaseDef", "0") end
+	if not EvBaseSpAtk then ball:setSpecialAttribute("EvBaseSpAtk", "0") end
+	if not EvBaseSpDef then ball:setSpecialAttribute("EvBaseSpDef", "0") end
+	if not EvBaseSpeed then ball:setSpecialAttribute("EvBaseSpeed", "0") end
+	
+	-- Se os dois tipos estiverem vazios ou nulos, define
+	if (not type1 or type1 == "0") and (not type2 or type2 == "0") then
+	    local monsterType = MonsterType(pokeName)
+	    if monsterType then
+	        local race1 = monsterType:getRaceName()
+	        local race2 = monsterType:getRace2Name()
+
+	        ball:setSpecialAttribute("pokeType1", race1)
+	        ball:setSpecialAttribute("pokeType2", race2)
+	    end
+	end
 
     local health = ball:getSpecialAttribute("pokeHealth") or 0
     if health <= 0 then
@@ -1543,8 +1552,14 @@ function doReleaseSummon(cid, pos, effect, message, missile)
 
     local monster = Game.createMonster(name, newPos, true, true, summonLevel, summonBoost)
     if monster then
+
         if message then
             local monsterName = monster:getName()
+    	    -- -- ✅ Adiciona nickname visual aqui
+			-- local nickname = ball:getSpecialAttribute("nick")
+			-- if nickname then
+			-- 	monster:setNickname(nickname)
+			-- end
             if string.find(monsterName, "Shiny ") == 1 then
                 monsterName = string.sub(monsterName, 7)
                 doSendShinyAura(monster)
