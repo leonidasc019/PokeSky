@@ -36,6 +36,9 @@ Bem-vindo ao changelog completo com todas as implementações, melhorias e novid
 - Efeitos no nascimento de Pokémon selvagens.
 - Shinys agora têm aura de estrelas (selvagens e jogadores).
 - Efeito de fogo (burn) e veneno (poison) visíveis nos Pokémon.
+- Adicionado Visual para Exibição e Manipulação Ev-System
+- ![image](https://github.com/user-attachments/assets/90e88fa3-97f0-4e7d-883d-4dbcbc5cdba3)
+
 
 ---
 
@@ -66,6 +69,12 @@ Bem-vindo ao changelog completo com todas as implementações, melhorias e novid
 - ![Pokemon Bar](https://github.com/user-attachments/assets/0e9ae22e-57ca-47be-8875-aa6089a763fa)
 - **Novo Módulo de Teleporte
 - ![image](https://github.com/user-attachments/assets/aa49b6be-10d3-4581-b906-809cf5bf97a4)
+- Sistema de TM já com Visual do Client Feito
+- ![image](https://github.com/user-attachments/assets/2c52aca6-c9d4-4480-8b28-dc9848794a3e)
+- Tela para Seleção de Espaços do Moveset
+- ![image](https://github.com/user-attachments/assets/51b04b6a-8e0c-4665-94f1-aae0a1bef536)
+
+
 
 
 ---
