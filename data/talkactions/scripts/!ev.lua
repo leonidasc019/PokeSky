@@ -1,51 +1,82 @@
-﻿function onSay(player, words, param)
+﻿local evAttributes = {
+    ["!evattack"] = { stat = "pokeAttack", counter = "EvBaseAtk" },
+    ["!evdefense"] = { stat = "pokeDefense", counter = "EvBaseDef" },
+    ["!evspeed"] = { stat = "pokeSpeed", counter = "EvBaseSpeed" },
+    ["!evspecialattack"] = { stat = "pokeSpecialAttack", counter = "EvBaseSpAtk" },
+    ["!evspecialdefense"] = { stat = "pokeSpecialDefense", counter = "EvBaseSpDef" },
+    ["!evhp"] = { stat = "pokeMaxHealth", counter = "EvBaseHp" }
+}
+
+function onSay(player, words, param)
+    local attr = evAttributes[words:lower()]
+    if not attr then
+        player:sendCancelMessage("Comando de EV inválido.")
+        return false
+    end
+
     local summon = player:getSummon()
     if not summon then
-        player:sendCancelMessage("Voce nao tem um Pokemon invocado.")
+        player:sendCancelMessage("Você não tem um Pokémon invocado.")
         return false
     end
 
-    -- Pegando a Pokébola correta
-    local ball = player:getUsingBall() 
+    local ball = player:getUsingBall()
     if not ball or not ball:isItem() then
-        player:sendCancelMessage("Erro: Nao foi possivel encontrar a Pokebola do seu Pokemon.")
+        player:sendCancelMessage("Erro: Pokébola não encontrada.")
         return false
     end
 
-    -- Pegando os EVs corretamente
-    local pokeEV = ball:getSpecialAttribute("pokeEv") or 0
-    if pokeEV <= 0 then
-        player:sendCancelMessage("Seu Pokemon nao possui pontos de EV disponiveis.")
+    local availableEV = ball:getSpecialAttribute("pokeEv") or 0
+    if availableEV <= 0 then
+        player:sendCancelMessage("Seu Pokémon não possui pontos de EV disponíveis.")
         return false
     end
 
-    local validStats = {
-        ["!evattack"] = "pokeAttack",
-        ["!evdefense"] = "pokeDefense",
-        ["!evspeed"] = "pokeSpeed",
-        ["!evspecialattack"] = "pokeSpecialAttack",
-        ["!evspecialdefense"] = "pokeSpecialDefense",
-        ["!evhp"] = "pokeMaxHealth"
-    }
+    local baseValue = ball:getSpecialAttribute(attr.stat) or 0
+    local currentCounter = ball:getSpecialAttribute(attr.counter) or 0
 
-    local statAttr = validStats[words:lower()]
-    if not statAttr then
-        player:sendCancelMessage("Houve um erro ao processar seu pedido.")
-        return false
-    end
+    -- Atualizando os atributos
+    ball:setSpecialAttribute(attr.stat, baseValue + 100)
+    ball:setSpecialAttribute(attr.counter, currentCounter + 1)
+    ball:setSpecialAttribute("pokeEv", availableEV - 1)
 
-    -- Adiciona 100 pontos no atributo
-    local currentStat = ball:getSpecialAttribute(statAttr) or 0
-    ball:setSpecialAttribute(statAttr, currentStat + 100)
+    -- Efeito e mensagem
+    summon:getPosition():sendMagicEffect(12)
+    player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Você adicionou 1 ponto de EV ao seu Pokémon!")
 
-    -- Reduz um ponto dos EVs disponíveis
-    ball:setSpecialAttribute("pokeEv", pokeEV - 1)
+    -- Atualiza o client com os dados novos
+    sendEvsUpdateToClient(player, ball)
 
-    -- Aplica um efeito visual no Pokémon
-    summon:getPosition():sendMagicEffect(12) -- Altere o número para o efeito desejado
-
-    -- Mensagem corrigida para não mostrar caracteres estranhos
-    player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Voce adicionou 1 ponto de EV seu Pokemon!")
-
-    return false -- Impede que o comando apareça no chat
+    return false
 end
+
+function sendEvsUpdateToClient(player, ball)
+    if not player or not ball then return end
+
+    local summon = player:getSummon()
+    if not summon then return end
+
+    local name = summon:getName()
+    local lookType = summon:getOutfit().lookType
+
+    -- CORRIGIDO: pega os tipos diretamente da Pokébola
+    local type1 = ball:getSpecialAttribute("pokeType1") or "none"
+    local type2 = ball:getSpecialAttribute("pokeType2") or "none"
+
+    local stats = {
+        ball:getSpecialAttribute("pokeMaxHealth") or 0,
+        ball:getSpecialAttribute("pokeAttack") or 0,
+        ball:getSpecialAttribute("pokeDefense") or 0,
+        ball:getSpecialAttribute("pokeSpecialAttack") or 0,
+        ball:getSpecialAttribute("pokeSpecialDefense") or 0,
+        ball:getSpecialAttribute("pokeSpeed") or 0,
+        ball:getSpecialAttribute("EvBaseHp") or 0,
+        ball:getSpecialAttribute("EvBaseAtk") or 0,
+        ball:getSpecialAttribute("EvBaseDef") or 0,
+        ball:getSpecialAttribute("EvBaseSpAtk") or 0,
+        ball:getSpecialAttribute("EvBaseSpDef") or 0,
+        ball:getSpecialAttribute("EvBaseSpeed") or 0,
+        ball:getSpecialAttribute("pokeEv") or 0
+    }
+end
+

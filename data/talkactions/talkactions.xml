@@ -87,4 +87,6 @@
 	<talkaction words="#tmsystem" separator=" " script="#tmsystem.lua" />
 	<talkaction words="/removeraddons" separator=" " script="removeraddons.lua"/>
 	<talkaction words="#addonsystem" separator=" " script="#addonsystem.lua" />
+	<talkaction words="!evinfo" script="ev_info.lua"/>
+
 </talkactions>
